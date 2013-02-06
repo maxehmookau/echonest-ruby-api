@@ -1,4 +1,4 @@
-# echonest-ruby-api
+# echonest-ruby-api [![Code Climate](https://codeclimate.com/github/maxehmookau/echonest-ruby-api.png)](https://codeclimate.com/github/maxehmookau/echonest-ruby-api)
 TODO: Everything! (also, come up with a cool name!)
 
 ## Installation
