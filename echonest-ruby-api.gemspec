@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Echonest::Ruby::Api::VERSION
   gem.authors       = ["Max Woolf"]
   gem.email         = ["max.woolf@boxuk.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = "A gem to get hold of some echonest stuff!"
+  gem.summary       = "A gem to get hold of some echonest stuff!"
+  gem.homepage      = "http://maxehmookau.github.com"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

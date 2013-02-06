@@ -1,9 +1,11 @@
 require "echonest-ruby-api/version"
+require_relative 'base'
 
 module Echonest
-  module Ruby
-    module Api
-      # Your code goes here...
-    end
+
+  def self.initialize(api_key)
+    @base = Base.new("ABCDE")
+    puts @base
   end
+
 end
