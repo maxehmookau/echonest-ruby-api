@@ -1,6 +1,5 @@
-# Echonest::Ruby::Api
-
-TODO: Write a gem description
+# echonest-ruby-api
+TODO: Everything! (also, come up with a cool name!)
 
 ## Installation
 
@@ -15,6 +14,8 @@ And then execute:
 Or install it yourself as:
 
     $ gem install echonest-ruby-api
+    
+*That said, probably don't do any of that, since nothing works yet...*
 
 ## Usage
 
