@@ -14,6 +14,7 @@ GEM
       multi_xml (>= 0.5.2)
     multi_json (1.5.0)
     multi_xml (0.5.2)
+    rake (10.0.3)
     rspec (2.12.0)
       rspec-core (~> 2.12.0)
       rspec-expectations (~> 2.12.0)
@@ -28,4 +29,5 @@ PLATFORMS
 
 DEPENDENCIES
   echonest-ruby-api!
+  rake
   rspec (~> 2.6)
