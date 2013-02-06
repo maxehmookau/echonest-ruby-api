@@ -5,7 +5,7 @@ require 'echonest-ruby-api/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "echonest-ruby-api"
-  gem.version       = Echonest::Ruby::Api::VERSION
+  gem.version       = Echonest::VERSION
   gem.authors       = ["Max Woolf"]
   gem.email         = ["max.woolf@boxuk.com"]
   gem.description   = "A gem to get hold of some echonest stuff!"
@@ -18,4 +18,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.add_dependency('httparty')
   gem.add_dependency('multi_json')
+  gem.add_development_dependency "rspec", "~> 2.6"
 end
