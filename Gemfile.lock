@@ -1,5 +1,12 @@
+PATH
+  remote: .
+  specs:
+    echonest-ruby-api (0.0.1)
+      httparty
+      multi_json
+
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     httparty (0.10.2)
       multi_json (~> 1.0)
@@ -11,5 +18,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  httparty
-  multi_json
+  echonest-ruby-api!

@@ -6,7 +6,7 @@ require_relative 'biography'
 
 class Artist < Base
 
-  def initialize(name, api_key)  
+  def initialize(name, api_key)
     @name = name
     @api_key = api_key
   end

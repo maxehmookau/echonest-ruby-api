@@ -1,3 +1,4 @@
-source "http://rubygems.org"
-gem 'httparty'
-gem 'multi_json'
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in echonest-ruby-api.gemspec
+gemspec
