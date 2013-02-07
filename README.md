@@ -16,7 +16,7 @@ And then execute:
 Or install it yourself as:
 
     $ gem install echonest-ruby-api
-    
+
 *That said, probably don't do any of that, since nothing works yet...*
 
 ## Usage
