@@ -4,6 +4,7 @@ require 'httparty'
 require 'multi_json'
 require_relative 'base'
 require_relative 'biography'
+require_relative 'blog'
 
 module Echonest
   class Artist < Base
@@ -17,20 +18,22 @@ module Echonest
       @name
     end
 
-    def biographies(options = { results: 1 })
-      endpoint = 'artist/biographies'
-      response = HTTParty.get("#{ Base.base_uri }#{ endpoint }?api_key=#{ @api_key }&format=json&results=#{ options[:results] }&name=#{ @name }")
-      json = MultiJson.load(response.body, symbolize_keys: true)
+    def biographies(options = {})
+      response = get(endpoint: 'artist/biographies', results: options[:results])
       biographies = []
-      json[:response][:biographies].each do |b|
+      response[:response][:biographies].each do |b|
         biographies << Biography.new(text: b[:text], site: b[:site], url: b[:url])
       end
       biographies
     end
 
-    def blogs(options = { results: 1 })
-      endpoint = 'artist/blogs'
-      
+    def blogs(options = {})
+      response = get(endpoint: 'artist/blogs', results: options[:results])
+      blogs = []
+      response[:response][:blogs].each do |b|
+        blogs << 1
+      end
+      blogs
     end
 
   end
