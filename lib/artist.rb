@@ -36,5 +36,10 @@ module Echonest
       blogs
     end
 
+    def familiarity
+      response = get('artist/familiarity', name: @name)
+      response[:response][:artist][:familiarity]
+    end
+
   end
 end

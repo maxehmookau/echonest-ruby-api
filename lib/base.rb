@@ -24,11 +24,8 @@ class Base
     json = MultiJson.load(response.body, symbolize_keys: true)
     response_code = json[:response][:status][:code]
 
-    if response_code.eql? 0
-      json
-    else
-      raise ArgumentError, "Echonest responded with an error of code #{ response_code }"
-    end
+    response_code.eql?(0) ? json : raise(ArgumentError, "Error code #{ response_code }")
+
   end
 
 end
