@@ -27,11 +27,11 @@ module Echonest
       biographies
     end
 
-    def blogs(options = {})
-      response = get(endpoint: 'artist/blogs', results: options[:results])
+    def blogs(options = { results: 1 })
+      response = get('artist/blogs', results: options[:results], name: @name)
       blogs = []
       response[:response][:blogs].each do |b|
-        blogs << 1
+        blogs << Blog.new(name: b[:name], site: b[:site], url: b[:url])
       end
       blogs
     end
