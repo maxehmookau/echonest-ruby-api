@@ -21,7 +21,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Require the gem in your file:
+
+    require 'echonest-ruby-api'
+
+Create an instance of an object
+
+    a = Echonest::Artist.new('Weezer', 'YOUR-API-KEY')
+
+Find out some stuff!
+
+    a.blogs(results: 20)
+    a.biographies
+
+Calls will return the first result unless setting the `results` option.
+
+*Any valid option for echonest API calls will work as normal*
 
 ## Contributing
 
