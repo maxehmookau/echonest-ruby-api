@@ -18,18 +18,13 @@ module Echonest
     end
 
     def biographies(options = {})
-      allowed_params = [:results]
-      endpoint = 'artist/biographies'
-      response = HTTParty.get("#{ Base.base_uri }#{ endpoint }?api_key=#{ @api_key }&format=json&results=#{ options[:results] }&name=#{ @name }")
-      json = MultiJson.load(response.body, symbolize_keys: true)
+      response = get(endpoint: 'artist/biographies', results: options[:results])
       biographies = []
-      json[:response][:biographies].each do |b|
+      response[:response][:biographies].each do |b|
         biographies << Biography.new(text: b[:text], site: b[:site], url: b[:url])
       end
       biographies
     end
-
-
 
   end
 end
