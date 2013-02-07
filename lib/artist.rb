@@ -17,8 +17,7 @@ module Echonest
       @name
     end
 
-    def biographies(options = {})
-      allowed_params = [:results]
+    def biographies(options = { results: 1 })
       endpoint = 'artist/biographies'
       response = HTTParty.get("#{ Base.base_uri }#{ endpoint }?api_key=#{ @api_key }&format=json&results=#{ options[:results] }&name=#{ @name }")
       json = MultiJson.load(response.body, symbolize_keys: true)
@@ -29,7 +28,10 @@ module Echonest
       biographies
     end
 
-
+    def blogs(options = { results: 1 })
+      endpoint = 'artist/blogs'
+      
+    end
 
   end
 end

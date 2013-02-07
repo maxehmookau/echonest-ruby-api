@@ -13,4 +13,9 @@ describe Echonest::Artist do
     a.biographies(results: 10).count.should be 10
   end
 
+  it 'should return one biography by default' do
+    a = Echonest::Artist.new('Weezer', 'BNOAEBT3IZYZI6WXI')
+    a.biographies.count.should be 1
+  end
+
 end

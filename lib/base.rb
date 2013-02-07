@@ -6,7 +6,11 @@ class Base
   end
 
   def self.base_uri
-    "http://developer.echonest.com/api/v4/"
+    "http://developer.echonest.com/api/v#{ Base.version }/"
+  end
+
+  def self.version
+    4
   end
 
 end
