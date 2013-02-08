@@ -2,7 +2,7 @@ require "rubygems"
 require "bundler/setup"
 require 'httparty'
 require 'multi_json'
-require 'base'
+require_relative 'base'
 
 module Echonest
   class Artist < Echonest::Base
@@ -21,41 +21,49 @@ module Echonest
     end
 
     def get_response(options = {})
-      calling_method = caller[0].split('`').last[0..-2]
-      get("#{ entity_name }/#{ calling_method }", options)
+      get(endpoint, options)
+    end
+
+    def endpoint
+      calling_method = caller[1].split('`').last[0..-2]
+      "#{ entity_name }/#{ calling_method }"
     end
 
     def biographies(options = { results: 1 })
-      #response = get("#{ entity_name }/#{ __method__ }", results: options[:results], name: @name)
       response = get_response(results: options[:results], name: @name)
       biographies = []
-      response[:response][:biographies].each do |b|
+      response[:biographies].each do |b|
         biographies << Biography.new(text: b[:text], site: b[:site], url: b[:url])
       end
       biographies
     end
 
     def blogs(options = { results: 1 })
-      response = get("#{ entity_name }/#{ __method__ }", results: options[:results], name: @name)
+      response = get_response(results: options[:results], name: @name)
       blogs = []
-      response[:response][:blogs].each do |b|
+      response[:blogs].each do |b|
         blogs << Blog.new(name: b[:name], site: b[:site], url: b[:url])
       end
       blogs
     end
 
     def familiarity
-      response = get("#{ entity_name }/#{ __method__ }", name: @name)
-      response[:response][:artist][:familiarity]
+      response = get_response(name: @name)
+      response[entity_name.to_sym][__method__.to_sym]
     end
 
     def hotttnesss
-      response = get("#{ entity_name }/#{ __method__ }", name: @name)
-      response[:response][:artist][:hotttnesss]
+      response = get_response(name: @name)
+      response[entity_name.to_sym][__method__.to_sym]
     end
 
     def images
-      response = get("#{ entity_name }/#{ __method__ }", name: @name)
+      response = get_response(name: @name)
+      images = []
+      response[:images].each do |i|
+        images << i[:url]
+      end
+      images
     end
 
   end

@@ -73,4 +73,20 @@ describe Echonest::Artist do
 
   end
 
+  describe '#images' do
+
+    it 'should allow us to get an array of urls' do
+      create_valid_artist
+      @a.images.should be_a Array
+    end
+
+    it 'should only return urls in the array' do
+      create_valid_artist
+      @a.images.each do |i|
+        i.should match(/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/)
+      end
+    end
+
+  end
+
 end
