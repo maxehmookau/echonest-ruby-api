@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe Base do
+describe Echonest::Base do
 
 end

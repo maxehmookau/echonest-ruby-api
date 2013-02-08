@@ -2,12 +2,10 @@ require "rubygems"
 require "bundler/setup"
 require 'httparty'
 require 'multi_json'
-require_relative 'base'
-require_relative 'biography'
-require_relative 'blog'
+require 'base'
 
 module Echonest
-  class Artist < Base
+  class Artist < Echonest::Base
 
     def initialize(name, api_key)
       @name = name
