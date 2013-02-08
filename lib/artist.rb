@@ -21,7 +21,7 @@ module Echonest
     end
 
     def biographies(options = { results: 1 })
-      response = get("#{ entity_name }/biographies", results: options[:results], name: @name)
+      response = get("#{ entity_name }/#{ __method__ }", results: options[:results], name: @name)
       biographies = []
       response[:response][:biographies].each do |b|
         biographies << Biography.new(text: b[:text], site: b[:site], url: b[:url])
@@ -30,7 +30,7 @@ module Echonest
     end
 
     def blogs(options = { results: 1 })
-      response = get('artist/blogs', results: options[:results], name: @name)
+      response = get("#{ entity_name }/#{ __method__ }", results: options[:results], name: @name)
       blogs = []
       response[:response][:blogs].each do |b|
         blogs << Blog.new(name: b[:name], site: b[:site], url: b[:url])
@@ -39,12 +39,12 @@ module Echonest
     end
 
     def familiarity
-      response = get('artist/familiarity', name: @name)
+      response = get("#{ entity_name }/#{ __method__ }", name: @name)
       response[:response][:artist][:familiarity]
     end
 
     def hotttnesss
-      response = get('artist/hotttnesss', name: @name)
+      response = get("#{ entity_name }/#{ __method__ }", name: @name)
       response[:response][:artist][:hotttnesss]
     end
 
