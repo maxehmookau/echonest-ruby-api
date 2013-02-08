@@ -16,8 +16,12 @@ module Echonest
       @name
     end
 
+    def entity_name
+      self.class.to_s.split('::').last.downcase
+    end
+
     def biographies(options = { results: 1 })
-      response = get('artist/biographies', results: options[:results], name: @name)
+      response = get("#{ entity_name }/biographies", results: options[:results], name: @name)
       biographies = []
       response[:response][:biographies].each do |b|
         biographies << Biography.new(text: b[:text], site: b[:site], url: b[:url])
@@ -37,6 +41,11 @@ module Echonest
     def familiarity
       response = get('artist/familiarity', name: @name)
       response[:response][:artist][:familiarity]
+    end
+
+    def hotttnesss
+      response = get('artist/hotttnesss', name: @name)
+      response[:response][:artist][:hotttnesss]
     end
 
   end
