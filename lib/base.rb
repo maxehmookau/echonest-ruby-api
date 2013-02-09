@@ -1,6 +1,7 @@
 require 'artist'
 require 'biography'
 require 'blog'
+require 'news'
 
 module Echonest
   class Base
