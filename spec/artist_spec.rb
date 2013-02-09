@@ -4,12 +4,12 @@ require 'base'
 describe Echonest::Artist do
 
   def create_valid_artist
-    @a = Echonest::Artist.new('Weezer', 'BNOAEBT3IZYZI6WXI')
+    @a = Echonest::Artist.new('BNOAEBT3IZYZI6WXI', 'Weezer')
   end
 
 
   it 'should allow an Artist to have a name' do
-    a = Echonest::Artist.new('Weezer', '12345')
+    a = Echonest::Artist.new('12345', 'Weezer')
     a.name.should eql 'Weezer'
   end
 
@@ -100,6 +100,22 @@ describe Echonest::Artist do
       create_valid_artist
       @a.list_genres.each do |g|
         g[:name].should be_a String
+      end
+    end
+
+  end
+
+  describe '#songs' do
+
+    it 'should return an Array of a Hash of songs' do
+      create_valid_artist
+      @a.songs.should be_a Array
+    end
+
+    it 'should return a valid hash for each song' do
+      create_valid_artist
+      @a.songs.each do |k|
+        k.should be_a Hash
       end
     end
 

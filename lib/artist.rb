@@ -5,9 +5,10 @@ require 'multi_json'
 require_relative 'base'
 
 module Echonest
+
   class Artist < Echonest::Base
 
-    def initialize(name, api_key)
+    def initialize(api_key, name = nil)
       @name = name
       @api_key = api_key
     end
@@ -68,6 +69,14 @@ module Echonest
 
     def list_genres
       get_response[:genres]
+    end
+
+    def songs
+      songs = []
+      get_response(name: @name)[:songs].each do |s|
+        songs << { s[:id] => s[:title] }
+      end
+      songs
     end
 
   end
