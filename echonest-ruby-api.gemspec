@@ -19,4 +19,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency('httparty')
   gem.add_dependency('multi_json')
   gem.add_development_dependency "rspec", "~> 2.6"
+  gem.add_development_dependency 'guard-rspec'
+  gem.add_development_dependency 'rb-fsevent', '~> 0.9.1'
 end

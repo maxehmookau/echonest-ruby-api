@@ -89,4 +89,20 @@ describe Echonest::Artist do
 
   end
 
+  describe '#list_genres' do
+
+    it 'should return an array of acceptable genres' do
+      create_valid_artist
+      @a.list_genres.should be_a Array
+    end
+
+    it 'should return an array in the correct format' do
+      create_valid_artist
+      @a.list_genres.each do |g|
+        g[:name].should be_a String
+      end
+    end
+
+  end
+
 end

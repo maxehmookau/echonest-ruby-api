@@ -66,5 +66,9 @@ module Echonest
       images
     end
 
+    def list_genres
+      get_response[:genres]
+    end
+
   end
 end
