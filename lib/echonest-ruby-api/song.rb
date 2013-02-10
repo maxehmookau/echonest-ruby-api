@@ -20,5 +20,15 @@ module Echonest
       end
     end
 
+    def identify(code)
+      raise ArgumentError, 'Not a valid Echoprint or ENFMP fingerprint' if code.empty?
+      response = get_response(code: code)
+      results = []
+      response[:songs].each do |song|
+        results << { score: song[:score], title: song[:title], artist_name: song[:artist_name] }
+      end
+      results
+    end
+
   end
 end
