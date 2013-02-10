@@ -1,7 +1,7 @@
 require 'artist'
+require 'song'
 require 'biography'
 require 'blog'
-require_relative 'song'
 
 module Echonest
   class Base
