@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    echonest-ruby-api (0.0.4)
+    echonest-ruby-api (0.0.5)
       httparty
       multi_json
 

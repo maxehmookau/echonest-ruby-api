@@ -17,19 +17,6 @@ module Echonest
       @name
     end
 
-    def entity_name
-      self.class.to_s.split('::').last.downcase
-    end
-
-    def get_response(options = {})
-      get(endpoint, options)
-    end
-
-    def endpoint
-      calling_method = caller[1].split('`').last[0..-2]
-      "#{ entity_name }/#{ calling_method }"
-    end
-
     def biographies(options = { results: 1 })
       response = get_response(results: options[:results], name: @name)
       biographies = []

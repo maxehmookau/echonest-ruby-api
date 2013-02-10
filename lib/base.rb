@@ -1,6 +1,7 @@
 require 'artist'
 require 'biography'
 require 'blog'
+require_relative 'song'
 
 module Echonest
   class Base
@@ -9,6 +10,19 @@ module Echonest
     def initialize(api_key)
       @api_key = api_key
       @base_uri = "http://developer.echonest.com/api/v4/"
+    end
+
+    def get_response(options = {})
+      get(endpoint, options)
+    end
+
+    def entity_name
+      self.class.to_s.split('::').last.downcase
+    end
+
+    def endpoint
+      calling_method = caller[1].split('`').last[0..-2]
+      "#{ entity_name }/#{ calling_method }"
     end
 
     # Gets the base URI for all API calls
