@@ -11,5 +11,14 @@ module Echonest
       @api_key = api_key
     end
 
+    def search(options = {})
+      defaults = { api_key: @api_key }
+      response = get_response(options)
+      songs = []
+      response[:songs].each do |song|
+        songs << song
+      end
+    end
+
   end
 end
