@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'base'
 
 describe Echonest::Artist do
 

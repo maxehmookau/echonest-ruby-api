@@ -1,6 +1,6 @@
 require "echonest-ruby-api/version"
-require_relative 'artist'
-require_relative 'song'
+require 'echonest-ruby-api/artist'
+require 'echonest-ruby-api/song'
 
 module Echonest
 

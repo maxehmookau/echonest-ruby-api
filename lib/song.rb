@@ -1,20 +1,10 @@
-require 'base'
 require "rubygems"
 require "bundler/setup"
 require 'httparty'
 require 'multi_json'
-
+require_relative 'base'
 
 module Echonest
-  class Song < Echonest::Base
-
-    def initialize(api_key)
-      @api_key = api_key
-    end
-
-    def search(options = {})
-      # response = get_response(results: options[:results], name: @name)
-    end
-
+  class Song
   end
 end
