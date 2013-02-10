@@ -1,4 +1,4 @@
-include 'base'
+require 'base'
 require "rubygems"
 require "bundler/setup"
 require 'httparty'
