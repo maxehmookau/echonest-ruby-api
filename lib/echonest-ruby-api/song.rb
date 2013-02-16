@@ -44,12 +44,12 @@ module Echonest
       return nil
     end
 
-    def echoprint_code(audio)
+    def echoprint_code(filepath)
       if which('echoprint-codegen').nil?
         raise Error.new(1), 'Install echoprint-codegen!'
       else
-        response = `echoprint-codegen #{ audio }`
-        puts JSON.parse(response).to_json.keys
+        response = `echoprint-codegen #{ filepath } 1 20`
+        JSON.parse(response)[0]['code']
       end
     end
 
