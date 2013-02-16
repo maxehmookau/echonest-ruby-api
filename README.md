@@ -17,7 +17,6 @@ Or install it yourself as:
 
     $ gem install echonest-ruby-api
 
-*That said, probably don't do any of that, since nothing works yet...*
 
 ## Usage
 
@@ -25,18 +24,24 @@ Require the gem in your file:
 
     require 'echonest-ruby-api'
 
+### Artist
+
+
 Create an instance of an object
 
-    a = Echonest::Artist.new('Weezer', 'YOUR-API-KEY')
+    artist = Echonest::Artist.new('Weezer', 'YOUR-API-KEY')
 
-Find out some stuff!
+Then you have access to a bunch of methods:
 
-    a.blogs(results: 20)
-    a.biographies
+    artist.name
+    artist.biographies
+    artist.blogs
+    artist.familiarity
+    artist.hotttnesss
+    artist.images
+    artist.songs
 
-Calls will return the first result unless setting the `results` option.
 
-*Any valid option for echonest API calls will work as normal*
 
 ## Contributing
 
