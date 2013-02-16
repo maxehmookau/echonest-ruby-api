@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'mocha/setup'
 
 describe Echonest::Song do
 
@@ -52,5 +53,35 @@ describe Echonest::Song do
     end
 
   end
+
+  describe '#echoprint_code' do
+    # This is all very hard to test in a sensible way since it relies on
+    # a binary existing on the users machine.
+
+    # it 'should raise Exception if echoprint-codegen binary is not present' do
+    #   a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+    #   a.stubs(:which).returns(nil)
+    #   expect { a.echoprint_code('path-to-mp3') }.to raise_error(Echonest::Error)
+    # end
+
+    # it 'should call the echoprint-binary if it exists' do
+    #   a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+    #   a.echoprint_code('/Users/maxwoolf/Desktop/example.mp3')
+    # end
+
+    # it 'should return a massive string if it was successful' do
+    #   a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+    #   a.echoprint_code('/Users/maxwoolf/Desktop/example.mp3').should be_a String
+    #   a.echoprint_code('/Users/maxwoolf/Desktop/example.mp3').length.should be > 400
+    # end
+
+    # it 'should identify a song using a generated code' do
+    #   a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+    #   code = a.echoprint_code('/Users/maxwoolf/Desktop/example.mp3')
+    #   puts code
+    #   puts
+    # end
+  end
+
   
 end

@@ -24,7 +24,10 @@ GEM
       multi_xml (>= 0.5.2)
     listen (0.7.2)
     lumberjack (1.0.2)
+    metaclass (0.0.1)
     method_source (0.8.1)
+    mocha (0.13.2)
+      metaclass (~> 0.0.1)
     multi_json (1.6.1)
     multi_xml (0.5.2)
     pry (0.9.10)
@@ -51,6 +54,7 @@ PLATFORMS
 DEPENDENCIES
   echonest-ruby-api!
   guard-rspec
+  mocha
   rake
   rb-fsevent (~> 0.9.1)
   rspec (~> 2.6)
