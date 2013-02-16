@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'mocha/setup'
 
 describe Echonest::Song do
 
@@ -52,5 +53,23 @@ describe Echonest::Song do
     end
 
   end
+
+  describe '.echoprint_code' do
+
+    it 'should raise Exception if echoprint-codegen binary is not present' do
+      a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+      a.stubs(:which).returns(nil)
+      expect { a.echoprint_code('path-to-mp3') }.to raise_error(Echonest::Error)
+    end
+
+    it 'should call the echoprint-binary if it exists' do
+      a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+      puts a.echoprint_code('/Users/maxwoolf/Desktop/example.mp3')
+    end
+
+
+
+  end
+
   
 end
