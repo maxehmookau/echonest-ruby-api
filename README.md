@@ -57,11 +57,13 @@ See the full list of params [here](http://developer.echonest.com/docs/v4/song.ht
 
 You can even **identify** a song simply from its fingerprint!
 
-Firstly generate an [Echoprint](http://echoprint.me/) code. You'll need to run and compile this for whatever platform you're using. [echonest/echoprint-codegen](https://github.com/echonest/echoprint-codegen) Then just pass the generated code to the `song.identify` method.
+Firstly generate an [Echoprint](http://echoprint.me/) code. You'll need to run and compile this for whatever platform you're using. [echonest/echoprint-codegen](https://github.com/echonest/echoprint-codegen) Then just pass the generated code to the `song.identify` method. 
 
-    song.idenfity(code)
+    song.idenfity(YOUR_ECHOPRINT_CODE)
 
 Checkout `spec/song_spec.rb` for an example code. 
+
+Note that this calls the song/identify API endpoint and does *not* support other Echoprint servers.
 
 ## Contributing
 
