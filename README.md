@@ -41,7 +41,19 @@ Then you have access to a bunch of methods:
     artist.images
     artist.songs
 
+### Song
 
+Create an instance of the Song module.
+
+    song = Echonest::Song.new('YOUR-API-KEY')
+
+Then you have access to the song/search endpoint:
+*(this is where it gets clever)*
+
+    params = { mood: "sad^.5", results: 10, min_tempo: 130, max_tempo: 150 }
+    song.search(params)
+
+See the full list of params [here](http://developer.echonest.com/docs/v4/song.html#search)
 
 ## Contributing
 
