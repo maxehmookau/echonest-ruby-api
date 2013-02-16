@@ -35,7 +35,7 @@ describe Echonest::Artist do
 
     it 'should deal gracefully with an invalid API key' do
       a = Echonest::Artist.new('Weezer', 'THISISNOTAKEY')
-      expect { a.biographies }.to raise_error(ArgumentError)
+      expect { a.biographies }.to raise_error(Echonest::Error)
     end
 
   end

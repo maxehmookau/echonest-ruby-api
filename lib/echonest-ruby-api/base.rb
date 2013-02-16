@@ -60,7 +60,7 @@ module Echonest
       json = MultiJson.load(response.body, symbolize_keys: true)
       response_code = json[:response][:status][:code]
 
-      response_code.eql?(0) ? json[:response] : raise(ArgumentError, "Error code #{ response_code }")
+      response_code.eql?(0) ? json[:response] : raise(Echonest::Error.new(response_code), "Error code #{ response_code }")
 
     end
 
