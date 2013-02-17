@@ -1,21 +1,26 @@
-# echonest-ruby-api
-[![Code Climate](https://codeclimate.com/github/maxehmookau/echonest-ruby-api.png)](https://codeclimate.com/github/maxehmookau/echonest-ruby-api)
-[![Build Status](https://travis-ci.org/maxehmookau/echonest-ruby-api.png)](https://travis-ci.org/maxehmookau/echonest-ruby-api)
-[![Dependency Status](https://gemnasium.com/maxehmookau/echonest-ruby-api.png)](https://gemnasium.com/maxehmookau/echonest-ruby-api)
+# echonest-ruby-api [![Code Climate](https://codeclimate.com/github/maxehmookau/echonest-ruby-api.png)](https://codeclimate.com/github/maxehmookau/echonest-ruby-api) [![Build Status](https://travis-ci.org/maxehmookau/echonest-ruby-api.png)](https://travis-ci.org/maxehmookau/echonest-ruby-api) [![Dependency Status](https://gemnasium.com/maxehmookau/echonest-ruby-api.png)](https://gemnasium.com/maxehmookau/echonest-ruby-api)
+
+
+![Echonest] (http://the.echonest.com/static/img/logos/250x80_lt.gif)
+
+**echonesst-ruby-api** is a pure Ruby wrapper around the Echonest APIs. 
+
+## Requirements
+* An API Key (available free)
+* Ruby 1.9.3+
+* [echonest/echoprint-codegen](https://github.com/echonest/echoprint-codegen) binary in your `$PATH` if you want to identify audio files. (yeah, *identify!*)
 
 ## Installation
 
-Add this line to your application's Gemfile:
+In your Gemfile:
 
     gem 'echonest-ruby-api'
+    
+and then `bundle install`
 
-And then execute:
+Or install locally:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install echonest-ruby-api
+    $ (sudo) gem install echonest-ruby-api
 
 
 ## Usage
@@ -24,8 +29,7 @@ Require the gem in your file:
 
     require 'echonest-ruby-api'
 
-### Artist
-
+## Artist
 
 Create an instance of an object
 
@@ -40,8 +44,10 @@ Then you have access to a bunch of methods:
     artist.hotttnesss
     artist.images
     artist.songs
+    
+*Exact response are specified in the RDoc  but the method names try to be as self-explanatory as possible.*
 
-### Song
+## Song
 
 Create an instance of the Song module.
 
@@ -55,13 +61,62 @@ Then you have access to the song/search endpoint:
 
 See the full list of params [here](http://developer.echonest.com/docs/v4/song.html#search)
 
-You can even **identify** a song simply from its fingerprint!
+## Identification
 
-Firstly generate an [Echoprint](http://echoprint.me/) code. You'll need to run and compile this for whatever platform you're using. [echonest/echoprint-codegen](https://github.com/echonest/echoprint-codegen) Then just pass the generated code to the `song.identify` method. 
+> **Note:** This stuff is flakey as hell. Seems to work pretty well on OSX, but it doesn't work out of the box. You'll need to follow these instructions to get it working.
 
-    song.idenfity(YOUR_ECHOPRINT_CODE)
+You can even **identify** a song simply from its fingerprint! Support for this is flaky so far and only tested on OS X.
 
-Checkout `spec/song_spec.rb` for an example code. 
+Firstly, make sure that the `echoprint-codegen` binary is available on your local `$PATH`. 
+    
+Just run: `echoprint-codegen` on the terminal and see if it returns anything other than an error.
+    
+If it's not installed, you'll need to compile it from source. **It's not as scary as it sounds.**
+
+
+    brew install ffmpeg boost taglib # Install dependencies
+    
+    cd ~/Desktop/ # or somewhere else sensible, you can delete it later anyway
+    
+    git clone https://github.com/echonest/echoprint-codegen.git
+    
+    cd echoprint-codegen
+    
+    make
+    
+    make install
+    
+This should then allow you to use the `echoprint-codegen` command at the command line. If not, try following the instructions here: [echonest/echoprint-codegen](https://github.com/echonest/echoprint-codegen)
+
+Then just use this method call:
+
+    song = Echonest::Song.new('YOUR-API-KEY')
+    code = song.echoprint_code('path/to/audio/file')
+    puts code.identify(code)
+
+If there's a positive match, it'll return something like this:
+
+    {
+      "response": {
+            "status": {
+            "code": 0,
+            "message": "Success",
+            "version": "4.2"
+          },
+          "songs": [
+          {
+            "title": "Billie Jean",
+            "artist_name": "Michael Jackson",
+            "artist_id": "ARXPPEY1187FB51DF4",
+            "score": 49,
+            "message": "OK (match type 5)",
+            "id": "SOKHYNL12A8C142FC7"
+          }
+        ]
+      }
+    }
+
+Checkout `spec/song_spec.rb` for an example code to test it out. 
 
 Note that this calls the song/identify API endpoint and does *not* support other Echoprint servers.
 
