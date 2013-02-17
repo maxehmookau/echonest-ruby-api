@@ -61,7 +61,20 @@ module Echonest
       response_code = json[:response][:status][:code]
 
       response_code.eql?(0) ? json[:response] : raise(Echonest::Error.new(response_code), "Error code #{ response_code }")
+    end
 
+    # Cross-platform way of finding an executable in the $PATH.
+    #
+    #   which('ruby') #=> /usr/bin/ruby
+    def which(cmd)
+      exts = ENV['PATHEXT'] ? ENV['PATHEXT'].split(';') : ['']
+      ENV['PATH'].split(File::PATH_SEPARATOR).each do |path|
+        exts.each { |ext|
+          exe = File.join(path, "#{ cmd }#{ ext }")
+          return exe if File.executable? exe
+        }
+      end
+      return nil
     end
 
   end

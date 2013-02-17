@@ -30,23 +30,23 @@ module Echonest
       results
     end
 
-    # Cross-platform way of finding an executable in the $PATH.
+    # Generates an acoustic fingerprint using the echoprint-codegen
+    # binary.
     #
-    #   which('ruby') #=> /usr/bin/ruby
-    def which(cmd)
-      exts = ENV['PATHEXT'] ? ENV['PATHEXT'].split(';') : ['']
-      ENV['PATH'].split(File::PATH_SEPARATOR).each do |path|
-        exts.each { |ext|
-          exe = File.join(path, "#{ cmd }#{ ext }")
-          return exe if File.executable? exe
-        }
-      end
-      return nil
-    end
-
+    # Examples:
+    #     echoprint_code('path/to/song.mp3')
+    #     #=> Echoprint code as String 
+    #
+    # Raises an +Echoprint::Error+ if the echoprint-codegen binary
+    # is not accessible to Ruby on $PATH
+    #
+    # * +filepath+ - Path (absolute or relative) to an audio file atleast 21 seconds in length
+    # 
+    # Returns a String
     def echoprint_code(filepath)
       if which('echoprint-codegen').nil?
-        raise Error.new(1), 'Install echoprint-codegen!'
+        error = Error.new(6)
+        raise Error.new(6), error.description
       else
         response = `echoprint-codegen #{ filepath } 1 20`
         JSON.parse(response)[0]['code']

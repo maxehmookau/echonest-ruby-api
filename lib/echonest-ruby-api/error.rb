@@ -7,7 +7,8 @@ module Echonest
                '2' => 'This API key is not allowed to call that method',
                '3' => 'Rate limit exceeded',
                '4' => 'Missing parameter',
-               '5' => 'Invalid parameter'
+               '5' => 'Invalid parameter',
+               '6' => 'Missing echoprint-codegen binary on $PATH'
              }
 
 
@@ -16,6 +17,7 @@ module Echonest
       @error_code = error_code
     end
 
+    
     def description
       ERRORS[@error_code.to_s]
     end
