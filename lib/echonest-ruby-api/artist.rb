@@ -3,6 +3,7 @@ require "bundler/setup"
 require_relative 'base'
 require_relative 'blog'
 require_relative 'biography'
+require_relative 'artist_result'
 
 module Echonest
 
@@ -56,6 +57,12 @@ module Echonest
 
     def list_genres
       get_response[:genres]
+    end
+
+    def search(options = {})
+      options = {name: @name}.merge(options)
+      response = get_response(options)[:artists]
+      ArtistResult.parse_array(response)
     end
 
     def songs
