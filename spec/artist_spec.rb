@@ -15,8 +15,10 @@ describe Echonest::Artist do
   describe '#entity_name' do
 
     it 'should always return artist' do
-      a = Echonest::Artist.new('Weezer', '12345')
-      a.entity_name.should eql 'artist'
+      VCR.use_cassette('entity_name') do
+        a = Echonest::Artist.new('Weezer', '12345')
+        a.entity_name.should eql 'artist'
+      end
     end
 
   end
@@ -24,18 +26,24 @@ describe Echonest::Artist do
   describe '#biographies' do
 
     it 'should download a specified number of biographies' do
-      create_valid_artist
-      @a.biographies(results: 10).count.should be 10
+      VCR.use_cassette('biographies') do
+        create_valid_artist
+        @a.biographies(results: 10).count.should be 10
+      end
     end
 
     it 'should return one biography by default' do
-      create_valid_artist
-      @a.biographies.count.should be 1
+      VCR.use_cassette('single_biography') do
+        create_valid_artist
+        @a.biographies.count.should be 1
+      end
     end
 
     it 'should deal gracefully with an invalid API key' do
-      a = Echonest::Artist.new('Weezer', 'THISISNOTAKEY')
-      expect { a.biographies }.to raise_error(Echonest::Error)
+      VCR.use_cassette('invalid_api_key_error') do
+        a = Echonest::Artist.new('Weezer', 'THISISNOTAKEY')
+        expect { a.biographies }.to raise_error(Echonest::Error)
+      end
     end
 
   end
@@ -43,13 +51,17 @@ describe Echonest::Artist do
   describe '#blogs' do
 
     it 'should download a specified number of blogs' do
-      create_valid_artist
-      @a.blogs(results: 10).count.should be 10
+      VCR.use_cassette('ten_blogs') do
+        create_valid_artist
+        @a.blogs(results: 10).count.should be 10
+      end
     end
 
     it 'should return one blog by default' do
-      create_valid_artist
-      @a.blogs.count.should be 1
+      VCR.use_cassette('blogs') do
+        create_valid_artist
+        @a.blogs.count.should be 1
+      end
     end
 
   end
