@@ -105,15 +105,15 @@ describe Echonest::Artist do
   end
 
   describe '#search' do
-    it 'should return an Array of artist search results' do
+    it 'should return an Array of artists' do
       create_valid_artist
       @a.search.should be_a Array
     end
 
-    it 'should return an ArtistResult object for each result' do
+    it 'should return an Artist object for each result' do
       create_valid_artist
       @a.search.each do |k|
-        k.class.should be ArtistResult
+        k.class.should be Echonest::Artist
       end
     end
 
