@@ -104,6 +104,27 @@ describe Echonest::Artist do
 
   end
 
+  describe '#search' do
+    it 'should return an Array of artists' do
+      create_valid_artist
+      @a.search.should be_a Array
+    end
+
+    it 'should return an Artist object for each result' do
+      create_valid_artist
+      @a.search.each do |k|
+        k.class.should be Echonest::Artist
+      end
+    end
+
+    it 'should search the specified bucket' do
+      create_valid_artist
+      results = @a.search(bucket: "id:musicbrainz")
+      foreign_id = results.first.foreign_ids.first
+      foreign_id.catalog.should eq("musicbrainz")
+    end
+  end
+
   describe '#songs' do
 
     it 'should return an Array of a Hash of songs' do
