@@ -3,18 +3,18 @@ require "bundler/setup"
 require_relative 'base'
 require_relative 'blog'
 require_relative 'biography'
+require_relative 'foreign_id'
 
 module Echonest
 
   class Artist < Echonest::Base
 
-    def initialize(api_key, name = nil)
+    attr_accessor :id, :name, :foreign_ids
+
+    def initialize(api_key, name = nil, foreign_ids = nil)
       @name = name
       @api_key = api_key
-    end
-
-    def name
-      @name
+      @foreign_ids = ForeignId.parse_array(foreign_ids) if foreign_ids
     end
 
     def biographies(options = { results: 1 })
@@ -56,6 +56,15 @@ module Echonest
 
     def list_genres
       get_response[:genres]
+    end
+
+    def search(options = {})
+      options = {name: @name}.merge(options)
+      artists = []
+      get_response(options)[:artists].each do |a|
+        artists << Artist.new(@api_key, a[:name], a[:foreign_ids])
+      end
+      artists
     end
 
     def songs
