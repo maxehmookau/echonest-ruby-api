@@ -120,10 +120,11 @@ Checkout `spec/song_spec.rb` for an example code to test it out.
 
 Note that this calls the song/identify API endpoint and does *not* support other Echoprint servers.
 
-## Contributing
+## Testing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Testing is done using RSpec. Just run `guard` in the root directory and it'll run the tests automatically. Use `vcr` to mock responses from the Echonest servers.
+
+## Contributors
+
+Max Woolf (me!)
+abdyer
