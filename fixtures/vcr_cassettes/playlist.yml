@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/playlist/dynamic/create?api_key=BNOAEBT3IZYZI6WXI&artist=Weezer&format=json&type=artist-radio
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:13:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - WZaoUsRkRBiaSVp7fJiUcA
+      Etag:
+      - ! '"90e79e9f1fa498373fcf19d25e72da86107337ae"'
+      X-Worker-Node:
+      - 7d98c:29641
+      Content-Length:
+      - '127'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "session_id": "20c87fed4f0b4637b0f9af6786aaa358"}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:13:21 GMT
+recorded_with: VCR 2.4.0
