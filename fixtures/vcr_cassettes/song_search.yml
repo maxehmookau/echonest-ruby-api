@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/song/search?api_key=BNOAEBT3IZYZI6WXI&format=json&title=Hello
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:15:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - n0ItTKhWS8+FVg7ua6O11w
+      Etag:
+      - ! '"7dba663b6e41e4e4fbaf750a7b01214251699013"'
+      X-Worker-Node:
+      - aadeb:11349
+      Content-Length:
+      - '1795'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "songs": [{"artist_id": "ARRYXUQ12AF7D9AFFC", "id": "SOGUSJE13447A33DAB",
+        "artist_name": "Phospho", "title": "Hello"}, {"artist_id": "ARBC4GQ1187B9B7F8D",
+        "id": "SOGWVMY13447A3388C", "artist_name": "Young Dro", "title": "Hello"},
+        {"artist_id": "ARSUODM12CEB2754F0", "id": "SODXANW13447A34092", "artist_name":
+        "Dj Whitestar", "title": "Hello"}, {"artist_id": "ARVXB6R1187B9B01EB", "id":
+        "SOOMXEN13447A33B74", "artist_name": "Amazon", "title": "Hello"}, {"artist_id":
+        "AROFTBV1313DF144E7", "id": "SOXABZB134D7CF0F86", "artist_name": "DJ Masker
+        Robert, DJ White", "title": "Hello"}, {"artist_id": "ARC0NAO1187B98DE48",
+        "id": "SOHHREF134EDB03C70", "artist_name": "Peter Nero", "title": "Hello"},
+        {"artist_id": "ARHSNUX1257509DA25", "id": "SOQDIZT134EE36B5C7", "artist_name":
+        "Igor Colonna", "title": "Hello"}, {"artist_id": "ARGMQTF12EFE49A074", "id":
+        "SOAWOGM134EE36B17B", "artist_name": "sosoo", "title": "Hello"}, {"artist_id":
+        "ARAGWS81187FB3F768", "id": "SOPNBLL134EDB0458B", "artist_name": "Various
+        Artists", "title": "Hello"}, {"artist_id": "ARLQOGS134CD512270", "id": "SOVAICV134EE36B4A0",
+        "artist_name": "Wonderful Happens", "title": "Hello!"}, {"artist_id": "ARKURNG12FE0874530",
+        "id": "SOONQJM134EE36B274", "artist_name": "LADY PJ", "title": "Hello"}, {"artist_id":
+        "ARNSCJA133B3F127C7", "id": "SOBCWDO134EDB0522C", "artist_name": "Datsik Techno",
+        "title": "Hello"}, {"artist_id": "ARZDHIZ133B3F128DF", "id": "SOUWCCO134EE36BE18",
+        "artist_name": "Soraya Berent", "title": "Hello"}, {"artist_id": "ARUHGGJ133B3F139C8",
+        "id": "SOAMELR134EDB05486", "artist_name": "Tartar Control", "title": "Hello"},
+        {"artist_id": "ARLUDNI12D5CD71199", "id": "SOJJZAB134EE36C3A9", "artist_name":
+        "Kate Truka", "title": "Hello"}]}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:15:51 GMT
+recorded_with: VCR 2.4.0

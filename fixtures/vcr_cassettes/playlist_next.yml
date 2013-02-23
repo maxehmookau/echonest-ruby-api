@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/playlist/dynamic/create?api_key=BNOAEBT3IZYZI6WXI&artist=Weezer&format=json&type=artist-radio
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:13:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 88PyJWBZRvuF+akOI3g54g
+      Etag:
+      - ! '"146840a29275c6afcd14a88df3baa2bc0ec8e6e1"'
+      X-Worker-Node:
+      - 5f1b3:29986
+      Content-Length:
+      - '127'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '7'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "session_id": "93bc73611c66425cbeb89052da870384"}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:13:51 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/playlist/dynamic/next?api_key=BNOAEBT3IZYZI6WXI&format=json&session_id=93bc73611c66425cbeb89052da870384
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:13:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - hNzF5lTjSou1dqy81ZLVpg
+      Etag:
+      - ! '"2a8f537e3c2e1257e473f628132921d16f41fc91"'
+      X-Worker-Node:
+      - aadeb:11293
+      Content-Length:
+      - '222'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '8'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "lookahead": [], "songs": [{"artist_id": "AR633SY1187B9AC3B9",
+        "id": "SOHTZUF12A8C13582B", "artist_name": "Weezer", "title": "Pork And Beans"}]}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:13:51 GMT
+recorded_with: VCR 2.4.0

@@ -1,0 +1,144 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/playlist/dynamic/create?api_key=BNOAEBT3IZYZI6WXI&artist=Weezer&format=json&type=artist-radio
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:18:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - nPMvV5YQQDKQ5REly2xisw
+      Etag:
+      - ! '"801631ac93065ed471d3062a163d44be43f76e0f"'
+      X-Worker-Node:
+      - 0b857:21278
+      Content-Length:
+      - '127'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '3'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "session_id": "f93c3d81fcd14f2c9c921334be7e1695"}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:18:23 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/playlist/dynamic/next?api_key=BNOAEBT3IZYZI6WXI&format=json&session_id=f93c3d81fcd14f2c9c921334be7e1695
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:18:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - XHokvZVQTGOw8Pg72VNLow
+      Etag:
+      - ! '"d589936921d541a4ae3093bc7789d4e73896314b"'
+      X-Worker-Node:
+      - 0b857:21277
+      Content-Length:
+      - '221'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '4'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "lookahead": [], "songs": [{"artist_id": "AR633SY1187B9AC3B9",
+        "id": "SOHXHLT1315CD4942C", "artist_name": "Weezer", "title": "The Good Life"}]}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:18:23 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/playlist/dynamic/next?api_key=BNOAEBT3IZYZI6WXI&format=json&session_id=f93c3d81fcd14f2c9c921334be7e1695
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:18:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - KVs/jffkTaysBtA4YqnG0Q
+      Etag:
+      - ! '"fcc2cec66917bbd9d2b4562e29b914d778e8da1d"'
+      X-Worker-Node:
+      - 1eef6:12417
+      Content-Length:
+      - '226'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '5'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "lookahead": [], "songs": [{"artist_id": "ARP7ILI1187B9AE9F7",
+        "id": "SOAOVTO12A8C1314A6", "artist_name": "Phantom Planet", "title": "Lonely
+        Day"}]}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:18:23 GMT
+recorded_with: VCR 2.4.0

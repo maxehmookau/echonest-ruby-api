@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/biographies?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&results=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 22 Feb 2013 20:57:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - S0DxrVdbT2O0D5NiewljIg
+      Etag:
+      - ! '"20406ebd7c4f93f2ed24d9566bbad8568af1c7e7"'
+      X-Worker-Node:
+      - aadeb:27235
+      Content-Length:
+      - '390'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "start": 0, "total": 13, "biographies": [{"text": "FOLLOW US MORE
+        VIDEOS", "site": "myspace", "url": "http://www.myspace.com/weezer#biography",
+        "license": {"type": "unknown", "attribution": "n/a", "attribution-url": "http://www.myspace.com/weezer#biography",
+        "url": "n/a", "version": "n/a"}, "truncated": true}]}}'
+    http_version: 
+  recorded_at: Fri, 22 Feb 2013 20:57:32 GMT
+recorded_with: VCR 2.4.0
