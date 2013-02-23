@@ -69,8 +69,10 @@ describe Echonest::Artist do
   describe '#familiarity' do
 
     it 'should allow us to find out how familiar an artist is' do
-      create_valid_artist
-      @a.familiarity.should be_a Float
+      VCR.use_cassette('familiarity') do
+        create_valid_artist
+        @a.familiarity.should be_a Float
+      end
     end
 
   end
@@ -78,8 +80,10 @@ describe Echonest::Artist do
   describe '#hotttnesss' do
 
     it 'should allow us to find out how hotttt an artist is' do
-      create_valid_artist
-      @a.hotttnesss.should be_a Float
+      VCR.use_cassette('hotttnesss') do
+        create_valid_artist
+        @a.hotttnesss.should be_a Float
+      end
     end
 
   end
@@ -87,14 +91,18 @@ describe Echonest::Artist do
   describe '#images' do
 
     it 'should allow us to get an array of urls' do
-      create_valid_artist
-      @a.images.should be_a Array
+      VCR.use_cassette('images') do
+        create_valid_artist
+        @a.images.should be_a Array
+      end
     end
 
     it 'should only return urls in the array' do
-      create_valid_artist
-      @a.images.each do |i|
-        i.should match(/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/)
+      VCR.use_cassette('images') do
+        create_valid_artist
+        @a.images.each do |i|
+          i.should match(/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/)
+        end
       end
     end
 
@@ -103,14 +111,18 @@ describe Echonest::Artist do
   describe '#list_genres' do
 
     it 'should return an array of acceptable genres' do
-      create_valid_artist
-      @a.list_genres.should be_a Array
+      VCR.use_cassette('list_genres') do
+        create_valid_artist
+        @a.list_genres.should be_a Array
+      end
     end
 
     it 'should return an array in the correct format' do
-      create_valid_artist
-      @a.list_genres.each do |g|
-        g[:name].should be_a String
+      VCR.use_cassette('list_genres') do
+        create_valid_artist
+        @a.list_genres.each do |g|
+          g[:name].should be_a String
+        end
       end
     end
 
@@ -118,36 +130,46 @@ describe Echonest::Artist do
 
   describe '#search' do
     it 'should return an Array of artists' do
-      create_valid_artist
-      @a.search.should be_a Array
+      VCR.use_cassette('search') do
+        create_valid_artist
+        @a.search.should be_a Array
+      end
     end
 
     it 'should return an Artist object for each result' do
-      create_valid_artist
-      @a.search.each do |k|
-        k.class.should be Echonest::Artist
+      VCR.use_cassette('search') do
+        create_valid_artist
+        @a.search.each do |k|
+          k.class.should be Echonest::Artist
+        end
       end
     end
 
     it 'should search the specified bucket' do
-      create_valid_artist
-      results = @a.search(bucket: "id:musicbrainz")
-      foreign_id = results.first.foreign_ids.first
-      foreign_id.catalog.should eq("musicbrainz")
+      VCR.use_cassette('search_2') do
+        create_valid_artist
+        results = @a.search(bucket: "id:musicbrainz")
+        foreign_id = results.first.foreign_ids.first
+        foreign_id.catalog.should eq("musicbrainz")
+      end
     end
   end
 
   describe '#songs' do
 
     it 'should return an Array of a Hash of songs' do
-      create_valid_artist
-      @a.songs.should be_a Array
+      VCR.use_cassette('songs') do
+        create_valid_artist
+        @a.songs.should be_a Array
+      end
     end
 
     it 'should return a valid hash for each song' do
-      create_valid_artist
-      @a.songs.each do |k|
-        k.should be_a Hash
+      VCR.use_cassette('songs') do
+        create_valid_artist
+        @a.songs.each do |k|
+          k.should be_a Hash
+        end
       end
     end
 

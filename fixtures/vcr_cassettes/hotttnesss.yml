@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/hotttnesss?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:05:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - MOIIYqqCTpW0LxylRaQ7wA
+      Etag:
+      - ! '"5826c5479542eca3a88f60adc26bf81874f65939"'
+      X-Worker-Node:
+      - c125c:9835
+      Content-Length:
+      - '170'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "artist": {"hotttnesss": 0.53242500000000004, "id": "AR633SY1187B9AC3B9",
+        "name": "Weezer"}}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:05:49 GMT
+recorded_with: VCR 2.4.0
