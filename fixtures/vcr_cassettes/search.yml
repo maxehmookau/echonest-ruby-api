@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/search?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:08:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - i1vZwLE+Qyiqwun/+oN84A
+      Etag:
+      - ! '"e7f36d4846d8fd7054706b4048cae87ded56ba0c"'
+      X-Worker-Node:
+      - fb7e1:21716
+      Content-Length:
+      - '441'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "artists": [{"name": "Weezer", "id": "AR633SY1187B9AC3B9"}, {"name":
+        "Weezer Tribute", "id": "ARHVIPZ122CC3B2537"}, {"name": "Weezer, Hayley Williams",
+        "id": "ARRLJLF13221695F30"}, {"name": "Weezer/Hayley Williams", "id": "ARGGYKM13365906CDC"},
+        {"name": "Grease Weezer", "id": "ARWHDKF12AF7D9BEBF"}, {"name": "Matt Sharp
+        (of Weezer", "id": "ARIVGRW134198DDE27"}]}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:08:19 GMT
+recorded_with: VCR 2.4.0

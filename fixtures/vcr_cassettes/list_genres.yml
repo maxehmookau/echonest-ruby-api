@@ -1,0 +1,177 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/list_genres?api_key=BNOAEBT3IZYZI6WXI&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:07:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - NJB7/Tg7QdyYFKvD23uhiA
+      Etag:
+      - ! '"7a30794ee60f06356de8ecfa7cb95c06d4eefa96"'
+      X-Worker-Node:
+      - 4dfa3:21282
+      Content-Length:
+      - '10101'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "genres": [{"name": "a cappella"}, {"name": "acid house"}, {"name":
+        "acid jazz"}, {"name": "acoustic blues"}, {"name": "afrobeat"}, {"name": "album
+        rock"}, {"name": "alternative country"}, {"name": "alternative dance"}, {"name":
+        "alternative hip hop"}, {"name": "alternative metal"}, {"name": "alternative
+        rock"}, {"name": "ambient"}, {"name": "anti-folk"}, {"name": "art rock"},
+        {"name": "atmospheric black metal"}, {"name": "australian hip hop"}, {"name":
+        "avant-garde"}, {"name": "avant-garde jazz"}, {"name": "avantgarde metal"},
+        {"name": "bachata"}, {"name": "baile funk"}, {"name": "banda"}, {"name": "bass
+        music"}, {"name": "bebop"}, {"name": "bhangra"}, {"name": "big band"}, {"name":
+        "big beat"}, {"name": "black metal"}, {"name": "blue-eyed soul"}, {"name":
+        "bluegrass"}, {"name": "blues"}, {"name": "blues-rock"}, {"name": "bolero"},
+        {"name": "boogaloo"}, {"name": "boogie-woogie"}, {"name": "bossa nova"}, {"name":
+        "brass band"}, {"name": "brazilian pop music"}, {"name": "breakbeat"}, {"name":
+        "breakcore"}, {"name": "brill building pop"}, {"name": "british blues"}, {"name":
+        "british folk"}, {"name": "british invasion"}, {"name": "british pop"}, {"name":
+        "broken beat"}, {"name": "brutal death metal"}, {"name": "bubblegum dance"},
+        {"name": "bubblegum pop"}, {"name": "cabaret"}, {"name": "calypso"}, {"name":
+        "canterbury scene"}, {"name": "ccm"}, {"name": "celtic"}, {"name": "celtic
+        rock"}, {"name": "chamber pop"}, {"name": "chanson"}, {"name": "chicago blues"},
+        {"name": "chicago house"}, {"name": "chicago soul"}, {"name": "children''s
+        music"}, {"name": "chill-out"}, {"name": "chillwave"}, {"name": "chiptune"},
+        {"name": "choro"}, {"name": "chorus"}, {"name": "christian alternative rock"},
+        {"name": "christian hardcore"}, {"name": "christian hip hop"}, {"name": "christian
+        metal"}, {"name": "christian music"}, {"name": "christian punk"}, {"name":
+        "christian rock"}, {"name": "classic rock"}, {"name": "classical"}, {"name":
+        "comedy"}, {"name": "contemporary country"}, {"name": "cool jazz"}, {"name":
+        "country"}, {"name": "country blues"}, {"name": "country gospel"}, {"name":
+        "country rock"}, {"name": "cowpunk"}, {"name": "crossover thrash"}, {"name":
+        "crunk"}, {"name": "crust punk"}, {"name": "cumbia"}, {"name": "dance pop"},
+        {"name": "dance rock"}, {"name": "dance-punk"}, {"name": "dancehall"}, {"name":
+        "dark ambient"}, {"name": "dark wave"}, {"name": "death core"}, {"name": "death
+        metal"}, {"name": "deathgrind"}, {"name": "deep house"}, {"name": "delta blues"},
+        {"name": "desi"}, {"name": "detroit techno"}, {"name": "digital hardcore"},
+        {"name": "dirty south rap"}, {"name": "disco"}, {"name": "disco house"}, {"name":
+        "djent"}, {"name": "doo-wop"}, {"name": "doom metal"}, {"name": "downtempo"},
+        {"name": "dream pop"}, {"name": "drone"}, {"name": "drum and bass"}, {"name":
+        "dub"}, {"name": "dubstep"}, {"name": "dutch rock"}, {"name": "early music"},
+        {"name": "east coast hip hop"}, {"name": "easy listening"}, {"name": "ebm"},
+        {"name": "electric blues"}, {"name": "electro"}, {"name": "electro-industrial"},
+        {"name": "electroclash"}, {"name": "electronic"}, {"name": "emo"}, {"name":
+        "eurobeat"}, {"name": "eurodance"}, {"name": "europop"}, {"name": "exotica"},
+        {"name": "experimental"}, {"name": "experimental rock"}, {"name": "fado"},
+        {"name": "filmi"}, {"name": "flamenco"}, {"name": "folk"}, {"name": "folk
+        metal"}, {"name": "folk punk"}, {"name": "folk rock"}, {"name": "folk-pop"},
+        {"name": "freak folk"}, {"name": "freakbeat"}, {"name": "free improvisation"},
+        {"name": "free jazz"}, {"name": "freestyle"}, {"name": "funeral doom"}, {"name":
+        "funk"}, {"name": "funk metal"}, {"name": "funk rock"}, {"name": "futurepop"},
+        {"name": "g funk"}, {"name": "gabba"}, {"name": "game"}, {"name": "gangster
+        rap"}, {"name": "garage rock"}, {"name": "german pop"}, {"name": "glam metal"},
+        {"name": "glam rock"}, {"name": "glitch"}, {"name": "goregrind"}, {"name":
+        "gospel"}, {"name": "gothic metal"}, {"name": "gothic rock"}, {"name": "gothic
+        symphonic metal"}, {"name": "grime"}, {"name": "grindcore"}, {"name": "groove
+        metal"}, {"name": "grunge"}, {"name": "gypsy jazz"}, {"name": "happy hardcore"},
+        {"name": "hard bop"}, {"name": "hard house"}, {"name": "hard rock"}, {"name":
+        "hard trance"}, {"name": "hardcore"}, {"name": "hardcore hip hop"}, {"name":
+        "hardcore techno"}, {"name": "hardstyle"}, {"name": "harmonica blues"}, {"name":
+        "hi nrg"}, {"name": "highlife"}, {"name": "hip hop"}, {"name": "hip house"},
+        {"name": "horror punk"}, {"name": "house"}, {"name": "hyphy"}, {"name": "icelandic
+        pop"}, {"name": "illbient"}, {"name": "indian classical"}, {"name": "indie
+        folk"}, {"name": "indie pop"}, {"name": "indie rock"}, {"name": "indietronica"},
+        {"name": "industrial"}, {"name": "industrial metal"}, {"name": "industrial
+        rock"}, {"name": "intelligent dance music"}, {"name": "irish folk"}, {"name":
+        "italian disco"}, {"name": "j pop"}, {"name": "j rock"}, {"name": "jam band"},
+        {"name": "jangle pop"}, {"name": "japanoise"}, {"name": "jazz"}, {"name":
+        "jazz blues"}, {"name": "jazz funk"}, {"name": "jazz fusion"}, {"name": "judaica"},
+        {"name": "jug band"}, {"name": "juggalo"}, {"name": "jump blues"}, {"name":
+        "jungle music"}, {"name": "k pop"}, {"name": "kiwi rock"}, {"name": "klezmer"},
+        {"name": "kompa"}, {"name": "kraut rock"}, {"name": "kwaito"}, {"name": "laiko"},
+        {"name": "latin"}, {"name": "latin alternative"}, {"name": "latin jazz"},
+        {"name": "latin pop"}, {"name": "lo-fi"}, {"name": "louisiana blues"}, {"name":
+        "lounge"}, {"name": "lovers rock"}, {"name": "madchester"}, {"name": "mambo"},
+        {"name": "mariachi"}, {"name": "martial industrial"}, {"name": "math rock"},
+        {"name": "mathcore"}, {"name": "medieval"}, {"name": "mellow gold"}, {"name":
+        "melodic death metal"}, {"name": "melodic hardcore"}, {"name": "melodic metalcore"},
+        {"name": "memphis blues"}, {"name": "memphis soul"}, {"name": "merengue"},
+        {"name": "merseybeat"}, {"name": "metal"}, {"name": "metalcore"}, {"name":
+        "minimal"}, {"name": "modern blues"}, {"name": "modern classical"}, {"name":
+        "motown"}, {"name": "mpb"}, {"name": "musique concrete"}, {"name": "nashville
+        sound"}, {"name": "native american"}, {"name": "neo classical metal"}, {"name":
+        "neo soul"}, {"name": "neo-progressive"}, {"name": "neoclassical"}, {"name":
+        "neofolk"}, {"name": "neue deutsche harte"}, {"name": "new age"}, {"name":
+        "new beat"}, {"name": "new jack swing"}, {"name": "new orleans blues"}, {"name":
+        "new orleans jazz"}, {"name": "new rave"}, {"name": "new romantic"}, {"name":
+        "new wave"}, {"name": "new weird america"}, {"name": "ninja"}, {"name": "no
+        wave"}, {"name": "noise pop"}, {"name": "noise rock"}, {"name": "northern
+        soul"}, {"name": "nu jazz"}, {"name": "nu metal"}, {"name": "nu skool breaks"},
+        {"name": "nwobhm"}, {"name": "oi"}, {"name": "old school hip hop"}, {"name":
+        "opera"}, {"name": "opm"}, {"name": "oratory"}, {"name": "outlaw country"},
+        {"name": "pagan black metal"}, {"name": "piano blues"}, {"name": "piano rock"},
+        {"name": "piedmont blues"}, {"name": "polka"}, {"name": "pop"}, {"name": "pop
+        punk"}, {"name": "pop rap"}, {"name": "pop rock"}, {"name": "portuguese rock"},
+        {"name": "post rock"}, {"name": "post-grunge"}, {"name": "post-hardcore"},
+        {"name": "post-metal"}, {"name": "post-punk"}, {"name": "power electronics"},
+        {"name": "power metal"}, {"name": "power noise"}, {"name": "power pop"}, {"name":
+        "power violence"}, {"name": "progressive bluegrass"}, {"name": "progressive
+        house"}, {"name": "progressive metal"}, {"name": "progressive rock"}, {"name":
+        "progressive trance"}, {"name": "protopunk"}, {"name": "psychedelic rock"},
+        {"name": "psychedelic trance"}, {"name": "psychobilly"}, {"name": "punk"},
+        {"name": "punk blues"}, {"name": "quiet storm"}, {"name": "r&b"}, {"name":
+        "ragtime"}, {"name": "rai"}, {"name": "ranchera"}, {"name": "rap"}, {"name":
+        "rap metal"}, {"name": "rap rock"}, {"name": "reggae"}, {"name": "reggaeton"},
+        {"name": "renaissance"}, {"name": "rock"}, {"name": "rock ''n roll"}, {"name":
+        "rock en espanol"}, {"name": "rock steady"}, {"name": "rockabilly"}, {"name":
+        "roots reggae"}, {"name": "roots rock"}, {"name": "rumba"}, {"name": "salsa"},
+        {"name": "samba"}, {"name": "screamo"}, {"name": "sexy"}, {"name": "shibuya-kei"},
+        {"name": "shoegaze"}, {"name": "show tunes"}, {"name": "singer-songwriter"},
+        {"name": "ska"}, {"name": "ska punk"}, {"name": "skate punk"}, {"name": "skiffle"},
+        {"name": "slovenian rock"}, {"name": "slow core"}, {"name": "sludge metal"},
+        {"name": "smooth jazz"}, {"name": "soca"}, {"name": "soft rock"}, {"name":
+        "soukous"}, {"name": "soul"}, {"name": "soul blues"}, {"name": "soul jazz"},
+        {"name": "soundtrack"}, {"name": "southern gospel"}, {"name": "southern hip
+        hop"}, {"name": "southern rock"}, {"name": "southern soul"}, {"name": "space
+        rock"}, {"name": "speed garage"}, {"name": "speed metal"}, {"name": "speedcore"},
+        {"name": "stoner metal"}, {"name": "stoner rock"}, {"name": "straight edge"},
+        {"name": "stride"}, {"name": "suomi rock"}, {"name": "surf music"}, {"name":
+        "swamp blues"}, {"name": "swing"}, {"name": "symphonic black metal"}, {"name":
+        "symphonic metal"}, {"name": "symphonic rock"}, {"name": "synthpop"}, {"name":
+        "tango"}, {"name": "tech house"}, {"name": "technical death metal"}, {"name":
+        "techno"}, {"name": "teen pop"}, {"name": "tejano"}, {"name": "texas blues"},
+        {"name": "texas country"}, {"name": "thai pop"}, {"name": "thrash core"},
+        {"name": "thrash metal"}, {"name": "traditional blues"}, {"name": "traditional
+        country"}, {"name": "traditional folk"}, {"name": "trance"}, {"name": "tribal
+        house"}, {"name": "trip hop"}, {"name": "turbo folk"}, {"name": "turntablism"},
+        {"name": "twee pop"}, {"name": "uk garage"}, {"name": "underground hip hop"},
+        {"name": "uplifting trance"}, {"name": "urban contemporary"}, {"name": "vallenato"},
+        {"name": "video game music"}, {"name": "viking metal"}, {"name": "visual kei"},
+        {"name": "vocal house"}, {"name": "vocal jazz"}, {"name": "west coast rap"},
+        {"name": "western swing"}, {"name": "world"}, {"name": "worship"}, {"name":
+        "zouk"}, {"name": "zydeco"}]}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:07:51 GMT
+recorded_with: VCR 2.4.0

@@ -1,0 +1,697 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/biographies?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&results=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 22 Feb 2013 20:54:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - uqvM0DasR02wgMleK+hdpA
+      Etag:
+      - ! '"a749d2ac1df43afc92a93ca82b6340072ff968f7"'
+      X-Worker-Node:
+      - aadeb:32511
+      Content-Length:
+      - '50435'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "start": 0, "total": 13, "biographies": [{"text": "FOLLOW US MORE
+        VIDEOS", "site": "myspace", "url": "http://www.myspace.com/weezer#biography",
+        "license": {"type": "unknown", "attribution": "n/a", "attribution-url": "http://www.myspace.com/weezer#biography",
+        "url": "n/a", "version": "n/a"}, "truncated": true}, {"text": "As one of the
+        most popular groups to emerge in ...", "site": "ilike", "url": "http://www.ilike.com/artist/Weezer",
+        "license": {"type": "unknown", "attribution": "ilike", "attribution-url":
+        "http://www.ilike.com/artist/Weezer", "url": "n/a", "version": "n/a"}, "truncated":
+        true}, {"text": "Weezer is a popular Californian college-rock band fronted
+        by geeky ...", "site": "amazon", "url": "http://www.amazon.com/Weezer/e/B000APYT4S/",
+        "license": {"type": "unknown", "attribution": "amazon", "attribution-url":
+        "http://www.amazon.com/Weezer/e/B000APYT4S/", "url": "n/a", "version": "n/a"},
+        "truncated": true}, {"text": "As one of the most popular groups to emerge
+        in ...", "site": "aol", "url": "http://music.aol.com/artist/weezer/biography",
+        "license": {"type": "unknown", "attribution": "aol", "attribution-url": "http://music.aol.com/artist/weezer/biography",
+        "url": "n/a", "version": "n/a"}, "truncated": true}, {"text": "Weezer is an
+        American alternative rock band. Formed in 1992, they have released eight full
+        length albums, six EPs, and a DVD. Their latest album, Hurley, was released
+        on September 14th, 2010. They have sold over 9 million records in the United
+        States to date.   Weezer formed in Los Angeles, California by Rivers Cuomo,
+        Patrick Wilson, Matt Sharp, and Jason Cropper, who was later replaced by Brian
+        Bell. Five weeks after forming, they had their first gig, opening for Dogstar
+        at Raji''s Bar and Ribshack on Hollywood Boulevard. Weezer began playing clubs
+        to small audiences around L.A. and recording home-demos. Soon the band began
+        to receive attention from various A&R reps, and were signed on June 26, 1993
+        by Todd Sullivan, an A&R rep from Geffen Records. The band was signed onto
+        the DGC label (which later became Interscope).  Creating \"The Blue Album\"
+        (1993-1994)  The self-titled debut, Weezer, commonly referred to as The Blue
+        Album, was released May 10, 1994. \"Undone - The Sweater Song\", \"Buddy Holly\"
+        and \"Say It Ain''t So\" were released as singles. The album was produced
+        by former The Cars frontman Ric Ocasek. During the recording of the Blue Album,
+        Jason Cropper left the band to take care of his future wife, who was pregnant
+        with their first child. Jason was replaced by Brian Bell, a then bassist from
+        a band called Carnival Art.  \"Undone - The Sweater Song\" was released as
+        the first single. Spike Jonze directed the music video for the track. In a
+        single unbroken take, it featured Weezer performing the song on a sound stage
+        with various amusing studio antics, including a pack of dogs swarming the
+        set.  Jonze also later directed the band''s second video, \"Buddy Holly\".
+        The video featured footage of the television sitcom Happy Days spliced with
+        the band performing in a remade \"Arnold''s Diner\", a setting from the series.
+        The video had heavy rotation on MTV, and went on to win Jonze and the band
+        four MTV Video Music Awards, including Breakthrough Video and Best Alternative
+        Music Video, and two Billboard Music Video Awards. This video was also included
+        as a bonus on the Microsoft Windows 95 CD. The success of the video arguably
+        pushed the band into the mainstream spotlight.  The video for Weezer''s third
+        single, \"Say It Ain''t So,\" was directed by Sophie Muller. It featured the
+        bandmates playing hacky sack and performing in the band''s original rehearsal
+        space in California. A photo of what the band calls the \"Garage\" is featured
+        on the inside cover of the album.  The Blue Album is currently certified 3
+        times platinum, making it Weezer''s all-time best seller. It was re-released
+        and repackaged in 2004 as a Deluxe Edition, which included a second disc of
+        b-sides along with other previously unreleased rarities.  Killer Record: Pinkerton(1995-1997)  In
+        late December 1994, Weezer took a break from touring for the Christmas holidays.
+        Cuomo traveled back east to his home state of Connecticut, and using an eight-track
+        recorder, he began piecing together demo material for Weezer''s next album.
+        Cuomo''s original concept for Weezer''s sophomore effort was to be a space-themed
+        rock opera, Songs from the Black Hole.  The album was intended to feature
+        songs that flowed together seamlessly, and ended with a special coda that
+        briefly revisited the major musical elements of the piece. The band began
+        demoing and working on Cuomo''s concept through intermittent recording sessions
+        in the spring and summer of 1995. Ultimately, the Songs from the Black Hole
+        album concept was dropped. The album would instead feature some old tunes
+        from before their first album (which had briefly been incorporated into the
+        space-opera) as well as some new ones written while Cuomo was at Harvard.  After
+        the multi-platinum success of their debut album, Weezer''s sophomore album
+        was finally released on September 24, 1996. Pinkerton, which peaked at #19
+        in the U.S. upon its release, didn''t sell as many copies as its predecessor,
+        probably due to its darker, more abrasive nature. Pinkerton was labeled \"one
+        of the worst albums of 1996\" by a Rolling Stone reader poll. Eventually,
+        the album grew into a cult classic, and is viewed by some as Weezer''s greatest
+        album. In fact, in 2004, the magazine changed their rating to a 5-star rating
+        and inducted it into The Rolling Stone Hall Of Fame. This article can be found
+        in the Reviews sections of the 500 Greatest Songs Of All Time issue.  Three
+        singles were taken from the album: \"El Scorcho\", \"The Good Life\" and \"Pink
+        Triangle\". The video for \"El Scorcho\" featured the band inside a darkened
+        room, sitting in a circle, that would be lit differently throughout parts
+        of the song; it was directed by Mark Romanek. The video for \"The Good Life\"
+        was directed by the team of Jonathan Dayton and Valerie Faris (though no known
+        video was made for \"Pink Triangle\"). However, the singles did not receive
+        as much airtime as the singles from their debut album.  The title of the album
+        comes from the character Lieutenant Pinkerton in Giacomo Puccini''s opera
+        Madame Butterfly. The entire album is heavily influenced by the opera''s story
+        line. Madame Butterfly is mentioned under her real name, Cio-Cio San, in \"El
+        Scorcho.\" The song \"Butterfly\" is written from Pinkerton''s point of view
+        at the end of the opera.  The album''s title was the source of a legal challenge.
+        Pinkerton Securities of Encino, Calif., filed a temporary restraining order
+        against the band and its Geffen record label for copyright infringement two
+        days before the album was to be released on September 24, 1996. A judge ruled
+        against the security company and the album was finally released.  Weezer completed
+        their touring for Pinkerton in the summer of 1997. The members of the band
+        took a break, with drummer Patrick Wilson returning to his home in Portland,
+        Oregon to work on his side project, The Special Goodness, Matt Sharp left
+        to complete the follow-up album for his group The Rentals, and Brian Bell
+        went to work on his group, Space Twins.  Rivers Cuomo returned to Boston,
+        Massachusetts, but dropped out of Harvard to focus on songwriting. He eventually
+        went into seclusion. He painted his walls black, disconnected his phone, and
+        didn''t communicate with anyone. Later, he formed a solo group, The Rivers
+        Cuomo Band. Cuomo used the group to try out unreleased material, including
+        possible new songs for the next Weezer album. The band played their first
+        show at T.T. the Bear''s on October 8, 1997. Future Weezer bassist Mikey Welsh
+        was part of the solo band''s lineup. The Boston songs were later abandoned
+        and not used on the next Weezer album, but live recordings of the Boston shows
+        are openly traded on the internet. In February of 1998, Rivers left Boston
+        and Harvard academia behind and returned to Los Angeles.  Pat Wilson and Brian
+        Bell joined Cuomo in L.A. to start work on the next album. Matt Sharp did
+        not rejoin the band and officially left the group in April of 1998. The group
+        decided on Mikey Welsh as Sharp''s replacement. Weezer continued rehearsal
+        and cut demos until the fall of 1998. Frustration and creative disagreements
+        led to a decline in rehearsals, and in late fall of 1998, drummer Pat Wilson
+        left for his home in Portland pending renewed productivity from Cuomo.  The
+        band would not reunite until April of 2000, when the Fuji Festival in Japan
+        offered Weezer a high-paying gig to play in August 2000. The festival served
+        as a catalyst for Weezer''s productivity, and from April to May, 2000, the
+        band rehearsed and demoed new songs in Los Angeles. The band returned to live
+        shows in June 2000, but without the Weezer name. Instead the shows featured
+        the group''s first use of the pseudonym Goat Punishment.  On June 23, 2000,
+        the band, now back under the Weezer name, joined the Warped Tour for eight
+        planned dates. Weezer was received well at the festival, leading the band
+        to book more tour dates for the summer.  SS2K - The Summer Sessions (2000)  In
+        the summer of 2000, Weezer (now consisting of Rivers Cuomo, Mikey Welsh, Pat
+        Wilson, and Brian Bell) went on tour. Weezer''s setlist consisted of 14 new
+        songs that fans have labeled the Summer Songs of 2000 (commonly abbreviated,
+        SS2K). When 13 of these songs did not appear on Weezer''s next album, fans
+        of the songs started a petition demanding the release of studio demos. Eventually,
+        mp3s were made available on the band''s official website for download. Three
+        SS2K songs, \"Hash Pipe\", \"Dope Nose\" and \"Slob,\" have appeared on studio
+        albums (\"Hash Pipe\" on the Green Album and \"Dope Nose\" and \"Slob\" appearing
+        on Maladroit).  Green Album & Maladroit (2001-2003)  Eventually, the band
+        went back into the studio to produce a third album. Weezer (2001) chose to
+        repeat the self-titled name of their first release. This album quickly became
+        known as The Green Album due to its distinctive bright green coloring. Shortly
+        after the release of The Green Album, Weezer went on another American tour.
+        They attracted a new generation of fans thanks to heavy MTV rotation for the
+        videos of their hit singles \"Hash Pipe\" and \"Island in the Sun.\"  The
+        video for \"Hash Pipe,\" directed by Marcos Siega featured sumo wrestlers
+        and was nominated for Best Rock Video at the 2001 MTV Video Music Awards,
+        but lost out to Limp Bizkit''s \"Rollin.\" Two videos were recorded for \"Island
+        in the Sun.\" Marcos Siega directed the first, which focused on a Mexican
+        wedding, and Spike Jonze directed the second, which involved Weezer with animals
+        in a wildlife reserve. Their video for \"Photograph\" was shot and put together
+        by Weezer friend and unofficial \"5th member\" Karl Koch.  As reported on
+        August 16th, 2001, by MTV, bassist Mikey Welsh was checked into a psychiatric
+        hospital. His whereabouts were previously unknown, as he mysteriously went
+        missing before their second filming of the \"Island in the Sun\" music video,
+        featuring the band with various animals. Weezer was prompted to find a temporary
+        replacement for Welsh. Through a mutual friend, Cuomo received Scott Shriner''s
+        number and asked if he was interested to fill in for Welsh. Shriner, at first
+        believing it was a prank phone call, accepted.  Much to the ire of their recording
+        label, Weezer decided to forgo the industry-preferred waiting period of 2
+        to 3 years between albums and began recording demos for their fourth album.
+        The band took an experimental approach for the recording process by allowing
+        fans to download the demos from their official website in return for feedback.
+        After the release of the album, the band subsequently stated that the process
+        was somewhat of a failure, as the fans did not supply them with cohesive constructive
+        advice. Only the song \"Slob\" was included on the album due to general fan
+        advice.  The fourth album, Maladroit, was released in 2002 with Scott Shriner
+        replacing Mikey Welsh on the bass. The album served as a harder-edged version
+        of their trademark catchy pop-influenced music. Although met with generally
+        positive critical reviews (including making many \"Best of ''02\" lists),
+        its sales were not as strong as The Green Album and remains their worst-selling
+        album to date.  Two singles were released from the album. The \"Dope Nose\"
+        music video featured a Japanese motorcycle gang, and was put into regular
+        rotation. The music video for \"Keep Fishin''\" combined Weezer with The Muppets,
+        and had heavy rotation on MTV. Both videos were directed by Marcos Siega.  As
+        soon as Maladroit had wrapped up, the band immediately began work on their
+        fifth album, recording numerous demos between tours for Maladroit (often recording
+        as many as 24 songs in a day). These songs were eventually scrapped, and Weezer
+        took a break after the release of two albums in quick succession.  Make Believe
+        (2003-2005)  In March of 2004, Weezer released their first DVD. Titled Video
+        Capture Device, the DVD contains all of their then-current music videos. It
+        also included live concerts and homemade movies. The DVD was certified \"gold\"
+        on November 8, 2004.  From December 2003 to the summer and early fall of 2004,
+        the members of Weezer recorded a large amount of material intended for a new
+        album to be released in the spring of 2005 with producer Rick Rubin. The band''s
+        early recording efforts became available to the public through the band''s
+        website. The demos, entitled the Album Five Demos (or album 4.5), were a big
+        hit with fans but only one song, \"Hold Me\", would be included on the finished
+        album. That album, entitled Make Believe, was released on May 10, 2005. The
+        album was very well received by the public. However, long-time Weezer fans
+        often consider it as a decline from their earlier albums, and has received
+        mixed reviews.  The album''s first single, \"Beverly Hills,\" became a hit
+        in the U.S. and worldwide, staying on the charts for several months after
+        its release. The video for \"Beverly Hills\", directed by Marcos Siega, featured
+        the band and a select choice of fans interacting with Playboy Bunnies and
+        Hugh Hefner at the Playboy Mansion. It became the first Weezer song to hit
+        #1 on the Billboard Modern Rock chart. The song was nominated for Best Rock
+        Song at the 48th Annual Grammy Awards, the first ever Grammy nomination for
+        the band. The video for the song was also nominated for Best Rock Video at
+        the 2005 MTV Video Music Awards.  During the \"Make Believe\" tour of 2005,
+        Cuomo allowed other members of the band to step into the spotlight of certain
+        songs:      * Brian Bell: \"Getchoo\" and \"Why Bother?\" (from Pinkerton),
+        \"Smile\" (from \"The Green Album\"), and \"Keep Fishin''\" (from Maladroit)     *
+        Scott Shriner: \"Fall Together\", and \"Dope Nose\", and \"In the Garage\"
+        (from \"The Blue Album\")     * Patrick Wilson: \"Photograph\" (from \"The
+        Green Album\"), \"Song 2\" (Blur cover, whilst playing lead guitar)  In late
+        August 2005, Weezer performed with the rock band The Pixies, which was one
+        of Rivers'' influences, at Summerfest and other dates.  From September 8 to
+        October 28, 2005, Weezer set out on a tour with the Foo Fighters, which, to
+        many, was simply called Foozer. The Foozer tour was awarded \"Most Creative
+        Tour Package\" at The 17th Annual Concert Industry Awards.  On December 13th,
+        2005, Winter Weezerland EP was released on iTunes. The EP was essentially
+        a re-release of the 2000 Weezer christmas CD which featured \"The Christmas
+        Song\" and \"Christmas Celebration\".  Also, in late 2005 the band released
+        the second single off Make Believe, called \"We Are All on Drugs\" (for family-oriented
+        purposes, some releases of the song were renamed \"We Are All in Love\"),
+        and the music video was directed by Justin Francis. It didn''t do well as
+        a single, and many weezer fans hated it.  In early 2006, it was announced
+        that Make Believe was certified platinum, and \"Beverly Hills\" was the second
+        most popular download on iTunes for 2005.  Also in early 2006, Make Believe''s
+        third single, \"Perfect Situation\", spent four weeks in a row at the #1 spot
+        on the Billboard Modern Rock chart, a personal record for Weezer. The Perfect
+        Situation video starred Elisha Cuthbert and was directed by Marc Webb. The
+        only other Weezer track to hit #1 was \"Beverly Hills,\" for one week. \"This
+        is Such a Pity\" is the band''s fourth single from the album, but no music
+        video was made for its release.  The Future (2006-)  As of January, 2006,
+        Bell and Wilson are set to portray Velvet Underground members Lou Reed and
+        John Cale in Factory Girl, an upcoming film about the life of Andy Warhol
+        cohort Edie Sedgwick.  Rivers Cuomo announced a new song called \"Piece of
+        the Pie\" while onstage during the band''s October 7th, 2005 show in Detroit
+        (but did not perform it). Cuomo has mentioned other song ideas recently, dropping
+        titles and ideas such as \"East Coast or West Coast,\" \"Pig\" and new songs
+        with lyrics he described as \"bloggy\".  Rivers has commented on his myspace
+        blog that his recent comments to mtv.com were ''misquoted'' and said that
+        what he meant \"was that the soccer song, \"Our Time will Come\", certainly
+        won''t be on a Weezer album.\" and said \"The rest of the songs, though, are
+        definite contenders for a Weezer record.\" A strong hint that the band are
+        in fact only on a break and that a sixth album is on the card.  In late 2006,
+        Brian Bell began work on a new project called The Relationship which fans
+        can follow on the band''s myspace page. Pat Wilson told Keifer Wells and Martin
+        Michalek in a radio interview for Andover High School that he and Scott Shriner
+        had been creating songs together and are trying to get Rivers to sing for
+        when the band has jam sessions. Pat has also been creating a few Special Goodness
+        songs, but said little more on the subject. Fans can currently follow the
+        news of the band at Rivers Cuomo''s myspace page and the official Weezer website.  Weezer''s
+        sixth studio album will be released on June 3, 2008, just over three years
+        after their latest release, Make Believe. Rick Rubin produced the album[30]
+        and Rich Costey provided the mixing[31] for what Weezer fans are calling \"Album
+        Six\".[32] The record is being described as \"experimental\", and according
+        to Cuomo, includes longer and non-traditional songs, TR-808 drum machines,
+        synthesizers, Southern rap, baroque counterpoint, and band members other than
+        Cuomo writing, singing, and switching instruments.[33]  Lead singer Rivers
+        Cuomo released a demo-compilation album entitled Alone: The Home Recordings
+        of Rivers Cuomo on December 18, 2007. The album contains demos of Cuomo''s
+        that span from 1992 to 2007, including songs from Weezer''s abandoned second
+        album, Songs from the Black Hole. Also included in Alone is a song intended
+        for Weezer''s upcoming 6th studio album, entitled \"This is the Way\". The
+        booklet of Alone tells of the band wanting the song for the album, but ultimately
+        choosing \"an epic, 6-minute, symphonic type of art song\" entitled \"Daydreamer\"
+        instead.  Weezer''s \"Weezer\" (also referred to as \"The Red Album\") was
+        released in June 2008. Rick Rubin produced the album and Rich Costey mixed
+        it. The record is being described as \"experimental\", and according to Cuomo,
+        includes longer and non-traditional songs, TR-808 drum machines, synthesizers,
+        Southern rap, baroque counterpoint, and band members other than Cuomo writing,
+        singing, and switching instruments. Pat Wilson said that the album cost about
+        a million dollars to make, contrasting it with the $150,000 budget of \"The
+        Blue Album\". The album''s singles were produced by Jacknife Lee. Its lead
+        single, \"Pork and Beans\", topped the Billboard Modern Rock Tracks charts
+        for 11 weeks, and its music video won a Grammy for Best Short Form Music Video.
+        The album''s second single, \"Troublemaker\", debuted at #39 on the Billboard
+        Hot Modern Rock Tracks chart and peaked at #2. In October 2008, the group
+        announced that the third single would be \"The Greatest Man That Ever Lived
+        (Variations on a Shaker Hymn)\".  In 2009, the band announced their next album,
+        \"Raditude\", would be released on November 3, 2009, where it debuted as the
+        seventh best-selling album of the week on the Billboard 200 chart. The band
+        scheduled tour dates in December 2009 extending into early 2010 to coincide
+        with the new album''s release. On December 6, 2009, Weezer frontman Rivers
+        Cuomo was injured when his tour bus crashed in upstate New York due to black
+        ice. Cuomo suffered three broken ribs, and his assistant broke two ribs. His
+        wife, baby daughter, and their nanny were also on the bus; however, they escaped
+        injury. Weezer cancelled tour dates the following day. The band resumed touring
+        on January 20, 2010.  In December 2009, it was revealed that the band was
+        no longer with Geffen Records. The band stated that they would still release
+        new material, but they are unsure of the means, whether it be self-released,
+        released online, or getting signed by another label. Eventually, the band
+        was signed to the independent label Epitaph.  The album \"Hurley\" was released
+        in September 2010 through Epitaph Records. The name comes from the character
+        Hugo \"Hurley\" Reyes from the television show \"Lost\". Jorge Garcia, the
+        actor who portrayed Hurley, stated that being featured on the album cover
+        is \"one of the biggest honors of [his] career.\" Weezer used internet streaming
+        service YouTube as a way to promote the album. Weezer loaned itself to 15
+        amateur online video producers, \"going along with whatever plans the creator
+        could execute in about 30 minutes.\" They have used many of the popular channels
+        to promote themselves, such as Barely Political, Ray William Johnson and Fred
+        Figglehorn. The Gregory Brothers solicited musical and vocal contributions
+        from the band on one of its compositions built around speeches by Rep. Charles
+        Rangel and President Barack Obama. Weezer calls the promotion \"The YouTube
+        Invasion\"  On November 2, 2010, Weezer released another studio album called
+        \"Death to False Metal\". This album was composed of newly re-recorded versions
+        of unused recordings spanning the band''s career.  On October 9, 2011, the
+        band announced on their website that former bassist Mikey Welsh had died.  The
+        band currently consists of the following members:      * Brian Bell -- guitar,
+        backing vocals     * Rivers Cuomo -- vocals, guitar     * Scott Shriner --
+        bass guitar, backing vocals (2002-present) (plays on Maladroit and Make Believe)     *
+        Patrick Wilson -- drums  Former members:      * Jason Cropper -- Guitar, left
+        the band in September 1993 (believed to have been fired by Cuomo, although
+        it is not clear as Cropper is forbidden from discussing the issue)     * Matt
+        Sharp -- bass guitar, backing vocals (1992-1997) (plays on The Blue Album
+        and Pinkerton)     * Mikey Welsh -- bass guitar, backing vocals (1998-2001)
+        (plays on The Green Album)", "site": "last.fm", "url": "http://www.last.fm/music/Weezer/+wiki",
+        "license": {"type": "cc-by-sa", "attribution": "Last.fm", "attribution-url":
+        "http://www.last.fm/music/Weezer/+wiki", "url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "version": "3.0"}}, {"text": "As one of the most popular groups to emerge
+        in ...", "site": "mog", "url": "http://mog.com/artists/bio/mn35732/weezer",
+        "license": {"type": "all-rights-reserved", "attribution": "mog", "attribution-url":
+        "http://mog.com/artists/bio/mn35732/weezer", "url": "n/a", "version": "n/a"},
+        "truncated": true}, {"text": "It''s the most obvious things that are the easiest
+        to ...", "site": "trouserpress", "url": "http://trouserpress.com/entry.php?a=weezer#flat_doc",
+        "license": {"type": "unknown", "attribution": "trouserpress", "attribution-url":
+        "http://trouserpress.com/entry.php?a=weezer", "url": "n/a", "version": "n/a"},
+        "truncated": true}, {"text": "As one of the most popular groups to emerge
+        in ...", "site": "mtvmusic", "url": "http://www.mtvmusic.com/weezer#flat_doc",
+        "license": {"type": "unknown", "attribution": "n/a", "attribution-url": "http://www.mtvmusic.com/weezer#flat_doc",
+        "url": "n/a", "version": "n/a"}, "truncated": true}, {"text": "Weezer''s 1994
+        debut yielded the band two big hit singles ...", "site": "7digital", "url":
+        "http://us.7digital.com/artists/weezer/", "license": {"type": "unknown", "attribution":
+        "7digital", "attribution-url": "http://us.7digital.com/artists/weezer/", "url":
+        "n/a", "version": "n/a"}, "truncated": true}, {"text": "Weezer is an American
+        alternative rock band from Los Angeles, California, formed in 1992. The band
+        consists of Rivers Cuomo (lead vocals, guitar), Patrick Wilson (drums, guitar,
+        backing vocals), Brian Bell (guitar, backing vocals, keyboards), and Scott
+        Shriner (bass, backing vocals, keyboards). The band''s line-up has changed
+        four times since its formation in 1992. They have released nine full-length
+        albums, six EPs, and a DVD. \nThe band is best known for their successful
+        singles \"Buddy Holly\", \"Undone - The Sweater Song\", \"Say It Ain''t So\",
+        \"Perfect Situation\", \"Island in the Sun\", \"Beverly Hills\" and \"Pork
+        and Beans\". The band''s eighth studio album, Hurley, was released on September
+        14, 2010 on Epitaph Records. Additionally, a deluxe release of their 1996
+        album Pinkerton and a compilation of rare and previously unreleased songs
+        titled Death to False Metal were released on November 2, 2010. \n\nHistory:\n\nFormation
+        and debut album (1992-1995):\n\nMain article: http://en.wikipedia.org/wiki/Weezer_(1994_album)\nWeezer,
+        consisting of Rivers Cuomo, Patrick Wilson, Matt Sharp, and Jason Cropper,
+        formed in 1992, had their first practice on February 14 of that year, and
+        their first gig was opening for Keanu Reeves'' band Dogstar shortly thereafter.
+        Weezer signed with Geffen Records on June 25, 1993 and recorded their debut
+        album with producer Ric Ocasek at Electric Lady Studios in New York City.
+        During the recording, guitarist Jason Cropper left the band and was replaced
+        by Brian Bell. The band released Weezer (also referred to as \"The Blue Album\")
+        in May 1994. The record label originally did not wish to release a single,
+        to see what sales could be generated by word-of-mouth alone. Soon after the
+        release of Weezer, DJ Marco Collins of the Seattle radio station The End started
+        playing \"Undone - The Sweater Song\", leading Geffen to release it as the
+        first single. The music video was directed by Spike Jonze. Filmed in an unbroken
+        take, it featured Weezer performing on a sound stage with little action, bar
+        a pack of dogs swarming the set. The video became an instant hit on MTV. \nJonze
+        also directed the band''s second video, \"Buddy Holly\". The video featured
+        footage from the television sitcom Happy Days spliced with the band performing
+        in a remade \"Arnold''s Drive-In.\" The video achieved heavy rotation on MTV
+        and went on to win Jonze and the band four MTV Video Music Awards, including
+        Breakthrough Video and Best Alternative Music Video, and two Billboard Music
+        Video Awards. The clip was also featured on the companion CD for the Microsoft
+        Windows 95 computer operating system. A third single, \"Say It Ain''t So\",
+        followed. Weezer is certified triple platinum in the United States, making
+        it Weezer''s all-time best seller. It is certified double platinum in Canada.
+        \n\nPinkerton (1996-1997):\n\nMain article: http://en.wikipedia.org/wiki/Pinkerton_(album)\nIn
+        late December 1994, Weezer took a break from touring for the Christmas holidays.
+        Cuomo traveled back east to his home state of Connecticut, and using an eight-track
+        recorder, he began piecing together demo material for Weezer''s next album.
+        The original concept for Weezer''s second album was to be a space-themed rock
+        opera, Songs from the Black Hole. The album was intended to feature songs
+        that flowed together seamlessly and end with a special coda that briefly revisited
+        the major musical elements of the piece. The band began demoing and working
+        on Cuomo''s concept through intermittent recording sessions in the spring
+        and summer of 1995. Ultimately, the Songs from the Black Hole album concept
+        was dropped. The album would instead feature songs composed before the band''s
+        first album (which had briefly been incorporated into the space opera) as
+        well as some new ones written while Cuomo was at Harvard. \nWeezer''s second
+        album, Pinkerton, was released on September 24, 1996. Three singles were taken
+        from the album: \"El Scorcho\", \"The Good Life\", and \"Pink Triangle\".
+        The album''s title sparked a legal challenge. Pinkerton Securities of Encino,
+        Calif., filed a temporary injunction against the band and its Geffen record
+        label for trademark infringement two days before the album was to be released
+        on September 24, 1996. A judge ruled for Weezer, and the album was finally
+        released. This injunction caused Geffen to hold back some of the initial advertising
+        and promotion for the album, possibly contributing to the album''s slow initial
+        sales. Due to initial weak sales (it peaked at No. 19 in the U.S.), the album
+        was, at first, viewed as a commercial failure, especially when viewed in light
+        of the multi-platinum success of their debut album. The album failed to gain
+        traction in the mainstream music world, perhaps due to its darker, more abrasive
+        sound.Pinkerton was labeled \"one of the worst albums of 1996\" by a Rolling
+        Stone reader poll. However, word of mouth kept the trickle of sales going
+        and eventually the record achieved cult status. In the book The ''90s (2010),
+        Rolling Stone ranked Pinkerton number 48 in the 100 Best Albums of the Nineties.
+        \n\nOn hiatus (1997-2000):\n\nWeezer completed their touring for Pinkerton
+        in the summer of 1997. The members of the band took a break, with drummer
+        Patrick Wilson returning to his home in Portland, Oregon to work on his side
+        project, The Special Goodness; Matt Sharp left to complete the follow-up album
+        for his group The Rentals; and Brian Bell went to work on his group, Space
+        Twins. \nRivers Cuomo returned to Boston, Massachusetts, but took a break
+        from Harvard to focus on songwriting. Cuomo gathered Boston-area musicians
+        and rehearsed new material, including possible songs for the next Weezer album.
+        The group, referred to by fans as the Rivers Cuomo Band, had several different
+        lineups and played several shows at local clubs, including their first show
+        at T.T. the Bear''s on October 8, 1997. Future Weezer bassist Mikey Welsh
+        was a constant of the group''s evolving lineups. Pat Wilson eventually flew
+        to Boston to sit in on drums. The Boston songs were later abandoned and not
+        used on the next Weezer album, but live recordings of the Boston shows are
+        openly traded on the internet. In February 1998, Rivers left Boston and returned
+        to Los Angeles. \nPat Wilson and Brian Bell joined Cuomo in Los Angeles to
+        start work on the next album. Matt Sharp did not rejoin the band and officially
+        left the group in April 1998. The group decided on Mikey Welsh as Sharp''s
+        replacement. Weezer continued rehearsing and cut demos until the fall of 1998.
+        Frustration and creative disagreements led to a decline in rehearsals, and
+        in late fall of 1998, drummer Pat Wilson left for his home in Portland pending
+        renewed productivity from Cuomo. In November 1998, the band (with a substitute
+        drummer) played two club shows in California under the name Goat Punishment.
+        The shows consisted entirely of Nirvana and Oasis cover songs, respectively.
+        In the months following, Rivers Cuomo went into a period of admitted depression,
+        painting the walls of his home black and putting \"fiberglass insulation all
+        over the windows and then black sheets of fiberglass so that no light could
+        get through. \nThe band would not reunite until April 2000, when the Fuji
+        Rock Festival in Japan offered Weezer a high-paying gig to play in August
+        2000. The festival served as a catalyst for Weezer''s productivity, and from
+        April to May 2000, the band rehearsed and demoed new songs in Los Angeles.
+        The band returned to live shows in June 2000, playing small unpromoted concerts
+        under the pseudonym Goat Punishment. In June 2000, the band joined the Warped
+        Tour for nine dates. \n\nRenewed popularity and The Green Album (2000-2001):\n\nMain
+        article: http://en.wikipedia.org/wiki/Weezer_(2001_album)\nIn the summer of
+        2000, Weezer (now consisting of Rivers Cuomo, Mikey Welsh, Pat Wilson, and
+        Brian Bell) went on tour (including dates on the popular Vans Warped Tour).
+        Weezer''s set-list consisted of 14 new songs that fans have labeled the Summer
+        Songs of 2000 (commonly abbreviated, SS2K). When 13 of these songs did not
+        appear on Weezer''s next album, fans of the songs started a petition demanding
+        the release of studio versions. \nEventually, the band went back into the
+        studio to produce a third album. They chose the title, Weezer (2001), to repeat
+        the self-titled name of their first release. This album quickly became known
+        as \"The Green Album\" due to its distinctive bright green coloring. Shortly
+        after the release of the album, Weezer went on another American tour. They
+        attracted a new generation of fans thanks to heavy MTV rotation for the videos
+        of their hit singles \"Hash Pipe\" and \"Island in the Sun\". \nAs reported
+        on August 16, 2001, by MTV, bassist Mikey Welsh was checked into a psychiatric
+        hospital. His whereabouts were previously unknown, as he mysteriously went
+        missing before the filming of the second video for \"Island in the Sun\".
+        Weezer was prompted to find a temporary replacement for Welsh. Through a mutual
+        friend, Cuomo received Scott Shriner''s number and asked if he was interested
+        in filling in for Welsh. Shriner accepted the invitation. \n\nMaladroit (2002-2003):\n\nMain
+        article: http://en.wikipedia.org/wiki/Maladroit\nThe band took an experimental
+        approach for the recording process of their fourth album by allowing fans
+        to download demos from their official website in return for feedback. After
+        the release of the album, the band said that this process was something of
+        a failure, as the fans did not supply them with coherent, constructive advice.
+        Cuomo eventually delegated song selection for the album to the band''s original
+        A&R rep, Todd Sullivan, saying that Weezer fans chose the \"wackest songs.\"
+        Only the song \"Slob\" was included on the album due to general fan advice.
+        \nThe recording was also done without input from Weezer''s record label, Interscope.
+        Cuomo had what he then described as a \"massive falling out\" with the label.
+        In early 2002, well before the official release of the album, the label sent
+        out a letter to radio stations requesting the song be pulled until an official,
+        sanctioned single was released. Interscope also briefly shut down Weezer''s
+        audio/video download webpage, removing all the MP3 demos. Online Weezer fans
+        staged a brief protest, with several websites proclaiming \"Free Maladroit\".
+        \nIn April 2002, former bassist Matt Sharp sued the band, alleging, among
+        several accusations, that he was owed money for cowriting several Weezer songs.
+        The suit was later settled out of court. \nThe fourth album, Maladroit, was
+        released on May 14, 2002, only one year after its predecessor. The album served
+        as a harder-edged version of the band''s trademark catchy pop-influenced music,
+        and was replete with busy 1980s-style guitar solos. Although met with generally
+        positive critical reviews, its sales were not as strong as those for \"The
+        Green Album\". Two singles were released from the album. The music video for
+        \"Dope Nose\" featured an obscure Japanese motorcycle gang, and was put into
+        regular rotation. The music video for \"Keep Fishin''\" combined Weezer with
+        The Muppets, and had heavy rotation on MTV. Both videos were directed by Marcos
+        Siega. \nAs soon as Maladroit had wrapped up, the band immediately began work
+        on their fifth album, recording numerous demos between tours (often recording
+        as many as 24 songs in a day). These songs were eventually scrapped, and Weezer
+        took a break after the release of two albums in quick succession. During this
+        break, Bell and Wilson released LPs from their respective side projects Space
+        Twins and The Special Goodness. \nWeezer released their much-delayed first
+        DVD on March 23, 2004. The Video Capture Device DVD chronicles the band from
+        its beginnings through Maladroit''s Enlightenment Tour. Compiled by Karl Koch,
+        the DVD features home video footage, music videos, commercials, rehearsals,
+        concert performances, television performances, and band commentary. The DVD
+        was certified \"gold\" on November 8, 2004. \n\nMake Believe (2003-2006):\n\nMain
+        article: http://en.wikipedia.org/wiki/Make_Believe_(Weezer_album)\nFrom December
+        2003 to the fall of 2004, the members of Weezer recorded a large amount of
+        material intended for a new album to be released in the spring of 2005 with
+        producer Rick Rubin. The band''s early recording efforts became available
+        to the public through the band''s website. The demos were a big hit, but none
+        of the songs recorded at this time were included on the finished album. That
+        album, titled Make Believe, was released on May 10, 2005. Despite commercial
+        success, Make Believe got a mixed reception from critics, receiving an average
+        score of 52 on review collator Metacritic. Although some reviews, such as
+        AMG''s, compared it favorably to Pinkerton, others, among them Pitchfork Media''s
+        score of 0.4 out of 10, panned the album as predictable and lyrically poor.
+        \nThe album''s first single, \"Beverly Hills\", became a hit in the U.S. and
+        worldwide, staying on the charts for several months after its release. It
+        became the first Weezer song to hit No. 1 on the Billboard Modern Rock chart.
+        \"Beverly Hills\" was nominated for Best Rock Song at the 48th Annual Grammy
+        Awards, the first ever Grammy nomination for the band. The video was also
+        nominated for Best Rock Video at the 2005 MTV Video Music Awards. The second
+        single off Make Believe was \"We Are All on Drugs\". MTV refused to play the
+        song, so Weezer re-recorded the lyrics by replacing \"on drugs\" with \"in
+        love\" and renaming the song \"We Are All in Love\". In early 2006, it was
+        announced that Make Believe was certified platinum, and \"Beverly Hills\"
+        was the second most popular song download on iTunes for 2005, finishing just
+        behind \"Hollaback Girl\" by Gwen Stefani.Make Believe''s third single, \"Perfect
+        Situation\", spent four weeks in a row at number one on the Billboard Modern
+        Rock chart. \"This Is Such a Pity\" was the band''s fourth single from the
+        album, but no music video was made for its release. The Make Believe tour
+        also found the band using additional instruments onstage, adding piano, synthesizers,
+        pseudophones, and guitarist Bobby Schneck. \nThe band has announced the possible
+        release of a live DVD composed of footage from the 2005 Japan tour. It will
+        consist of a two-day, seven-camera shoot of the shows in Japan, plus material
+        that will be drawn from various behind-the-scenes footage. The DVD was announced
+        in late 2005, but in a 2006 update on the band''s Web site, Karl Koch noted
+        it was \"apparently edited, but has been put on hold for now.\" \n\nThe Red
+        Album (2007-2008):\n\nMain article: http://en.wikipedia.org/wiki/Weezer_(2008_album)\nWeezer
+        (also referred to as \"The Red Album\") was released in June 2008. Rick Rubin
+        produced the album and Rich Costey mixed it. The record was described as \"experimental\",
+        and according to Cuomo, included longer and non-traditional songs, TR-808
+        drum machines, synthesizers, Southern rap, baroque counterpoint, and band
+        members other than Cuomo writing, singing, and switching instruments. Pat
+        Wilson said the album cost about a million dollars to make, contrasting it
+        with the $150,000 budget of \"The Blue Album\". The album''s singles were
+        produced by Jacknife Lee. Its lead single, \"Pork and Beans\", topped the
+        Billboard Modern Rock Tracks charts for 11 weeks, and its music video won
+        a Grammy for Best Short Form Music Video. The second single, \"Troublemaker\",
+        debuted at No. 39 on the Billboard Hot Modern Rock Tracks chart and peaked
+        at No. 2. In October 2008, the group announced that the third single would
+        be \"The Greatest Man That Ever Lived (Variations on a Shaker Hymn)\". \nOn
+        May 30, 2008, the Toledo Free Press revealed in an interview with Scott Shriner
+        that Weezer would be unveiling the \"Hootenanny Tour\", in which fans would
+        be invited to bring their own instruments to play along with the band. Said
+        Shriner: \"They can bring whatever they want... oboes, keyboards, drums, violins,
+        and play the songs with us as opposed to us performing for them.\" \nThe band
+        performed five dates in Japan at the beginning of September and then embarked
+        on what was dubbed the ''Troublemaker'' tour, consisting of 21 dates around
+        North America, including two in Canada. Angels and Airwaves and Tokyo Police
+        Club joined them as support at each show, and Brian Bell''s ''other'' band
+        The Relationship also performed at a handful of dates. Shortly before the
+        encore at each show, the band would bring on fans with various instruments
+        and perform Island in the Sun and Beverly Hills with them. At a show in Austin,
+        after Tokyo Police Club had played their set, Rivers was wheeled out in a
+        box and mimed to a recording of rare Weezer demo, ''My Brain'', dressed in
+        pajamas and with puppets on his hands, before being wheeled off again. This
+        bizarre event later surfaced as the climax to a promo video for Cuomo''s second
+        demo album, Alone 2. \nCuomo also wrote a song with pop duo Aly & AJ, and
+        was very pleased with the way the girls worked. It is unknown if the song
+        will be made public on an album. \nOn December 4, iOS developer Tapulous released
+        the game Christmas With Weezer, featuring gameplay similar to Tap Tap Revenge
+        and six Christmas carols performed by the band. A digital EP featuring the
+        songs, titled \"Christmas with Weezer\", was also released on December 16,
+        2008. \n\nRaditude (2009-2010):\n\nMain article: http://en.wikipedia.org/wiki/Raditude\nWeezer
+        toured with Blink-182 in 2009, including an August 30 stop at the Virgin Festival
+        at Merriweather Post Pavilion in Columbia, Maryland. Drummer Josh Freese joined
+        Weezer on a temporary basis to play drums on the tour, while Pat Wilson switched
+        to guitar. Wilson said in an interview for Yahoo! Music that Cuomo wanted
+        \"to be active and more free on stage and him having guitar on was an impediment.\"
+        Freese stated he was a Weezer fan and did not want to pass up the opportunity
+        to play with them. \nRaditude''s album artwork was revealed on September 11,
+        featuring a National Geographic contest-winning photograph of a jumping dog
+        named Sidney. The record''s release was pushed to November 3, 2009, where
+        it debuted as the seventh best-selling album of the week on the Billboard
+        200 chart. The band scheduled tour dates in December 2009 extending into early
+        2010 to coincide with the new album''s release. On December 6, 2009, Cuomo
+        was injured when his tour bus crashed in upstate New York due to black ice.
+        Cuomo suffered three broken ribs, and his assistant broke two ribs. His wife,
+        baby daughter, and their nanny were also on the bus, but they escaped injury.
+        Weezer cancelled tour dates the following day. The band resumed touring on
+        January 20, 2010. \nIn December 2009, it was revealed that the band was no
+        longer with Geffen Records. The band stated that they would still release
+        new material, but they were unsure of the means, whether it be self-released,
+        released online, or getting signed by another label. Eventually, the band
+        was signed to the independent label Epitaph. \nThe band also recorded a cover
+        of \"I''m a Believer\" for the movie Shrek Forever After. \nWeezer co-headlined
+        The Bamboozle in May, 2010, and performed at the Bonnaroo Music and Arts Festival
+        in Manchester, Tennessee in June. In August, 2010, Weezer performed at the
+        Reading and Leeds Festival, and performed at the Voodoo Experience festival
+        in New Orleans, LA in October 2010. \nOn June 11, 2010, the band released
+        a new single, \"Represent\". The song was said to be an \"unofficial US anthem\"
+        to coincide with the 2010 FIFA World Cup. \n\nHurley and Death to False Metal
+        (2010-present):\n\nThe album Hurley was released in September 2010 through
+        Epitaph Records. The name comes from the character Hugo \"Hurley\" Reyes from
+        the television show Lost. Jorge Garcia, the actor who portrayed Hurley, stated
+        that being featured on the album cover is \"one of the biggest honors of his
+        career.\"  Weezer used internet streaming service YouTube as a way to promote
+        the album. Weezer loaned itself to 15 amateur online video producers, \"going
+        along with whatever plans the creator could execute in about 30 minutes.\"
+        They have used many of the popular channels to promote themselves, such as
+        Barely Political, Ray William Johnson and Fred Figglehorn. The Gregory Brothers
+        solicited musical and vocal contributions from the band on one of its compositions
+        built around speeches by Rep. Charles Rangel and President Barack Obama. Weezer
+        calls the promotion \"The YouTube Invasion\". \nIn November 2010, Weezer released
+        a compilation album composed of re-recorded versions of unused recordings
+        spanning various years, Death to False Metal. On the same day a deluxe version
+        of Pinkerton, which includes \"25 demos, outtakes and live tracks\" was also
+        released. A third volume of Rivers Cuomo''s solo Alone series, titled Alone
+        III: The Pinkerton Years, consisting of demos and outtakes from the Pinkerton
+        sessions, was released on December 12, 2011. They also contributed a cover
+        of The Cars'' \"You Might Think\" for the Disney-Pixar film Cars 2. \nOn October
+        8, 2011 former bassist Mikey Welsh was found dead in a Chicago, Illinois hotel
+        room. Weezer performed in Chicago the very next day, and dedicated the concert
+        to Welsh (Welsh was supposed to be a surprise guest at that concert). \nThe
+        band began working on their tenth studio album in September 2010 with the
+        intent of a 2011 release, but the year ended without seeing a release. The
+        band headlined a four-day rock-themed Carnival Cruise from Miami to Cozumel
+        that set sail on January 19, 2012. \nIn May 2012, drummer Patrick Wilson released
+        his fourth studio album with side-project, The Special Goodness, entitled
+        Natural. \nIn July 2012, Weezer headlined the inaugural Bunbury Music Festival
+        in Cincinnati, Ohio. Also, in July they announced plans for an Australian
+        tour in early 2013, their first since 1996. \nOn December 25, 2012, according
+        to official Weezer website, assistant Karl Koch stated Weezer is looking to
+        record another album, but had no official information yet. He wrote, \"While
+        its impossible to say when the next Weezer album will come out, rest assured
+        the band is excited and united in their desire to make it great.\" \n\nMusical
+        style and influences:\n\nWhile Weezer are most commonly an alternative rock
+        and power pop band, they have also been associated with other genres, such
+        as pop punk,emo and indie rock. \nMany modern bands, such as Dinosaur Pile-Up,Cymbals
+        Eat Guitars and The Fall of Troy, list Weezer as an influence. Weezer themselves
+        have listed several influences, among them KISS (with direct references in
+        the song \"In the Garage\"), Nirvana (who were their labelmates at DGC for
+        a very brief time before Kurt Cobain''s death), The Beach Boys, Pixies (especially
+        early in their career), Sonic Youth, Oasis, and Wax. Early Weezer demos, such
+        as \"Paperface\", have obvious musical ties to the Pixies and Nirvana. Also,
+        the song \"Susanne\" originally contained the lyrics, \"Even Kurt Cobain and
+        Axl Rose\", before being changed to \"Even Izzy, Slash, and Axl Rose\" after
+        Cobain''s death. There is also a direct reference to Nevermind in \"Heart
+        Songs\", a track found on The Red Album. As a side project, Weezer briefly
+        played Nirvana and Oasis covers under the stage moniker \"Goat Punishment\".
+        In 1998, Weezer covered \"Velouria\" by the Pixies for a tribute album, and
+        in 2005 briefly got to tour with their idols for a few dates. Green Day has
+        also been said to be an influence (there is a lyric about them in \"El Scorcho\"),
+        and it has been acknowledged that the two bands are friends and enjoy each
+        other''s music. Weezer contributed the song \"Worry Rock\" to A Different
+        Shade of Green: Tribute to Green Day. Cuomo also covered \"Brain Stew\" in
+        a 2009 AOL Sessions set. \n\nSolo work:\n\nRivers Cuomo released a demo-compilation
+        album titled Alone: The Home Recordings of Rivers Cuomo on December 18, 2007.
+        The album contains demos of Cuomo''s that span from 1992 to 2007, including
+        songs from Weezer''s abandoned second album, Songs from the Black Hole. \nBrian
+        Bell has been working on a solo project called The Relationship, and did not
+        write any songs for Raditude in order to save material for his solo work.
+        He has also collaborated with Space Twins. \nCuomo''s second demo album, Alone
+        II: The Home Recordings of Rivers Cuomo, was released on November 25, 2008.
+        The album includes further tracks from Songs from the Black Hole, early versions
+        of songs later released as full-band demos, and other demo tracks. \nAlso,
+        Mikey Welsh played with Juliana Hatfield, The Kickovers, Heretix, Jocobono,
+        Slower and Left Nut; Patrick Wilson records with The Special Goodness; and
+        Matt Sharp is in The Rentals and performs alone under his own name. \n\nBand
+        members:\n\nCurrent members:\n\nRivers Cuomo - lead vocals, lead guitar, keyboards,
+        drums, harmonica (1992-present), \nPatrick Wilson - drums, percussion, guitar,
+        backing vocals, keyboards (1992-present), \nBrian Bell - rhythm guitar, backing
+        vocals, keyboards, harmonica (1993-present), \nScott Shriner - bass guitar,
+        backing vocals, keyboards (2001-present), \n\nFormer members:\n\nMatt Sharp
+        - bass guitar, backing vocals (1992-1998), \nJason Cropper - rhythm guitar,
+        backing vocals (1992-1993), \nMikey Welsh - bass guitar, backing vocals (1998-2001)
+        (died 2011), \n\nFormer touring members:\n\nBobby Schneck - guitar, percussion
+        (2005), \nKarl Koch - keyboards (2008), percussion (2010-2012), \nJosh Freese
+        - drums, percussion (2009-2012)", "site": "wikipedia", "url": "http://en.wikipedia.org/wiki/Weezer",
+        "license": {"type": "cc-by-sa", "attribution": "wikipedia", "attribution-url":
+        "http://en.wikipedia.org/wiki/Weezer", "url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "version": "3.0"}}]}}'
+    http_version: 
+  recorded_at: Fri, 22 Feb 2013 20:54:34 GMT
+recorded_with: VCR 2.4.0

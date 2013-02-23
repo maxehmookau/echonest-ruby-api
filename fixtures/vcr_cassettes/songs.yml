@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/songs?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Feb 2013 13:09:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - +ovF9f5UQaedKzaLBuVCwg
+      Etag:
+      - ! '"22026e1a47cc766f6423ddb003b0187986667135"'
+      X-Worker-Node:
+      - f9196:23573
+      Content-Length:
+      - '1093'
+      X-Ratelimit-Remaining:
+      - '20'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '17'
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "start": 0, "total": 259, "songs": [{"id": "SOUKLXX133EB86AA58",
+        "title": "I Hear Bells"}, {"id": "SOOEKVH133EB4D2820", "title": "Cold Dark
+        World"}, {"id": "SOICETK1340BB065C6", "title": "You Might Think"}, {"id":
+        "SOYMLBV12A6D4F97DF", "title": "Photograph (Live Version)"}, {"id": "SOUASQW130516E198A",
+        "title": "You Gave Your Love To Me Softly"}, {"id": "SOXMSGY1338A5D5873",
+        "title": "Island In The Sun"}, {"id": "SOSVPWC1338A5D27C3", "title": "Rainbow
+        Connection (feat. Hayley Williams)"}, {"id": "SOCKDXY1338A5EAC06", "title":
+        "The Story Of My Life"}, {"id": "SOKMTYU1338A5D27C2", "title": "Outta Here"},
+        {"id": "SOOTDCR1338A5E5211", "title": "Life Is What You Make It"}, {"id":
+        "SOXQVUT12C563E8552", "title": "I Don''t Want Your Loving"}, {"id": "SOUJXNZ1315CD4E8C8",
+        "title": "I Swear It''s True"}, {"id": "SOADHBD12A58A7AB85", "title": "O Holy
+        Night"}, {"id": "SOGVDTE135C4346C6F", "title": "Kids / Poker Face (iTunes
+        Originals Version)"}, {"id": "SORSDAD135C28BB7C3", "title": "Undone -- The
+        Sweater Song"}]}}'
+    http_version: 
+  recorded_at: Sat, 23 Feb 2013 13:10:05 GMT
+recorded_with: VCR 2.4.0

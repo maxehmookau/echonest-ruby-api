@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/biographies?api_key=Weezer&format=json&name=THISISNOTAKEY&results=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 22 Feb 2013 20:56:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      X-Request-Id:
+      - sexj1QlATCuvIPQK1vPEpw
+      Content-Length:
+      - '134'
+      Server:
+      - TornadoServer/2.4.1
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 1, "message":
+        "api_key - Invalid key: \"Weezer\" is not a valid, active api key"}}}'
+    http_version: 
+  recorded_at: Fri, 22 Feb 2013 20:56:40 GMT
+recorded_with: VCR 2.4.0
