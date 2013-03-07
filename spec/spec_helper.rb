@@ -4,6 +4,9 @@ require_relative '../lib/echonest-ruby-api/base.rb'
 require 'echonest-ruby-api'
 require 'vcr'
 require 'webmock/rspec'
+require 'coveralls'
+
+Coveralls.wear!
 
 RSpec.configure do |config|
 
