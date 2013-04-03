@@ -126,5 +126,6 @@ Testing is done using RSpec. Just run `guard` in the root directory and it'll ru
 
 ## Contributors
 
-Max Woolf (me!)
-abdyer
+* Max Woolf (me!)
+* abdyer
+* garethrees
