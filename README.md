@@ -33,7 +33,7 @@ Require the gem in your file:
 
 Create an instance of an object
 
-    artist = Echonest::Artist.new('Weezer', 'YOUR-API-KEY')
+    artist = Echonest::Artist.new('YOUR-API-KEY', 'Weezer')
 
 Then you have access to a bunch of methods:
 
