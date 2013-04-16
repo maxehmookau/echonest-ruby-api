@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=BNOAEBT3IZYZI6WXI&format=json&id=ARH6W4X1187B99274F&name=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Apr 2013 15:36:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2111'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - gXpEgeizQAGGst47meOWAQ
+      Etag:
+      - ! '"6c7ad38226a2cb3f6808fed206c128221da1472e"'
+      X-Worker-Node:
+      - d1c7d:18043
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/2.4.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-3
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "start": 0, "terms": [{"frequency": 1.0, "name": "rock", "weight":
+        1.0}, {"frequency": 0.32362762914965709, "name": "alternative rock", "weight":
+        0.69780927835051543}, {"frequency": 0.44937160189619696, "name": "electronic",
+        "weight": 0.68547496318114876}, {"frequency": 0.30395783840385909, "name":
+        "alternative", "weight": 0.51113770250368185}, {"frequency": 0.3330351216068515,
+        "name": "pop", "weight": 0.41310751104565535}, {"frequency": 0.12701643032455379,
+        "name": "art rock", "weight": 0.37453976435935199}, {"frequency": 0.18900195035169701,
+        "name": "90s", "weight": 0.32041605301914583}, {"frequency": 0.15086233578978614,
+        "name": "electronica", "weight": 0.30660898379970547}, {"frequency": 0.15515439522510874,
+        "name": "experimental", "weight": 0.28194035346097202}, {"frequency": 0.11026300031196913,
+        "name": "modern rock", "weight": 0.27899484536082475}, {"frequency": 0.11311005144022887,
+        "name": "post-punk", "weight": 0.2766936671575847}, {"frequency": 0.1958486968107972,
+        "name": "jazz", "weight": 0.25717967599410896}, {"frequency": 0.076972709443209955,
+        "name": "british pop", "weight": 0.23205081001472755}, {"frequency": 0.07795958505745175,
+        "name": "experimental rock", "weight": 0.22984167893961707}, {"frequency":
+        0.11062690830619014, "name": "ambient", "weight": 0.22505522827687777}, {"frequency":
+        0.060773261607601083, "name": "british rock", "weight": 0.17396907216494845},
+        {"frequency": 0.043226336802103069, "name": "alternative pop rock", "weight":
+        0.17286450662739322}, {"frequency": 0.043338377308222591, "name": "indietronica",
+        "weight": 0.17249631811487481}, {"frequency": 0.067005410887189226, "name":
+        "grunge", "weight": 0.1639359351988218}, {"frequency": 0.069209522653945518,
+        "name": "progressive rock", "weight": 0.16053019145802652}, {"frequency":
+        0.082315134619655381, "name": "80s", "weight": 0.14202871870397643}, {"frequency":
+        0.085107639075017574, "name": "indie", "weight": 0.13871502209131076}, {"frequency":
+        0.070086224148814005, "name": "soundtrack", "weight": 0.12039764359351988}]}}'
+    http_version: 
+  recorded_at: Tue, 16 Apr 2013 15:36:58 GMT
+recorded_with: VCR 2.4.0
