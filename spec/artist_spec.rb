@@ -175,4 +175,17 @@ describe Echonest::Artist do
 
   end
 
+  describe "#profile" do
+
+    it 'should return an artist profile given an id' do
+      VCR.use_cassette('profile') do
+        @a = Echonest::Artist.new('BNOAEBT3IZYZI6WXI', nil, nil, 'ARH6W4X1187B99274F')
+        artist = @a.profile
+        artist.should be_a Echonest::Artist
+        artist.name.should eq "Radiohead"
+      end
+    end
+
+  end
+
 end
