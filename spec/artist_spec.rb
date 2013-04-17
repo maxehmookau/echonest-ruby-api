@@ -6,6 +6,10 @@ describe Echonest::Artist do
     @a = Echonest::Artist.new('BNOAEBT3IZYZI6WXI', 'Weezer')
   end
 
+  def create_valid_artist_with_id
+    @a = Echonest::Artist.new('BNOAEBT3IZYZI6WXI', nil, nil, 'ARH6W4X1187B99274F')
+  end
+
 
   it 'should allow an Artist to have a name' do
     a = Echonest::Artist.new('12345', 'Weezer')
@@ -188,4 +192,30 @@ describe Echonest::Artist do
 
   end
 
+  describe '#terms' do
+
+    it 'should return an array of hashes of terms' do
+      VCR.use_cassette('terms') do
+        create_valid_artist_with_id
+        @a.terms.should be_a Array
+      end
+    end
+
+    it 'should return valid hash for each term' do
+      VCR.use_cassette('terms') do
+        create_valid_artist_with_id
+        @a.terms.each do |k|
+          k.should be_a Hash
+        end
+      end
+    end
+
+    it 'should return modern rock for Radiohead' do
+      VCR.use_cassette('terms') do
+        create_valid_artist_with_id
+        @a.terms.map{|t| t[:name]}.should include("modern rock")
+      end
+    end
+
+  end
 end
