@@ -11,7 +11,8 @@ module Echonest
 
     attr_accessor :id, :name, :foreign_ids
 
-    def initialize(api_key, name = nil, foreign_ids = nil)
+    def initialize(api_key, name = nil, foreign_ids = nil, id = nil)
+      @id = id
       @name = name
       @api_key = api_key
       @foreign_ids = ForeignId.parse_array(foreign_ids) if foreign_ids
@@ -71,6 +72,11 @@ module Echonest
         songs << { s[:id] => s[:title] }
       end
       songs
+    end
+
+    def terms(options = {})
+      options = {name: @name, id: @id}.merge(options)
+      get_response(options)[:terms]
     end
 
   end
