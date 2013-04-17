@@ -129,3 +129,4 @@ Testing is done using RSpec. Just run `guard` in the root directory and it'll ru
 * Max Woolf (me!)
 * abdyer
 * garethrees
+* jordanpoulton
