@@ -56,7 +56,7 @@ module Echonest
         query_string << "#{ key }=#{ value }&"
       end
       #puts "#{ Base.base_uri }#{ endpoint }?api_key=#{ @api_key }&format=json&#{ query_string }"
-      response = HTTParty.get("#{ Base.base_uri }#{ endpoint }?api_key=#{ @api_key }&format=json&#{ query_string }")
+      response = HTTParty.get(URI.escape("#{ Base.base_uri }#{ endpoint }?api_key=#{ @api_key }&format=json&#{ query_string }"))
       json = MultiJson.load(response.body, symbolize_keys: true)
       response_code = json[:response][:status][:code]
 

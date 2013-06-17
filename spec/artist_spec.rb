@@ -101,6 +101,13 @@ describe Echonest::Artist do
       end
     end
 
+    it 'should allow Artists with whitespace in their names' do
+      VCR.use_cassette('images_whitespace') do
+        @a = Echonest::Artist.new('BNOAEBT3IZYZI6WXI', 'Bob Marley')
+        @a.images.should be_a Array
+      end
+    end
+
     it 'should only return urls in the array' do
       VCR.use_cassette('images') do
         create_valid_artist
