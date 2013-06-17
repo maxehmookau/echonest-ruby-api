@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Bob%20Marley
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 17 Jun 2013 18:39:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3514'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - G7d6WfNxRmKnS6a4UP6Djg
+      Etag:
+      - ! '"b9b9cfa02c362649b53e832a81ed6e2112b2c01e"'
+      X-Worker-Node:
+      - 2d6ca:15157
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.0.1
+      X-Ratelimit-Limit:
+      - '20'
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-3
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "start": 0, "total": 141, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/0/0f/LocationAfrica.png",
+        "license": {"type": "unknown", "attribution": "n/a", "url": "http://en.wikipedia.org/wiki/File:LocationAfrica.png"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/3/3a/Bob-Marley-in-Concert_Zurich_05-30-80.jpg",
+        "license": {"type": "cc-by-sa", "attribution": "CdaMVvWgS", "url": "http://upload.wikimedia.org/wikipedia/commons/3/3a/Bob-Marley-in-Concert_Zurich_05-30-80.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bob-marley-wailers-crystal-palace.jpg/800px-Bob-marley-wailers-crystal-palace.jpg",
+        "license": {"type": "cc-by-sa", "attribution": "Tankfield", "url": "http://en.wikipedia.org/wiki/File:Bob-marley-wailers-crystal-palace.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/6/68/Bob-Marley_3.jpg",
+        "license": {"type": "cc-by-sa", "attribution": "Leahtwosaints", "url": "http://upload.wikimedia.org/wikipedia/commons/6/68/Bob-Marley_3.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/6/61/Bob-marley-wailers-crystal-palace.jpg",
+        "license": {"type": "cc-by-sa", "attribution": "Fountain Posters", "url":
+        "http://upload.wikimedia.org/wikipedia/commons/6/61/Bob-marley-wailers-crystal-palace.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/8/84/Bob_Marley_house_in_Nine_Mile.jpg",
+        "license": {"type": "cc-by-sa", "attribution": "File Upload Bot (Magnus Manske)",
+        "url": "http://upload.wikimedia.org/wikipedia/commons/8/84/Bob_Marley_house_in_Nine_Mile.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/1/1e/Bob_Marley_Wax.jpg",
+        "license": {"type": "cc-by-sa", "attribution": "Sub-Zero 88", "url": "http://upload.wikimedia.org/wikipedia/commons/1/1e/Bob_Marley_Wax.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/4/44/Bob-Star.jpg",
+        "license": {"type": "cc-by-sa", "attribution": "Dioz", "url": "http://upload.wikimedia.org/wikipedia/commons/4/44/Bob-Star.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/5/5e/Bob-Marley.jpg",
+        "license": {"type": "cc-by-sa", "attribution": "LobStoR", "url": "http://upload.wikimedia.org/wikipedia/commons/5/5e/Bob-Marley.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/0/03/Bob_Marley_apartment_in_London.jpg",
+        "license": {"type": "cc-by", "attribution": "Fountain Posters", "url": "http://upload.wikimedia.org/wikipedia/commons/0/03/Bob_Marley_apartment_in_London.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/3604577/Bob+Marley+Esther+Anderson.jpg",
+        "license": {"type": "unknown", "attribution": "last.fm", "url": "http://www.last.fm/music/Bob+Marley/+images"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/3154905/Bob+Marley+BobMarley.jpg",
+        "license": {"type": "unknown", "attribution": "last.fm", "url": "http://www.last.fm/music/Bob+Marley/+images"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/46289809/Bob+Marley+bob_marley_80.jpg",
+        "license": {"type": "unknown", "attribution": "n/a", "url": "http://www.last.fm/music/Bob+Marley/+images"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/24579307/Bob+Marley+0000173918002.jpg",
+        "license": {"type": "unknown", "attribution": "last.fm", "url": "http://www.last.fm/music/Bob+Marley/+images"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/23882297/Bob+Marley+bob.jpg",
+        "license": {"type": "unknown", "attribution": "n/a", "url": "http://www.last.fm/music/Bob+Marley/+images"}}]}}'
+    http_version: 
+  recorded_at: Mon, 17 Jun 2013 18:39:13 GMT
+recorded_with: VCR 2.4.0
