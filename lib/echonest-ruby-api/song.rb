@@ -7,12 +7,15 @@ require_relative 'base'
 module Echonest
   class Song < Echonest::Base
 
+    attr_accessor :buckets
+
     def initialize(api_key)
       @api_key = api_key
     end
 
     def search(options = {})
       defaults = { api_key: @api_key }
+      options = { bucket: @buckets }.merge(options).delete_if{ |k,v| v.nil? }
       response = get_response(options)
       songs = []
       response[:songs].each do |song|

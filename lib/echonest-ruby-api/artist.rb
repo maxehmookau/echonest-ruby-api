@@ -9,7 +9,7 @@ module Echonest
 
   class Artist < Echonest::Base
 
-    attr_accessor :id, :name, :foreign_ids
+    attr_accessor :id, :name, :foreign_ids, :buckets
 
     def initialize(api_key, name = nil, foreign_ids = nil, id = nil)
       @id = id
@@ -19,7 +19,7 @@ module Echonest
     end
 
     def biographies(options = { results: 1 })
-      response = get_response(results: options[:results], name: @name)
+      response = get_response(results: options[:results], name: @name, bucket: @buckets)
 
       response[:biographies].collect do |b|
         Biography.new(text: b[:text], site: b[:site], url: b[:url])
@@ -27,7 +27,7 @@ module Echonest
     end
 
     def blogs(options = { results: 1 })
-      response = get_response(results: options[:results], name: @name)
+      response = get_response(results: options[:results], name: @name, bucket: @buckets)
 
       response[:blogs].collect do |b|
         Blog.new(name: b[:name], site: b[:site], url: b[:url])
@@ -35,17 +35,17 @@ module Echonest
     end
 
     def familiarity
-      response = get_response(name: @name)
+      response = get_response(name: @name, bucket: @buckets)
       response[entity_name.to_sym][__method__.to_sym]
     end
 
     def hotttnesss
-      response = get_response(name: @name)
+      response = get_response(name: @name, bucket: @buckets)
       response[entity_name.to_sym][__method__.to_sym]
     end
 
     def images
-      response = get_response(name: @name)
+      response = get_response(name: @name, bucket: @buckets)
       images = []
       response[:images].each do |i|
         images << i[:url]
@@ -58,7 +58,7 @@ module Echonest
     end
 
     def search(options = {})
-      options = {name: @name}.merge(options)
+      options = {name: @name, bucket: @buckets}.merge(options).delete_if{ |k,v| v.nil? }
       artists = []
       get_response(options)[:artists].each do |a|
         artists << Artist.new(@api_key, a[:name], a[:foreign_ids])
@@ -75,13 +75,24 @@ module Echonest
     end
 
     def profile(options = {})
-      options = {name: @name, id: @id}.merge(options)
+      options = {name: @name, id: @id, bucket: @buckets}.merge(options).delete_if{ |k,v| v.nil? }
       artist_data = get_response(options)[:artist]
-      Artist.new(@api_key, artist_data[:name], artist_data[:foreign_ids], artist_data[:id])
-    end 
+
+      artist = Artist.new(@api_key, artist_data[:name], artist_data[:foreign_ids], artist_data[:id])
+
+      @buckets.each do |bucket|
+        unless bucket.include? 'id:' then
+          artist.instance_variable_set("@#{bucket}", eval("artist_data[:'#{bucket}']"))
+          artist.class.__send__(:attr_accessor, "#{bucket}")
+        end
+
+      end
+
+      artist
+    end
 
     def terms(options = {})
-      options = {name: @name, id: @id}.merge(options)
+      options = {name: @name, id: @id, bucket: @buckets}.merge(options).delete_if{ |k,v| v.nil? }
       get_response(options)[:terms]
     end
 
