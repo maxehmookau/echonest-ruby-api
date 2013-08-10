@@ -105,7 +105,7 @@ Then just use this method call:
 ```ruby
 song = Echonest::Song.new('YOUR-API-KEY')
 code = song.echoprint_code('path/to/audio/file')
-puts code.identify(code)
+puts song.identify(code)
 ```
 
 If there's a positive match, it'll return something like this:
