@@ -148,3 +148,7 @@ Testing is done using RSpec. Just run `guard` in the root directory and it'll ru
 * jordanpoulton
 * makersacademy
 * deadroxy
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/maxehmookau/echonest-ruby-api/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
