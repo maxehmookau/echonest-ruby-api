@@ -87,6 +87,9 @@ describe Echonest::Artist do
       VCR.use_cassette('hotttnesss') do
         create_valid_artist
         @a.hotttnesss.should be_a Float
+        @a.hotttnesss(type: 'social').should be_a Float
+        @a.hotttnesss(type: 'reviews').should be_a Float
+        @a.hotttnesss(type: 'mainstream').should be_a Float
       end
     end
 
