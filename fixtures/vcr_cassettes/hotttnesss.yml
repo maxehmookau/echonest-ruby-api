@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/hotttnesss?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer
+    uri: http://developer.echonest.com/api/v4/artist/hotttnesss?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&type=overall
     body:
       encoding: US-ASCII
       string: ''
@@ -13,38 +13,203 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Feb 2013 13:05:46 GMT
+      - Mon, 02 Sep 2013 00:30:28 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Connection:
-      - keep-alive
+      Content-Length:
+      - '170'
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - MOIIYqqCTpW0LxylRaQ7wA
+      - eDP46hPZRBW057iKbKSE1A
       Etag:
-      - ! '"5826c5479542eca3a88f60adc26bf81874f65939"'
+      - ! '"db4a58343e66279b7a1d0a879e3aa2b619395963"'
       X-Worker-Node:
-      - c125c:9835
-      Content-Length:
-      - '170'
+      - d1c7d:30417
       X-Ratelimit-Remaining:
-      - '20'
+      - '17'
       Server:
-      - TornadoServer/2.4.1
+      - TornadoServer/3.0.1
       X-Ratelimit-Limit:
       - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
       Cache-Control:
       - max-age=86400
       Access-Control-Allow-Origin:
       - ! '*'
       X-Ratelimit-Used:
-      - '1'
+      - '3'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-3
     body:
       encoding: US-ASCII
       string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
-        "Success"}, "artist": {"hotttnesss": 0.53242500000000004, "id": "AR633SY1187B9AC3B9",
+        "Success"}, "artist": {"hotttnesss": 0.74428000000000005, "id": "AR633SY1187B9AC3B9",
         "name": "Weezer"}}}'
     http_version: 
-  recorded_at: Sat, 23 Feb 2013 13:05:49 GMT
-recorded_with: VCR 2.4.0
+  recorded_at: Mon, 02 Sep 2013 00:30:30 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/hotttnesss?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&type=social
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 02 Sep 2013 00:30:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '170'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - weNnCgizTGSZYaCeLZ2p7w
+      Etag:
+      - ! '"db4a58343e66279b7a1d0a879e3aa2b619395963"'
+      X-Worker-Node:
+      - 04371:24564
+      X-Ratelimit-Remaining:
+      - '16'
+      Server:
+      - TornadoServer/3.0.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '4'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-2
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "artist": {"hotttnesss": 0.74428000000000005, "id": "AR633SY1187B9AC3B9",
+        "name": "Weezer"}}}'
+    http_version: 
+  recorded_at: Mon, 02 Sep 2013 00:30:30 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/hotttnesss?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&type=reviews
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 02 Sep 2013 00:30:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '170'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - rtJhZrvPSeG6AxEz+mZDqQ
+      Etag:
+      - ! '"db4a58343e66279b7a1d0a879e3aa2b619395963"'
+      X-Worker-Node:
+      - a0306:17448
+      X-Ratelimit-Remaining:
+      - '15'
+      Server:
+      - TornadoServer/3.0.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '5'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-3
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "artist": {"hotttnesss": 0.74428000000000005, "id": "AR633SY1187B9AC3B9",
+        "name": "Weezer"}}}'
+    http_version: 
+  recorded_at: Mon, 02 Sep 2013 00:30:30 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/hotttnesss?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&type=mainstream
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 02 Sep 2013 00:30:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '170'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - pL0tjBvAS5iPqubTZV7O8A
+      Etag:
+      - ! '"db4a58343e66279b7a1d0a879e3aa2b619395963"'
+      X-Worker-Node:
+      - c6357:18864
+      X-Ratelimit-Remaining:
+      - '14'
+      Server:
+      - TornadoServer/3.0.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '6'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-2
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "artist": {"hotttnesss": 0.74428000000000005, "id": "AR633SY1187B9AC3B9",
+        "name": "Weezer"}}}'
+    http_version: 
+  recorded_at: Mon, 02 Sep 2013 00:30:30 GMT
+recorded_with: VCR 2.5.0

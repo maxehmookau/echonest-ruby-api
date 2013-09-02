@@ -39,8 +39,8 @@ module Echonest
       response[entity_name.to_sym][__method__.to_sym]
     end
 
-    def hotttnesss
-      response = get_response(name: @name)
+    def hotttnesss(options = {})
+      response = get_response(name: @name, type: options.fetch(:type, 'overall'))
       response[entity_name.to_sym][__method__.to_sym]
     end
 
