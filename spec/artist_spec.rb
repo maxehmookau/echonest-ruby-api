@@ -159,6 +159,15 @@ describe Echonest::Artist do
       end
     end
 
+    it 'should fill in id of each returned artist' do
+      VCR.use_cassette('search') do
+        create_valid_artist
+        @a.search.each do |k|
+          k.id.should_not be_nil
+        end
+      end
+    end
+
     it 'should search the specified bucket' do
       VCR.use_cassette('search_2') do
         create_valid_artist
