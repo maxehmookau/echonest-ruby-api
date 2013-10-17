@@ -55,12 +55,15 @@ module Echonest
       options.each do |key, value|
         query_string << "#{ key }=#{ value }&"
       end
-      #puts "#{ Base.base_uri }#{ endpoint }?api_key=#{ @api_key }&format=json&#{ query_string }"
       response = HTTParty.get(URI.escape("#{ Base.base_uri }#{ endpoint }?api_key=#{ @api_key }&format=json&#{ query_string }"))
       json = MultiJson.load(response.body, symbolize_keys: true)
       response_code = json[:response][:status][:code]
 
-      response_code.eql?(0) ? json[:response] : raise(Echonest::Error.new(response_code), "Error code #{ response_code }")
+      if response_code.eql?(0)
+        json[:response]
+      else
+        raise Echonest::Error.new(response_code, response), "Error code #{ response_code }"
+      end
     end
 
     # Cross-platform way of finding an executable in the $PATH.
