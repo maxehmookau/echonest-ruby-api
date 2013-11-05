@@ -236,5 +236,17 @@ describe Echonest::Artist do
       end
     end
 
+    it 'should work even when artist has both name and id' do
+      # If we try, echonest will respond with error:
+      # 'limit - Only one of \"name\" or \"id\" is allowed'
+      VCR.use_cassette('terms') do
+        create_valid_artist_with_id
+        @a.name = "Weezer"
+        expect {
+          @a.terms
+        }.to_not raise_error
+      end
+    end
+
   end
 end

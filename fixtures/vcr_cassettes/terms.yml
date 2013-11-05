@@ -23,7 +23,7 @@ http_interactions:
       X-Request-Id:
       - gXpEgeizQAGGst47meOWAQ
       Etag:
-      - ! '"6c7ad38226a2cb3f6808fed206c128221da1472e"'
+      - '"6c7ad38226a2cb3f6808fed206c128221da1472e"'
       X-Worker-Node:
       - d1c7d:18043
       X-Ratelimit-Remaining:
@@ -35,7 +35,7 @@ http_interactions:
       Cache-Control:
       - max-age=86400
       Access-Control-Allow-Origin:
-      - ! '*'
+      - '*'
       X-Ratelimit-Used:
       - '1'
       Connection:
@@ -46,32 +46,115 @@ http_interactions:
       - 1.1 ID-0000627501223666 uproxy-3
     body:
       encoding: US-ASCII
-      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
-        "Success"}, "start": 0, "terms": [{"frequency": 1.0, "name": "rock", "weight":
-        1.0}, {"frequency": 0.32362762914965709, "name": "alternative rock", "weight":
-        0.69780927835051543}, {"frequency": 0.44937160189619696, "name": "electronic",
-        "weight": 0.68547496318114876}, {"frequency": 0.30395783840385909, "name":
-        "alternative", "weight": 0.51113770250368185}, {"frequency": 0.3330351216068515,
-        "name": "pop", "weight": 0.41310751104565535}, {"frequency": 0.12701643032455379,
-        "name": "art rock", "weight": 0.37453976435935199}, {"frequency": 0.18900195035169701,
-        "name": "90s", "weight": 0.32041605301914583}, {"frequency": 0.15086233578978614,
-        "name": "electronica", "weight": 0.30660898379970547}, {"frequency": 0.15515439522510874,
-        "name": "experimental", "weight": 0.28194035346097202}, {"frequency": 0.11026300031196913,
-        "name": "modern rock", "weight": 0.27899484536082475}, {"frequency": 0.11311005144022887,
-        "name": "post-punk", "weight": 0.2766936671575847}, {"frequency": 0.1958486968107972,
-        "name": "jazz", "weight": 0.25717967599410896}, {"frequency": 0.076972709443209955,
-        "name": "british pop", "weight": 0.23205081001472755}, {"frequency": 0.07795958505745175,
-        "name": "experimental rock", "weight": 0.22984167893961707}, {"frequency":
-        0.11062690830619014, "name": "ambient", "weight": 0.22505522827687777}, {"frequency":
-        0.060773261607601083, "name": "british rock", "weight": 0.17396907216494845},
-        {"frequency": 0.043226336802103069, "name": "alternative pop rock", "weight":
-        0.17286450662739322}, {"frequency": 0.043338377308222591, "name": "indietronica",
-        "weight": 0.17249631811487481}, {"frequency": 0.067005410887189226, "name":
-        "grunge", "weight": 0.1639359351988218}, {"frequency": 0.069209522653945518,
-        "name": "progressive rock", "weight": 0.16053019145802652}, {"frequency":
-        0.082315134619655381, "name": "80s", "weight": 0.14202871870397643}, {"frequency":
-        0.085107639075017574, "name": "indie", "weight": 0.13871502209131076}, {"frequency":
-        0.070086224148814005, "name": "soundtrack", "weight": 0.12039764359351988}]}}'
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "terms": [{"frequency": 1.0, "name": "rock", "weight": 1.0}, {"frequency":
+        0.32362762914965709, "name": "alternative rock", "weight": 0.69780927835051543},
+        {"frequency": 0.44937160189619696, "name": "electronic", "weight": 0.68547496318114876},
+        {"frequency": 0.30395783840385909, "name": "alternative", "weight": 0.51113770250368185},
+        {"frequency": 0.3330351216068515, "name": "pop", "weight": 0.41310751104565535},
+        {"frequency": 0.12701643032455379, "name": "art rock", "weight": 0.37453976435935199},
+        {"frequency": 0.18900195035169701, "name": "90s", "weight": 0.32041605301914583},
+        {"frequency": 0.15086233578978614, "name": "electronica", "weight": 0.30660898379970547},
+        {"frequency": 0.15515439522510874, "name": "experimental", "weight": 0.28194035346097202},
+        {"frequency": 0.11026300031196913, "name": "modern rock", "weight": 0.27899484536082475},
+        {"frequency": 0.11311005144022887, "name": "post-punk", "weight": 0.2766936671575847},
+        {"frequency": 0.1958486968107972, "name": "jazz", "weight": 0.25717967599410896},
+        {"frequency": 0.076972709443209955, "name": "british pop", "weight": 0.23205081001472755},
+        {"frequency": 0.07795958505745175, "name": "experimental rock", "weight":
+        0.22984167893961707}, {"frequency": 0.11062690830619014, "name": "ambient",
+        "weight": 0.22505522827687777}, {"frequency": 0.060773261607601083, "name":
+        "british rock", "weight": 0.17396907216494845}, {"frequency": 0.043226336802103069,
+        "name": "alternative pop rock", "weight": 0.17286450662739322}, {"frequency":
+        0.043338377308222591, "name": "indietronica", "weight": 0.17249631811487481},
+        {"frequency": 0.067005410887189226, "name": "grunge", "weight": 0.1639359351988218},
+        {"frequency": 0.069209522653945518, "name": "progressive rock", "weight":
+        0.16053019145802652}, {"frequency": 0.082315134619655381, "name": "80s", "weight":
+        0.14202871870397643}, {"frequency": 0.085107639075017574, "name": "indie",
+        "weight": 0.13871502209131076}, {"frequency": 0.070086224148814005, "name":
+        "soundtrack", "weight": 0.12039764359351988}]}}'
     http_version: 
   recorded_at: Tue, 16 Apr 2013 15:36:58 GMT
-recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/terms?api_key=BNOAEBT3IZYZI6WXI&format=json&id=ARH6W4X1187B99274F
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 12 Oct 2013 12:28:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2795'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - X0WI5W4YTSqVg3ChIufjdA
+      Etag:
+      - '"ca47178456bf833f4236e57ad2db739adaaf845a"'
+      X-Worker-Node:
+      - 2d6ca:24235
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-3
+    body:
+      encoding: UTF-8
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "start": 0, "terms": [{"frequency": 1.0, "name": "rock", "weight": 1.0}, {"frequency":
+        0.50056445167152541, "name": "electronic", "weight": 0.76179177451826285},
+        {"frequency": 0.29054535637337708, "name": "alternative rock", "weight": 0.6259706643658326},
+        {"frequency": 0.41711702389033906, "name": "pop", "weight": 0.51704055220017253},
+        {"frequency": 0.27481688997448123, "name": "alternative", "weight": 0.46138912855910269},
+        {"frequency": 0.14477044187279242, "name": "art rock", "weight": 0.42608570606844981},
+        {"frequency": 0.18768888908047751, "name": "experimental", "weight": 0.34023583549036523},
+        {"frequency": 0.16288987379250486, "name": "electronica", "weight": 0.33031348863963189},
+        {"frequency": 0.1867971502729068, "name": "90s", "weight": 0.31607707794075351},
+        {"frequency": 0.1510795216447437, "name": "ambient", "weight": 0.30644233534656312},
+        {"frequency": 0.22557046127642771, "name": "jazz", "weight": 0.29587287891860797},
+        {"frequency": 0.093852065975919011, "name": "british pop", "weight": 0.28206787460454413},
+        {"frequency": 0.095061528373122664, "name": "experimental rock", "weight":
+        0.27991084268047167}, {"frequency": 0.15281722054220978, "name": "soundtrack",
+        "weight": 0.26186367558239859}, {"frequency": 0.15842776261614069, "name":
+        "indie", "weight": 0.25769341386252514}, {"frequency": 0.096748185840265413,
+        "name": "post-punk", "weight": 0.23619499568593616}, {"frequency": 0.091995700478839704,
+        "name": "modern rock", "weight": 0.23209663503019845}, {"frequency": 0.088619945150828675,
+        "name": "grunge", "weight": 0.21620649985619786}, {"frequency": 0.10941427818931845,
+        "name": "80s", "weight": 0.18845268909979868}, {"frequency": 0.058871852681638602,
+        "name": "00s", "weight": 0.18277250503307449}, {"frequency": 0.078837608640815418,
+        "name": "progressive rock", "weight": 0.18241299971239575}, {"frequency":
+        0.12049584640252849, "name": "metal", "weight": 0.18097497842968077}, {"frequency":
+        0.076360092189907885, "name": "indie rock", "weight": 0.1622088006902502},
+        {"frequency": 0.051549088378287804, "name": "post rock", "weight": 0.16113028472821397},
+        {"frequency": 0.081416315447692789, "name": "electro", "weight": 0.15703192407247626},
+        {"frequency": 0.063773730992766717, "name": "classic rock", "weight": 0.14387402933563417},
+        {"frequency": 0.068399828845829846, "name": "psychedelic", "weight": 0.13812194420477422},
+        {"frequency": 0.041850069189502591, "name": "trip hop", "weight": 0.12108139200460166},
+        {"frequency": 0.042195287172128608, "name": "british rock", "weight": 0.12036238136324418},
+        {"frequency": 0.044040217303918695, "name": "emo", "weight": 0.11662352602818522},
+        {"frequency": 0.044880652784358821, "name": "indie pop", "weight": 0.11496980155306298}]}}'
+    http_version: 
+  recorded_at: Sat, 12 Oct 2013 12:28:53 GMT
+recorded_with: VCR 2.6.0

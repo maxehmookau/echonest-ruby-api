@@ -81,7 +81,7 @@ module Echonest
     end
 
     def terms(options = {})
-      options = {name: @name, id: @id}.merge(options)
+      options = (@id ? {id: @id} : {name: @name}).merge(options)
       get_response(options)[:terms]
     end
 
