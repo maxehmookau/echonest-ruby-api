@@ -28,6 +28,16 @@ describe Echonest::Song do
       end
     end
 
+    it 'should support multiple bucket query params to return track data' do
+      VCR.use_cassette('song_search') do
+        a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+        options = { combined: "weezer - El Scorcho", bucket: ["id:7digital-US", "audio_summary", "tracks"] }
+        a.search(options).each do |song|
+          song.keys.should include :id, :artist_id, :artist_name, :title, :artist_foreign_ids, :tracks, :audio_summary
+        end
+      end
+    end
+
     it 'should happily find slow songs' do
       VCR.use_cassette('song_search_slow') do
         a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
