@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=BNOAEBT3IZYZI6WXI&format=json&id=ARH6W4X1187B99274F&name=
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=BNOAEBT3IZYZI6WXI&format=json&id=ARH6W4X1187B99274F
     body:
       encoding: US-ASCII
       string: ''
