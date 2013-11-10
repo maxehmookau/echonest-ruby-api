@@ -26,7 +26,7 @@ module Echonest
       if error_code == 3
         # Returns a hash similar to {"remaining"=>0, "limit"=>20, "used"=>29}.
         Hash[response.headers.select{|k,v| k =~ /x-ratelimit/}.
-          map{|k,v| [k.sub('x-ratelimit-', ''), v.first.to_i] }]
+          map{ |k,v| [k.sub('x-ratelimit-', ''), v.first.to_i] }]
       end
     end
 
