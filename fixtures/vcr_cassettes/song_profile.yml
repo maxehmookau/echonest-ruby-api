@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/song/search?api_key=BNOAEBT3IZYZI6WXI&format=json&id=SOCRHFJ12A67021D74
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 13 Nov 2013 01:24:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '104'
+      X-Request-Id:
+      - I8IxYezuT2+w1YUa3Mc9sA
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-2
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 5, "message":
+        "method - Invalid parameter: \"id\""}}}'
+    http_version: 
+  recorded_at: Wed, 13 Nov 2013 01:24:56 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/song/profile?api_key=BNOAEBT3IZYZI6WXI&format=json&id=SOCRHFJ12A67021D74
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Nov 2013 01:26:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '201'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - NvdAOls0Qom57WkgmWTwmw
+      Etag:
+      - ! '"b756f588c500d1f36868111e5e3185c70788dcd9"'
+      X-Worker-Node:
+      - 2902a:22872
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-3
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "songs": [{"artist_id": "AR633SY1187B9AC3B9", "id": "SOCRHFJ12A67021D74",
+        "artist_name": "Weezer", "title": "El Scorcho"}]}}'
+    http_version: 
+  recorded_at: Wed, 13 Nov 2013 01:26:37 GMT
+recorded_with: VCR 2.7.0

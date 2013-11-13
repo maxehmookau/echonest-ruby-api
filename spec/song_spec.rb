@@ -8,6 +8,26 @@ describe Echonest::Song do
     a.should be_a Echonest::Song
   end
 
+  describe "#profile" do
+    it "should return the song for a given id" do
+      VCR.use_cassette('song_profile') do
+        a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+        options = { id: 'SOCRHFJ12A67021D74' }
+        a.profile(options).each do |song|
+          song.keys.should include :id, :artist_id, :artist_name, :title
+        end
+      end
+    end
+
+    it "raises an ArgumentError if id is not provided" do
+      VCR.use_cassette('song_profile') do
+        a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+        options = { id: nil }
+        expect{a.profile(options)}.to raise_exception(ArgumentError)
+      end
+    end
+  end
+
   describe '#search' do
 
     it 'should return an array of tracks' do
@@ -24,6 +44,16 @@ describe Echonest::Song do
         options = { title: 'Hello' }
         a.search(options).each do |song|
           song.keys.should include :id, :artist_id, :artist_name, :title
+        end
+      end
+    end
+
+    it 'should support multiple bucket query params to return track data' do
+      VCR.use_cassette('song_search') do
+        a = Echonest::Song.new('BNOAEBT3IZYZI6WXI')
+        options = { combined: "weezer - El Scorcho", bucket: ["id:7digital-US", "audio_summary", "tracks"] }
+        a.search(options).each do |song|
+          song.keys.should include :id, :artist_id, :artist_name, :title, :artist_foreign_ids, :tracks, :audio_summary
         end
       end
     end

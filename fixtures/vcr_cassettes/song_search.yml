@@ -67,4 +67,214 @@ http_interactions:
         "Kate Truka", "title": "Hello"}]}}'
     http_version: 
   recorded_at: Sat, 23 Feb 2013 13:15:51 GMT
-recorded_with: VCR 2.4.0
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/song/search?api_key=BNOAEBT3IZYZI6WXI&bucket=tracks&combined=weezer%20-%20El%20Scorcho&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Nov 2013 16:58:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '16013'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - LgxMtaIBR0O+lGGIpSLtEw
+      Etag:
+      - ! '"3f970c2b6604bf09bfac5dc9db8575cc20b43492"'
+      X-Worker-Node:
+      - 96cdc:5825
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223666 uproxy-3
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "songs": [{"title": "weezer tribute - a tribute to weezer - 09
+        - the stereo - el scorcho", "artist_name": "Weezer", "artist_foreign_ids":
+        [{"catalog": "7digital-US", "foreign_id": "7digital-US:artist:7516"}], "tracks":
+        [], "audio_md5": "e58e471ab8ff27057cea1d0dc02137e6", "artist_id": "AR633SY1187B9AC3B9",
+        "id": "SOFUENY12B0B80A2EC", "audio_summary": {"key": 1, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/TRVOJHF123E85806AE/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=N9El1OYIixssSnev/%2BWJtGn4GDU%3D",
+        "energy": 0.54621717405125914, "liveness": 0.098055736102958091, "tempo":
+        70.117999999999995, "speechiness": 0.039930275002796278, "acousticness": 0.025835454965767436,
+        "mode": 1, "time_signature": 3, "duration": 259.39546000000001, "loudness":
+        -8.4740000000000002, "audio_md5": "e58e471ab8ff27057cea1d0dc02137e6", "valence":
+        0.15291152883100836, "danceability": 0.30119084566305093}}, {"title": "El
+        Scorcho", "artist_name": "Weezer", "artist_foreign_ids": [{"catalog": "7digital-US",
+        "foreign_id": "7digital-US:artist:7516"}], "tracks": [{"release_image": "http://cdn.7static.com/static/img/sleeveart/00/019/385/0001938573_200.jpg",
+        "foreign_release_id": "7digital-US:release:1938573", "preview_url": "http://previews.7digital.com/clips/34/20645785.clip.mp3",
+        "catalog": "7digital-US", "foreign_id": "7digital-US:track:20645785", "id":
+        "TRLJPRE13A79B0D1F9"}, {"release_image": "http://cdn.7static.com/static/img/sleeveart/00/019/177/0001917766_200.jpg",
+        "foreign_release_id": "7digital-US:release:1917766", "preview_url": "http://previews.7digital.com/clips/34/20989891.clip.mp3",
+        "catalog": "7digital-US", "foreign_id": "7digital-US:track:20989891", "id":
+        "TRXMMZF13A79B3D64B"}, {"release_image": "http://cdn.7static.com/static/img/sleeveart/00/019/177/0001917766_200.jpg",
+        "foreign_release_id": "7digital-US:release:1917766", "preview_url": "http://previews.7digital.com/clips/34/20989916.clip.mp3",
+        "catalog": "7digital-US", "foreign_id": "7digital-US:track:20989916", "id":
+        "TRXSOON13A79B3D656"}, {"release_image": "http://cdn.7static.com/static/img/sleeveart/00/019/177/0001917766_200.jpg",
+        "foreign_release_id": "7digital-US:release:1917766", "preview_url": "http://previews.7digital.com/clips/34/20989920.clip.mp3",
+        "catalog": "7digital-US", "foreign_id": "7digital-US:track:20989920", "id":
+        "TRCVEWJ13A79B3F532"}, {"release_image": "http://cdn.7static.com/static/img/sleeveart/00/019/177/0001917766_200.jpg",
+        "foreign_release_id": "7digital-US:release:1917766", "preview_url": "http://previews.7digital.com/clips/34/20989912.clip.mp3",
+        "catalog": "7digital-US", "foreign_id": "7digital-US:track:20989912", "id":
+        "TRQYBOB13A79B3F52C"}], "audio_md5": "92c409b359f3783d719f99da5d6bea30", "artist_id":
+        "AR633SY1187B9AC3B9", "id": "SOCRHFJ12A67021D74", "audio_summary": {"key":
+        1, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/CGGZbgoAu3VCpEpnaOe2x7lAA6tqvAxM3HbsfVLA66ilt9OZrHaqHfVj5hpaTk3YtCnCF3uIBs8HV0uiM%3D/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=hdn0laDJTQeDN%2BYk6yhJznRE9V8%3D",
+        "energy": 0.72650664678888077, "liveness": 0.084808022338250355, "tempo":
+        148.999, "speechiness": 0.073141213941956662, "acousticness": 0.020281331756578286,
+        "mode": 1, "time_signature": 4, "duration": 243.66621000000001, "loudness":
+        -4.4100000000000001, "audio_md5": "92c409b359f3783d719f99da5d6bea30", "valence":
+        0.45570664322192195, "danceability": 0.45255827023781192}}, {"title": "El
+        Scorcho (Director''s Cut)", "artist_name": "Weezer", "artist_foreign_ids":
+        [{"catalog": "7digital-US", "foreign_id": "7digital-US:artist:7516"}], "tracks":
+        [], "audio_md5": "087de450515874932a719c5bd212d131", "artist_id": "AR633SY1187B9AC3B9",
+        "id": "SOPIIUL13E9067B376", "audio_summary": {"key": 8, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/A3LwHwEzUl3zlWEoM8yk_sDA6dY6i07D9Bnx0l/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=S3HcvXe%2Bo0943UTnMNybI9SkngY%3D",
+        "energy": 0.40297031179122894, "liveness": 0.25457472757529687, "tempo": 74.524000000000001,
+        "speechiness": 0.035890067969342687, "acousticness": 0.44464887861795327,
+        "mode": 1, "time_signature": 4, "duration": 246.97556, "loudness": -16.719000000000001,
+        "audio_md5": "087de450515874932a719c5bd212d131", "valence": 0.26112877472791557,
+        "danceability": 0.53420358850477667}}, {"title": "El Scorcho (Live and Acoustic)",
+        "artist_name": "Weezer", "artist_foreign_ids": [{"catalog": "7digital-US",
+        "foreign_id": "7digital-US:artist:7516"}], "tracks": [], "audio_md5": "de9115b298f885336c2eed710369a85e",
+        "artist_id": "AR633SY1187B9AC3B9", "id": "SOGRRAZ12D9F5224B8", "audio_summary":
+        {"key": 8, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/3NYbcgg3UNJA1PrlDLuulhAtdETbV_mWKOdTbtDpIs-s4hhX4e00_W-p9M3R3aeZjnzY6PkljxLs5dJmM%3D/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=RA0IGZJtjue%2BT8sQVNfVCEHQ3Ms%3D",
+        "energy": 0.46981245219290091, "liveness": 0.97454003516679888, "tempo": 145.86600000000001,
+        "speechiness": 0.044845720907872588, "acousticness": 0.18924426716678527,
+        "mode": 1, "time_signature": 4, "duration": 266.14621, "loudness": -7.5679999999999996,
+        "audio_md5": "de9115b298f885336c2eed710369a85e", "valence": 0.23762761233385088,
+        "danceability": 0.40321067187085752}}, {"title": "El Scorcho (Live Version)",
+        "artist_name": "Weezer", "artist_foreign_ids": [{"catalog": "7digital-US",
+        "foreign_id": "7digital-US:artist:7516"}], "tracks": [{"release_image": "http://cdn.7static.com/static/img/sleeveart/00/004/991/0000499182_200.jpg",
+        "foreign_release_id": "7digital-US:release:499182", "preview_url": "http://previews.7digital.com/clips/34/5529356.clip.mp3",
+        "catalog": "7digital-US", "foreign_id": "7digital-US:track:5529356", "id":
+        "TRSLLXR12E5AC92DB2"}], "audio_md5": "6c7315d2dc3f65c4424104bf30b6a6c9", "artist_id":
+        "AR633SY1187B9AC3B9", "id": "SOBXNXS12AB0184EC6", "audio_summary": {"key":
+        8, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/ra2U2w5vPwUQCWsuTIn7oWudD8c-1vM0uT4ymwzRuz7q_mZXuTTPKxJI2rCbRKiv9dz8uKpBnVe9CDinw%3D/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=3nDVkOiptipWy7MQnyAZRP024Po%3D",
+        "energy": 0.72080595006041182, "liveness": 0.64565466975511177, "tempo": 79.956000000000003,
+        "speechiness": 0.052348155837272259, "acousticness": 0.0077265142199913085,
+        "mode": 1, "time_signature": 4, "duration": 255.93288000000001, "loudness":
+        -8.3369999999999997, "audio_md5": "6c7315d2dc3f65c4424104bf30b6a6c9", "valence":
+        0.21653892274580336, "danceability": 0.53605543872346018}}, {"title": "El
+        Scorcho (Live at Y100 Sonic Session)", "artist_name": "Weezer", "artist_foreign_ids":
+        [{"catalog": "7digital-US", "foreign_id": "7digital-US:artist:7516"}], "tracks":
+        [], "audio_md5": "c3b69376f35d484578fdc220d5568c46", "artist_id": "AR633SY1187B9AC3B9",
+        "id": "SONDZAR1315CD4C41B", "audio_summary": {"key": 8, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/iMglUAwmfhJkuIGRiH7gi0FhPJULjsG2qEFTDwH9zAHnez8NT6G7zQk3j3CdBqm0KzL5tATQkvo0ZPQww%3D/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=8tmFzq/LBAgeMVk7am75HZXlAmA%3D",
+        "energy": 0.52511401575074823, "liveness": 0.72582678316129789, "tempo": 147.31299999999999,
+        "speechiness": 0.058873253695273908, "acousticness": 0.75866741005033456,
+        "mode": 1, "time_signature": 4, "duration": 247.62620999999999, "loudness":
+        -6.4900000000000002, "audio_md5": "c3b69376f35d484578fdc220d5568c46", "valence":
+        0.63914724946801416, "danceability": 0.45506128573100907}}, {"title": "El
+        Scorcho (Live at Reading Festival / 1996)", "artist_name": "Weezer", "artist_foreign_ids":
+        [{"catalog": "7digital-US", "foreign_id": "7digital-US:artist:7516"}], "tracks":
+        [], "audio_md5": "b407ea718a29237bbc6ca5284ddae516", "artist_id": "AR633SY1187B9AC3B9",
+        "id": "SOBMVWB135FF3AF240", "audio_summary": {"key": 8, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/4w7ffQVBq71Bpo95vSCeb2Bg73Q4OHitBURo1AgIdyJXJfM1aFMfllpfiD50lfG7wV6Ehcy9-rwT2QuqA%3D/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=zCwY9Y5htPd7A/pZ55sh3kIaie4%3D",
+        "energy": 0.78829460831070974, "liveness": 0.42244526158305484, "tempo": 142.76499999999999,
+        "speechiness": 0.098870534355800455, "acousticness": 0.010468399530986489,
+        "mode": 1, "time_signature": 4, "duration": 249.90620999999999, "loudness":
+        -5.25, "audio_md5": "b407ea718a29237bbc6ca5284ddae516", "valence": 0.41112256785513629,
+        "danceability": 0.39942793001447202}}, {"title": "weezer tribute - a tribute
+        to weezer - 10 - mycomplex - tired of sex", "artist_name": "Weezer", "artist_foreign_ids":
+        [{"catalog": "7digital-US", "foreign_id": "7digital-US:artist:7516"}], "tracks":
+        [], "audio_md5": "f488bff37f84b285f46d3728e684db4e", "artist_id": "AR633SY1187B9AC3B9",
+        "id": "SOACLKS12B0B808694", "audio_summary": {"key": 6, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/TRSFWHX123E85838E7/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=aJID86Ax47aWitkl9N/32OoWp7c%3D",
+        "energy": 0.97225208036384314, "liveness": 0.18269153860438919, "tempo": 70.388999999999996,
+        "speechiness": 0.05718956600918651, "acousticness": 0.00080035622524831003,
+        "mode": 1, "time_signature": 7, "duration": 172.40771000000001, "loudness":
+        -4.7350000000000003, "audio_md5": "f488bff37f84b285f46d3728e684db4e", "valence":
+        0.49186589889821719, "danceability": 0.12650025672223394}}, {"title": "weezer
+        tribute - a tribute to weezer - 03 - glasseater - holiday", "artist_name":
+        "Weezer", "artist_foreign_ids": [{"catalog": "7digital-US", "foreign_id":
+        "7digital-US:artist:7516"}], "tracks": [], "audio_md5": "efbbfb75e81cea52137a6a2bab3d9732",
+        "artist_id": "AR633SY1187B9AC3B9", "id": "SOXZNBO12B0B8086A5", "audio_summary":
+        {"key": 9, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/TRAKGEB123E859105D/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=Eizk9E6DSJOY3Y1WyrKNJX0Gv1M%3D",
+        "energy": 0.89255902909529894, "liveness": 0.093744242368857547, "tempo":
+        126.16800000000001, "speechiness": 0.039012555826289874, "acousticness": 0.019778543837455618,
+        "mode": 1, "time_signature": 3, "duration": 195.52608000000001, "loudness":
+        -5.234, "audio_md5": "efbbfb75e81cea52137a6a2bab3d9732", "valence": 0.38544276742326905,
+        "danceability": 0.18880682341806618}}, {"title": "weezer tribute - a tribute
+        to weezer - 04 - grade - surf wax america", "artist_name": "Weezer", "artist_foreign_ids":
+        [{"catalog": "7digital-US", "foreign_id": "7digital-US:artist:7516"}], "tracks":
+        [], "audio_md5": "b1a755094e5ddb9ec3ff1273e2724872", "artist_id": "AR633SY1187B9AC3B9",
+        "id": "SOEMBQN12B0B808697", "audio_summary": {"key": 7, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/TRXNSQO123E85951F7/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=RTgbxzMXm6T0/gCGS7/AAVUVEtI%3D",
+        "energy": 0.92630398861406593, "liveness": 0.068189884318534455, "tempo":
+        84.248000000000005, "speechiness": 0.036145658810747661, "acousticness": 0.00084735493308902578,
+        "mode": 1, "time_signature": 1, "duration": 165.30240000000001, "loudness":
+        -6.3099999999999996, "audio_md5": "b1a755094e5ddb9ec3ff1273e2724872", "valence":
+        0.26021874076212054, "danceability": 0.13559971069715798}}, {"title": "weezer
+        tribute - a tribute to weezer - 11 - the impossibles - the good life", "artist_name":
+        "Weezer", "artist_foreign_ids": [{"catalog": "7digital-US", "foreign_id":
+        "7digital-US:artist:7516"}], "tracks": [], "audio_md5": "ed395a54df6790005bb909b672e7b541",
+        "artist_id": "AR633SY1187B9AC3B9", "id": "SOLDOAD12B0B80A2E5", "audio_summary":
+        {"key": 4, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/TRZBRJM123E857CBC6/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=epCvK3SBvVqegqmahsQ%2Bd/t43bM%3D",
+        "energy": 0.95156625736500766, "liveness": 0.44095669104264873, "tempo": 141.077,
+        "speechiness": 0.059233605635693964, "acousticness": 0.092905273118622525,
+        "mode": 0, "time_signature": 4, "duration": 235.38892999999999, "loudness":
+        -6.008, "audio_md5": "ed395a54df6790005bb909b672e7b541", "valence": 0.41867524997326178,
+        "danceability": 0.39053779633091734}}, {"title": "weezer tribute - a tribute
+        to weezer - 13 - the ataris - butterfly", "artist_name": "Weezer", "artist_foreign_ids":
+        [{"catalog": "7digital-US", "foreign_id": "7digital-US:artist:7516"}], "tracks":
+        [], "audio_md5": "e44a293bc2d324ea3a1a0bab78e2c52b", "artist_id": "AR633SY1187B9AC3B9",
+        "id": "SOKKIRO12B0B80A2F0", "audio_summary": {"key": 8, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/TRJXDUZ123E85939FE/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=tSKZNyx1lU/zmHR0F1%2B14HXCHXQ%3D",
+        "energy": 0.46419827841911532, "liveness": 0.097025313508424846, "tempo":
+        68.858999999999995, "speechiness": 0.045660208030876337, "acousticness": 0.91660634736419566,
+        "mode": 0, "time_signature": 1, "duration": 166.13831999999999, "loudness":
+        -10.436999999999999, "audio_md5": "e44a293bc2d324ea3a1a0bab78e2c52b", "valence":
+        0.53248584708903968, "danceability": 0.37858614207448416}}, {"title": "weezer
+        tribute - a tribute to weezer - 07 - midtown - susanne", "artist_name": "Weezer",
+        "artist_foreign_ids": [{"catalog": "7digital-US", "foreign_id": "7digital-US:artist:7516"}],
+        "tracks": [], "audio_md5": "5522d190923a3f9621a4c28dc67e5c62", "artist_id":
+        "AR633SY1187B9AC3B9", "id": "SOBEOSW12B0B80869C", "audio_summary": {"key":
+        8, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/TRQPBEZ123E859C64A/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=kyuKbkru6brzGw6BE1jlgUSZl1s%3D",
+        "energy": 0.95068602351804421, "liveness": 0.049794877149266885, "tempo":
+        104.34999999999999, "speechiness": 0.055598863217484418, "acousticness": 0.044226349944663935,
+        "mode": 1, "time_signature": 4, "duration": 142.78485000000001, "loudness":
+        -5.1079999999999997, "audio_md5": "5522d190923a3f9621a4c28dc67e5c62", "valence":
+        0.5786127998045637, "danceability": 0.1495080646105561}}, {"title": "weezer
+        tribute - a tribute to weezer - 08 - dashboard confessional - jamie", "artist_name":
+        "Weezer", "artist_foreign_ids": [{"catalog": "7digital-US", "foreign_id":
+        "7digital-US:artist:7516"}], "tracks": [], "audio_md5": "765620a5c329495eb45a186234f97b49",
+        "artist_id": "AR633SY1187B9AC3B9", "id": "SOPDMFX12B0B8086A1", "audio_summary":
+        {"key": 6, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/TRNVMEH123E8599E31/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=y0YHKzrbZCrKbhcr7S2Q433x9lA%3D",
+        "energy": 0.35662478142932102, "liveness": 0.077308278136483305, "tempo":
+        114.18600000000001, "speechiness": 0.036597796265677718, "acousticness": 0.83105546723441048,
+        "mode": 1, "time_signature": 4, "duration": 248.58077, "loudness": -7.4720000000000004,
+        "audio_md5": "765620a5c329495eb45a186234f97b49", "valence": 0.67184389562526992,
+        "danceability": 0.6871513821219799}}, {"title": "weezer tribute - a tribute
+        to weezer - 06 - christopher john (elliot) - the world has turned", "artist_name":
+        "Weezer", "artist_foreign_ids": [{"catalog": "7digital-US", "foreign_id":
+        "7digital-US:artist:7516"}], "tracks": [], "audio_md5": "5e406bddbcdddc2821d3f3a53ee409c0",
+        "artist_id": "AR633SY1187B9AC3B9", "id": "SOPLFNT1376BBCCB99", "audio_summary":
+        {"key": 6, "analysis_url": "http://echonest-analysis.s3.amazonaws.com/TR/TRDWFER123E82F4CA1/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1383930517&Signature=/UcbPPuXTYpn1d8ByDhAHuMTh4k%3D",
+        "energy": 0.35602189090641229, "liveness": 0.11037179813161779, "tempo": 133.36699999999999,
+        "speechiness": 0.036236986757947121, "acousticness": 0.55025235780908854,
+        "mode": 1, "time_signature": 4, "duration": 372.34893, "loudness": -9.5730000000000004,
+        "audio_md5": "5e406bddbcdddc2821d3f3a53ee409c0", "valence": 0.28790226452583439,
+        "danceability": 0.49932195809745156}}]}}'
+    http_version: 
+  recorded_at: Fri, 08 Nov 2013 16:58:38 GMT
+recorded_with: VCR 2.7.0
