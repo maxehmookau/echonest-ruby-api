@@ -20,6 +20,16 @@ module Echonest
       end
     end
 
+    def profile(options = {})
+      raise ArgumentError, 'You must include a song id' if options[:id].nil?
+      defaults = { api_key: @api_key }
+      response = get_response(options)
+      songs = []
+      response[:songs].each do |song|
+        songs << song
+      end
+    end
+
     def identify(code)
       raise ArgumentError, 'Not a valid Echoprint or ENFMP fingerprint' if code.empty?
       response = get_response(code: code)
