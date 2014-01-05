@@ -1,11 +1,13 @@
-class Biography
+module Echonest
+  class Biography
 
-  attr_accessor :text, :site, :url
+    attr_accessor :text, :site, :url
 
-  def initialize(options = {})
-    @text = options[:text]
-    @site = options[:site]
-    @url = options[:url]
+    def initialize(options = {})
+      @text = options[:text]
+      @site = options[:site]
+      @url = options[:url]
+    end
+
   end
-
 end
