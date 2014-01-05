@@ -51,11 +51,13 @@ module Echonest
     #
     # Returns a response as a Hash
     def get(endpoint, options = {})
-      query_string = ""
-      options.each do |key, value|
-        query_string << "#{ key }=#{ value }&"
-      end
-      response = HTTParty.get(URI.escape("#{ Base.base_uri }#{ endpoint }?api_key=#{ @api_key }&format=json&#{ query_string }"))
+      options.merge!(api_key: @api_key,
+                           format: "json")
+
+      httparty_options = { query_string_normalizer: HTTParty::Request::NON_RAILS_QUERY_STRING_NORMALIZER,
+                           query: options }
+
+      response = HTTParty.get("#{ Base.base_uri }#{ endpoint }", httparty_options)
       json = MultiJson.load(response.body, symbolize_keys: true)
       response_code = json[:response][:status][:code]
 
