@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&results=15
     body:
       encoding: US-ASCII
       string: ''
@@ -13,66 +13,78 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Feb 2013 13:06:16 GMT
+      - Mon, 06 Jan 2014 21:26:25 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Connection:
-      - keep-alive
+      Content-Length:
+      - '3529'
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - JqnS9DQcTTStsd0ISZ32oQ
+      - Poy5IAtkQgeNmqFgKzrx6w
       Etag:
-      - ! '"5a8042a15d413c7f6a6f7b3c62e14a4508e93f63"'
+      - ! '"6597e75a1cce28f2f827afc4ca3e6eca018f9469"'
       X-Worker-Node:
-      - 4dfa3:20562
-      Content-Length:
-      - '2868'
+      - 96cdc:21874
       X-Ratelimit-Remaining:
-      - '20'
+      - '19'
       Server:
-      - TornadoServer/2.4.1
+      - TornadoServer/3.1
       X-Ratelimit-Limit:
       - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
       Cache-Control:
       - max-age=86400
       Access-Control-Allow-Origin:
       - ! '*'
       X-Ratelimit-Used:
       - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-2
     body:
       encoding: US-ASCII
       string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
-        "Success"}, "start": 0, "total": 257, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/2/2b/Weezer.jpg",
-        "license": {"type": "cc-by-sa", "attribution": "ryanwh / ryan", "url": "http://en.wikipedia.org/wiki/File:Weezer.jpg"}},
-        {"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Weezer_2005.jpg/800px-Weezer_2005.jpg",
-        "license": {"type": "cc-by", "attribution": "James from Somerville, USA",
-        "url": "http://en.wikipedia.org/wiki/File:Weezer_2005.jpg"}}, {"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Weezer_2009.jpg/399px-Weezer_2009.jpg",
-        "license": {"type": "cc-by-sa", "attribution": "Green Up Music", "url": "http://en.wikipedia.org/wiki/File:Weezer_2009.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/279528.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/279528.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/431014.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/431014.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/93147.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/93147.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/131510.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/131510.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/277801.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/277801.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/252260.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/252260.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/268073.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/268073.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/268537.png", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/268537.png"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/73183.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/73183.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/278070.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/278070.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/150394.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/150394.jpg"}},
-        {"url": "http://userserve-ak.last.fm/serve/_/268537.jpg", "license": {"type":
-        "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/268537.jpg"}}]}}'
+        "Success"}, "start": 0, "total": 175, "images": [{"url": "http://upload.wikimedia.org/wikipedia/commons/2/2b/Weezer.jpg",
+        "tags": [], "width": 640, "height": 480, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "ryanwh
+        / ryan", "url": "http://en.wikipedia.org/wiki/File:Weezer.jpg"}}, {"url":
+        "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Weezer_2005.jpg/800px-Weezer_2005.jpg",
+        "tags": [], "width": 800, "height": 600, "aspect_ratio": 1.3333333333333333,
+        "verified": false, "license": {"type": "cc-by", "attribution": "James from
+        Somerville, USA", "url": "http://en.wikipedia.org/wiki/File:Weezer_2005.jpg"}},
+        {"url": "http://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Weezer_2009.jpg/399px-Weezer_2009.jpg",
+        "tags": [], "width": 399, "height": 600, "aspect_ratio": 0.66500000000000004,
+        "verified": false, "license": {"type": "cc-by-sa", "attribution": "Green Up
+        Music", "url": "http://en.wikipedia.org/wiki/File:Weezer_2009.jpg"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/279528.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/279528.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/431014.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/431014.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/93147.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/93147.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/131510.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/131510.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/277801.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/277801.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/252260.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/252260.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/268073.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/268073.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/268537.png", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/268537.png"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/73183.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/73183.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/278070.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/278070.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/150394.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/150394.jpg"}},
+        {"url": "http://userserve-ak.last.fm/serve/_/268537.jpg", "tags": [], "verified":
+        false, "license": {"type": "unknown", "attribution": "last.fm", "url": "http://userserve-ak.last.fm/serve/_/268537.jpg"}}]}}'
     http_version: 
-  recorded_at: Sat, 23 Feb 2013 13:06:23 GMT
-recorded_with: VCR 2.4.0
+  recorded_at: Mon, 06 Jan 2014 21:26:25 GMT
+recorded_with: VCR 2.8.0
