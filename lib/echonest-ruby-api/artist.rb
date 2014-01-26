@@ -39,6 +39,14 @@ module Echonest
       response[entity_name.to_sym][__method__.to_sym]
     end
 
+    def genres
+      response = get_response(name: @name)
+      genres = []
+      genres << response[:terms][:genre]
+      genres << response[:terms][:sub_genre]
+      genres
+    end
+
     def hotttnesss(options = {})
       response = get_response(name: @name, type: options.fetch(:type, 'overall'))
       response[entity_name.to_sym][__method__.to_sym]
