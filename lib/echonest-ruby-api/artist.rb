@@ -75,7 +75,7 @@ module Echonest
     end
 
     def profile(options = {})
-      options = {name: @name, id: @id}.merge(options)
+      options = (@id ? {id: @id} : {name: @name}).merge(options)
       artist_data = get_response(options)[:artist]
       Artist.new(@api_key, artist_data[:name], artist_data[:foreign_ids], artist_data[:id])
     end
