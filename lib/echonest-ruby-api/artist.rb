@@ -40,11 +40,9 @@ module Echonest
     end
 
     def genres
-      response = get_response(name: @name)
       genres = []
-      genres << response[:terms][:genre]
-      genres << response[:terms][:sub_genre]
-      genres
+      response = get('artist/profile', {name: @name, bucket: 'genre'})
+      return response[:artist][:genres].collect {|g| g[:name]}
     end
 
     def hotttnesss(options = {})

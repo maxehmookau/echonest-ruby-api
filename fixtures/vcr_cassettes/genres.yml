@@ -159,4 +159,265 @@ http_interactions:
         "AR633SY1187B9AC3B9", "name": "Weezer"}}'
     http_version: 
   recorded_at: Sun, 26 Jan 2014 04:06:03 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/profile?api_key=BNOAEBT3IZYZI6WXI&bucket=genre&format=json&name=Weezer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 26 Jan 2014 23:26:27 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '69'
+      Vary:
+      - Accept-Encoding
+      Server:
+      - TornadoServer/3.1
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-2
+    body:
+      encoding: US-ASCII
+      string: ! '<html><title>404: Not Found</title><body>404: Not Found</body></html>'
+    http_version: 
+  recorded_at: Sun, 26 Jan 2014 23:26:27 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=BNOAEBT3IZYZI6WXI&bucket=genre&format=json&name=Weezer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 Jan 2014 23:58:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '471'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 1tzjORt/QN2f0t1gu8AWCg
+      Etag:
+      - ! '"3a947d2bd34bbca959ebbcbe4447e410165537c2"'
+      X-Worker-Node:
+      - 7cbef:17202
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-3
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "artist": {"genres": [{"name": "alternative rock"}, {"name": "punk
+        christmas"}, {"name": "indie christmas"}, {"name": "power pop"}, {"name":
+        "pop punk"}, {"name": "pop rock"}, {"name": "hot adult contemporary"}, {"name":
+        "pop christmas"}, {"name": "post-grunge"}, {"name": "indie rock"}, {"name":
+        "funk rock"}, {"name": "chr"}, {"name": "rock"}], "id": "AR633SY1187B9AC3B9",
+        "name": "Weezer"}}}'
+    http_version: 
+  recorded_at: Sun, 26 Jan 2014 23:58:56 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=BNOAEBT3IZYZI6WXI&bucket=genre&format=json&name=Weezer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 Jan 2014 23:58:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '471'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - yfsrq/4uRjOFKtHbICSOBw
+      Etag:
+      - ! '"3a947d2bd34bbca959ebbcbe4447e410165537c2"'
+      X-Worker-Node:
+      - 14f18:14623
+      X-Ratelimit-Remaining:
+      - '18'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '2'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-2
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "artist": {"genres": [{"name": "alternative rock"}, {"name": "punk
+        christmas"}, {"name": "indie christmas"}, {"name": "power pop"}, {"name":
+        "pop punk"}, {"name": "pop rock"}, {"name": "hot adult contemporary"}, {"name":
+        "pop christmas"}, {"name": "post-grunge"}, {"name": "indie rock"}, {"name":
+        "funk rock"}, {"name": "chr"}, {"name": "rock"}], "id": "AR633SY1187B9AC3B9",
+        "name": "Weezer"}}}'
+    http_version: 
+  recorded_at: Sun, 26 Jan 2014 23:58:56 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=BNOAEBT3IZYZI6WXI&bucket=genre&format=json&name=Weezer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Jan 2014 00:02:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '471'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - eRNOTf++SN2HKheFotdIuA
+      Etag:
+      - ! '"3a947d2bd34bbca959ebbcbe4447e410165537c2"'
+      X-Worker-Node:
+      - 20284:21431
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-3
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "artist": {"genres": [{"name": "alternative rock"}, {"name": "punk
+        christmas"}, {"name": "indie christmas"}, {"name": "power pop"}, {"name":
+        "pop punk"}, {"name": "pop rock"}, {"name": "hot adult contemporary"}, {"name":
+        "pop christmas"}, {"name": "post-grunge"}, {"name": "indie rock"}, {"name":
+        "funk rock"}, {"name": "chr"}, {"name": "rock"}], "id": "AR633SY1187B9AC3B9",
+        "name": "Weezer"}}}'
+    http_version: 
+  recorded_at: Mon, 27 Jan 2014 00:02:55 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/profile?api_key=BNOAEBT3IZYZI6WXI&bucket=genre&format=json&name=Weezer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Jan 2014 00:02:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '471'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - iWUed2F5RBu2svsQqunvCw
+      Etag:
+      - ! '"3a947d2bd34bbca959ebbcbe4447e410165537c2"'
+      X-Worker-Node:
+      - 7cbef:17202
+      X-Ratelimit-Remaining:
+      - '18'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '2'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-2
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "artist": {"genres": [{"name": "alternative rock"}, {"name": "punk
+        christmas"}, {"name": "indie christmas"}, {"name": "power pop"}, {"name":
+        "pop punk"}, {"name": "pop rock"}, {"name": "hot adult contemporary"}, {"name":
+        "pop christmas"}, {"name": "post-grunge"}, {"name": "indie rock"}, {"name":
+        "funk rock"}, {"name": "chr"}, {"name": "rock"}], "id": "AR633SY1187B9AC3B9",
+        "name": "Weezer"}}}'
+    http_version: 
+  recorded_at: Mon, 27 Jan 2014 00:02:55 GMT
 recorded_with: VCR 2.8.0

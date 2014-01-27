@@ -86,8 +86,9 @@ describe Echonest::Artist do
       VCR.use_cassette('genres', record: :new_episodes) do
         create_valid_artist
         @a.genres.should be_an Array
-        @a.genres[0].should eql 'rock'
-        @a.genres[1].should eql 'alternative rock'
+        @a.genres.size.should > 0
+        @a.genres.should include('rock')
+        @a.genres.should include('alternative rock')
       end
     end
   end
