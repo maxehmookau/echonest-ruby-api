@@ -111,6 +111,14 @@ describe Echonest::Artist do
       end
     end
 
+    it 'should be able to fetch more than the default amount' do
+      VCR.use_cassette('images_more') do
+        @a = Echonest::Artist.new('BNOAEBT3IZYZI6WXI', 'Bob Marley')
+        images = @a.images(results: 20)
+        images.size.should be > 15
+      end
+    end
+
     it 'should only return urls in the array' do
       VCR.use_cassette('images') do
         create_valid_artist

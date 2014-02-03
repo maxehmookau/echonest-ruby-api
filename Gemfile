@@ -4,4 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rake'
-gem 'simplecov', :require => false, :group => :test
+group :test do
+  gem 'mocha', :require => 'mocha/api'
+  gem 'simplecov', :require => false
+end

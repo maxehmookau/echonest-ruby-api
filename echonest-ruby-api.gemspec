@@ -22,7 +22,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "rspec", "~> 2.6"
   gem.add_development_dependency 'guard-rspec'
   gem.add_development_dependency 'rb-fsevent', '~> 0.9.1'
-  gem.add_development_dependency 'mocha'
   gem.add_development_dependency 'vcr'
   gem.add_development_dependency 'webmock'
   gem.add_development_dependency 'coveralls'

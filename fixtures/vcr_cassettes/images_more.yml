@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Bob%20Marley&results=15
+    uri: http://developer.echonest.com/api/v4/artist/images?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Bob%20Marley&results=20
     body:
       encoding: US-ASCII
       string: ''
@@ -13,21 +13,21 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 06 Jan 2014 21:26:25 GMT
+      - Mon, 06 Jan 2014 21:26:26 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '4557'
+      - '5698'
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - 3oVtc1GbRz6u7/4XH/1Htg
+      - OF7F2++gSUSNP2Ga6GwXmw
       Etag:
-      - ! '"e1f92aa229894bc8b218ec1aecfeb3bece54421d"'
+      - ! '"638849d6f3120cbf26f0c20748597ce948d1ef9c"'
       X-Worker-Node:
-      - d1c7d:12847
+      - 89619:18333
       X-Ratelimit-Remaining:
-      - '18'
+      - '17'
       Server:
       - TornadoServer/3.1
       X-Ratelimit-Limit:
@@ -39,7 +39,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - ! '*'
       X-Ratelimit-Used:
-      - '2'
+      - '3'
       Connection:
       - Keep-alive
       Keep-Alive:
@@ -98,6 +98,20 @@ http_interactions:
         "http://userserve-ak.last.fm/serve/_/23882297/Bob+Marley+bob.jpg", "tags":
         [], "verified": false, "license": {"type": "unknown", "attribution": "n/a",
         "url": "http://www.last.fm/music/Bob+Marley/+images"}}, {"url": "http://userserve-ak.last.fm/serve/500/8733225/Bob+Marley+108681826668.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://www.last.fm/music/Bob+Marley/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/500/3604551/Bob+Marley+Esther+Anderson.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://www.last.fm/music/Bob+Marley/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/500/48180067/Bob+Marley+000BobMarley.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://www.last.fm/music/Bob+Marley/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/19857863/Bob+Marley+marley_weed.jpg",
+        "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
+        "last.fm", "url": "http://www.last.fm/music/Bob+Marley/+images"}}, {"url":
+        "http://userserve-ak.last.fm/serve/_/8456759/Bob+Marley+14707b.jpg", "tags":
+        [], "verified": false, "license": {"type": "unknown", "attribution": "last.fm",
+        "url": "http://www.last.fm/music/Bob+Marley/+images"}}, {"url": "http://userserve-ak.last.fm/serve/500/8209257/Bob+Marley+9_tossing_ball.jpg",
         "tags": [], "verified": false, "license": {"type": "unknown", "attribution":
         "last.fm", "url": "http://www.last.fm/music/Bob+Marley/+images"}}]}}'
     http_version: 

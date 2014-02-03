@@ -44,8 +44,8 @@ module Echonest
       response[entity_name.to_sym][__method__.to_sym]
     end
 
-    def images
-      response = get_response(name: @name)
+    def images(options = { results: 15 })
+      response = get_response(results: options[:results], name: @name)
       images = []
       response[:images].each do |i|
         images << i[:url]
