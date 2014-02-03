@@ -81,8 +81,19 @@ describe Echonest::Artist do
 
   end
 
-  describe '#hotttnesss' do
+  describe '#genres' do
+    it 'should allow us to find what genre an artist is in' do
+      VCR.use_cassette('genres', record: :new_episodes) do
+        create_valid_artist
+        @a.genres.should be_an Array
+        @a.genres.size.should > 0
+        @a.genres.should include('rock')
+        @a.genres.should include('alternative rock')
+      end
+    end
+  end
 
+  describe '#hotttnesss' do
     it 'should allow us to find out how hotttt an artist is' do
       VCR.use_cassette('hotttnesss') do
         create_valid_artist

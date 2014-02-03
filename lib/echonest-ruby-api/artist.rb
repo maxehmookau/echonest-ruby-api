@@ -39,6 +39,12 @@ module Echonest
       response[entity_name.to_sym][__method__.to_sym]
     end
 
+    def genres
+      genres = []
+      response = get('artist/profile', {name: @name, bucket: 'genre'})
+      return response[:artist][:genres].collect {|g| g[:name]}
+    end
+
     def hotttnesss(options = {})
       response = get_response(name: @name, type: options.fetch(:type, 'overall'))
       response[entity_name.to_sym][__method__.to_sym]
