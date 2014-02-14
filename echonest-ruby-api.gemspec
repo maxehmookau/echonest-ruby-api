@@ -11,6 +11,8 @@ Gem::Specification.new do |gem|
   gem.description   = "A simple ruby wrapper around the Echonest API"
   gem.summary       = "A gem to get hold of some echonest stuff!"
   gem.homepage      = "https://github.com/maxehmookau/echonest-ruby-api"
+  s.cert_chain  = ['certs/maxehmookau.pem']
+  s.signing_key = File.expand_path("~/.ssh/gem-private_key.pem") if $0 =~ /gem\z/
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
