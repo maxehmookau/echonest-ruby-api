@@ -5,6 +5,7 @@ gemspec
 
 gem 'rake'
 group :test do
+  gem 'rspec'
   gem 'mocha', :require => 'mocha/api'
   gem 'simplecov', :require => false
 end

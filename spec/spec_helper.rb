@@ -12,6 +12,7 @@ Coveralls.wear!
 
 RSpec.configure do |config|
   config.mock_with :mocha
+  config.extend VCR::RSpec::Macros
 end
 
 VCR.configure do |c|

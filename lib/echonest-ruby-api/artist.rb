@@ -72,6 +72,14 @@ module Echonest
       artists
     end
 
+    def top_hottt(options = {})
+      artists = []
+      get_response(options)[:artists].each do |a|
+        artists << Artist.new(@api_key, a[:name], a[:foreign_ids], a[:id])
+      end
+      artists
+    end
+
     def songs
       songs = []
       get_response(name: @name)[:songs].each do |s|

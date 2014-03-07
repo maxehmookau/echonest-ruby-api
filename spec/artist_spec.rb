@@ -17,14 +17,12 @@ describe Echonest::Artist do
   end
 
   describe '#entity_name' do
-
     it 'should always return artist' do
       VCR.use_cassette('entity_name') do
         a = Echonest::Artist.new('Weezer', '12345')
         a.entity_name.should eql 'artist'
       end
     end
-
   end
 
   describe '#biographies' do
@@ -103,11 +101,9 @@ describe Echonest::Artist do
         @a.hotttnesss(type: 'mainstream').should be_a Float
       end
     end
-
   end
 
   describe '#images' do
-
     it 'should allow us to get an array of urls' do
       VCR.use_cassette('images') do
         create_valid_artist
@@ -139,86 +135,105 @@ describe Echonest::Artist do
       end
     end
 
-  end
+  end # /images
 
   describe '#list_genres' do
+    use_vcr_cassette 'list_genres'
 
     it 'should return an array of acceptable genres' do
-      VCR.use_cassette('list_genres') do
-        create_valid_artist
-        @a.list_genres.should be_a Array
-      end
+      create_valid_artist
+      @a.list_genres.should be_a Array
     end
 
     it 'should return an array in the correct format' do
-      VCR.use_cassette('list_genres') do
-        create_valid_artist
-        @a.list_genres.each do |g|
-          g[:name].should be_a String
-        end
+      create_valid_artist
+      @a.list_genres.each do |g|
+        g[:name].should be_a String
       end
     end
-
   end
 
   describe '#search' do
+    use_vcr_cassette 'search'
+
     it 'should return an Array of artists' do
-      VCR.use_cassette('search') do
-        create_valid_artist
-        @a.search.should be_a Array
-      end
+      create_valid_artist
+      @a.search.should be_a Array
     end
 
     it 'should return an Artist object for each result' do
-      VCR.use_cassette('search') do
-        create_valid_artist
-        @a.search.each do |k|
-          k.class.should be Echonest::Artist
-        end
+      create_valid_artist
+      @a.search.each do |k|
+        k.class.should be Echonest::Artist
       end
     end
 
     it 'should fill in id of each returned artist' do
-      VCR.use_cassette('search') do
-        create_valid_artist
-        @a.search.each do |k|
-          k.id.should_not be_nil
-        end
+      create_valid_artist
+      @a.search.each do |k|
+        k.id.should_not be_nil
       end
     end
 
-    it 'should search the specified bucket' do
-      VCR.use_cassette('search_2') do
+    context 'with bucket' do
+      use_vcr_cassette 'search_2'
+      it 'should search the specified bucket' do
         create_valid_artist
         results = @a.search(bucket: "id:musicbrainz")
         foreign_id = results.first.foreign_ids.first
         foreign_id.catalog.should eq("musicbrainz")
       end
     end
-  end
+  end # /search
+
+  describe '#top_hottt' do
+    use_vcr_cassette('top_hottt')
+
+    it 'should return an Array of artists' do
+      create_valid_artist
+      @a.top_hottt.should be_a Array
+    end
+
+    it 'should return an Artist object for each result' do
+      create_valid_artist
+      @a.top_hottt.each do |k|
+        k.class.should be Echonest::Artist
+      end
+    end
+
+    it 'should fill in id of each returned artist' do
+      create_valid_artist
+      @a.top_hottt.each do |k|
+        k.id.should_not be_nil
+      end
+    end
+
+    it 'should only make one network request' do
+      create_valid_artist
+      @a.expects(:get_response).times(1).returns({:artists=>[]})
+      artists = @a.top_hottt
+      artists.should eq([])
+    end
+
+  end # /top_hottt
 
   describe '#songs' do
+    use_vcr_cassette 'songs'
 
     it 'should return an Array of a Hash of songs' do
-      VCR.use_cassette('songs') do
-        create_valid_artist
-        @a.songs.should be_a Array
-      end
+      create_valid_artist
+      @a.songs.should be_a Array
     end
 
     it 'should return a valid hash for each song' do
-      VCR.use_cassette('songs') do
-        create_valid_artist
-        @a.songs.each do |k|
-          k.should be_a Hash
-        end
+      create_valid_artist
+      @a.songs.each do |k|
+        k.should be_a Hash
       end
     end
-
   end
 
   describe "#profile" do
-
     it 'should return an artist profile given an id' do
       VCR.use_cassette('profile') do
         @a = Echonest::Artist.new('BNOAEBT3IZYZI6WXI', nil, nil, 'ARH6W4X1187B99274F')
@@ -227,45 +242,37 @@ describe Echonest::Artist do
         artist.name.should eq "Radiohead"
       end
     end
-
   end
 
   describe '#terms' do
+    use_vcr_cassette 'terms'
 
     it 'should return an array of hashes of terms' do
-      VCR.use_cassette('terms') do
-        create_valid_artist_with_id
-        @a.terms.should be_a Array
-      end
+      create_valid_artist_with_id
+      @a.terms.should be_a Array
     end
 
     it 'should return valid hash for each term' do
-      VCR.use_cassette('terms') do
-        create_valid_artist_with_id
-        @a.terms.each do |k|
-          k.should be_a Hash
-        end
+      create_valid_artist_with_id
+      @a.terms.each do |k|
+        k.should be_a Hash
       end
     end
 
     it 'should return modern rock for Radiohead' do
-      VCR.use_cassette('terms') do
-        create_valid_artist_with_id
-        @a.terms.map{|t| t[:name]}.should include("modern rock")
-      end
+      create_valid_artist_with_id
+      @a.terms.map{|t| t[:name]}.should include("modern rock")
     end
 
     it 'should work even when artist has both name and id' do
       # If we try, echonest will respond with error:
       # 'limit - Only one of \"name\" or \"id\" is allowed'
-      VCR.use_cassette('terms') do
-        create_valid_artist_with_id
-        @a.name = "Weezer"
-        expect {
-          @a.terms
-        }.to_not raise_error
-      end
+      create_valid_artist_with_id
+      @a.name = "Weezer"
+      expect {
+        @a.terms
+      }.to_not raise_error
     end
+  end # /terms
 
-  end
 end
