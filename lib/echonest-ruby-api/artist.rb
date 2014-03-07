@@ -26,10 +26,20 @@ module Echonest
       end
     end
 
+    # Stuff from blogspot, etc
     def blogs(options = { results: 1 })
       response = get_response(results: options[:results], name: @name)
 
       response[:blogs].collect do |b|
+        Blog.new(name: b[:name], site: b[:site], url: b[:url])
+      end
+    end
+
+    # This appears to be from more "reputable" sources?
+    def news(options = { results: 1 })
+      response = get_response(results: options[:results], name: @name)
+
+      response[:news].collect do |b|
         Blog.new(name: b[:name], site: b[:site], url: b[:url])
       end
     end
