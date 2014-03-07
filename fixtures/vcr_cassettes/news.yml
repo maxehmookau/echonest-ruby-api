@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/news?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&results=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 07 Mar 2014 15:15:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1072'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - U4hAviusSVqHx1Y+b/k98A
+      Etag:
+      - ! '"d4a8306be4cb8d72672a2626e06134382b61add2"'
+      X-Worker-Node:
+      - d2362:21237
+      X-Ratelimit-Remaining:
+      - '18'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '2'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-3
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "start": 0, "total": 1300, "news": [{"url": "http://www.billboard.com/articles/news/5915668/tour-managers-of-foo-fighters-the-rolling-stones-fleetwood-mac-swap-wild-tales",
+        "id": "7fc9810b73e4d4f9e54d45c5f86e6460", "date_found": "2014-02-24T00:00:00",
+        "name": "Tour Managers of Foo Fighters, Rolling Stones & Fleetwood Mac Swap
+        Wild Tales From the Road", "summary": "corralling groupies and how exactly
+        $100,000 in cash gets delivered.The PanelSTUART ROSS Ross has tour-managed
+        Tom Waits for more than 20 years, and was part of the team that launched Lollapalooza.
+        He''s also headed Goldenvoice/AEG''s festival division and worked with acts
+        like Metallica, George Michael and <span>Weezer</span>. He currently oversees
+        touring and festivals at Red Light Management, and heads his own Music Tour
+        Consulting agency. PARTRICK STANSFIELD Stansfield broke into the music industry
+        as a stage manager for Bill Graham''s FM Productions, where he helped the
+        famed concert promoter launch and popularize"}]}}'
+    http_version: 
+  recorded_at: Fri, 07 Mar 2014 15:15:38 GMT
+recorded_with: VCR 2.8.0

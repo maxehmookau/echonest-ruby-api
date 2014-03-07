@@ -68,6 +68,24 @@ describe Echonest::Artist do
 
   end
 
+  describe '#news' do
+
+    it 'should download a specified number of news articles' do
+      VCR.use_cassette('ten_news_articles') do
+        create_valid_artist
+        @a.news(results: 10).count.should be 10
+      end
+    end
+
+    it 'should return one news article by default' do
+      VCR.use_cassette('news') do
+        create_valid_artist
+        @a.news.count.should be 1
+      end
+    end
+
+  end
+
   describe '#familiarity' do
 
     it 'should allow us to find out how familiar an artist is' do
