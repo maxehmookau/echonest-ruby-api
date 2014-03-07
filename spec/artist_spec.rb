@@ -137,9 +137,7 @@ describe Echonest::Artist do
 
   end # /images
 
-  describe '#list_genres' do
-    use_vcr_cassette 'list_genres'
-
+  describe '#list_genres', vcr: {cassette_name: 'list_genres'} do
     it 'should return an array of acceptable genres' do
       create_valid_artist
       @a.list_genres.should be_a Array
@@ -153,9 +151,7 @@ describe Echonest::Artist do
     end
   end
 
-  describe '#search' do
-    use_vcr_cassette 'search'
-
+  describe '#search', vcr: {cassette_name: 'search'} do
     it 'should return an Array of artists' do
       create_valid_artist
       @a.search.should be_a Array
@@ -175,8 +171,7 @@ describe Echonest::Artist do
       end
     end
 
-    context 'with bucket' do
-      use_vcr_cassette 'search_2'
+    context 'with bucket', vcr: {cassette_name: 'search_2'} do
       it 'should search the specified bucket' do
         create_valid_artist
         results = @a.search(bucket: "id:musicbrainz")
@@ -186,9 +181,7 @@ describe Echonest::Artist do
     end
   end # /search
 
-  describe '#top_hottt' do
-    use_vcr_cassette('top_hottt')
-
+  describe '#top_hottt', vcr: {cassette_name: 'top_hottt'} do
     it 'should return an Array of artists' do
       create_valid_artist
       @a.top_hottt.should be_a Array
@@ -217,9 +210,7 @@ describe Echonest::Artist do
 
   end # /top_hottt
 
-  describe '#songs' do
-    use_vcr_cassette 'songs'
-
+  describe '#songs', vcr: {cassette_name: 'songs'} do
     it 'should return an Array of a Hash of songs' do
       create_valid_artist
       @a.songs.should be_a Array
@@ -244,9 +235,7 @@ describe Echonest::Artist do
     end
   end
 
-  describe '#terms' do
-    use_vcr_cassette 'terms'
-
+  describe '#terms', vcr: {cassette_name: 'terms'} do
     it 'should return an array of hashes of terms' do
       create_valid_artist_with_id
       @a.terms.should be_a Array
