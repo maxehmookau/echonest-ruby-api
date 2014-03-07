@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/top_hottt?api_key=BNOAEBT3IZYZI6WXI&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAwNyBNYXIgMjAxNCAwMzoyNzowNCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        ODU0
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        MDJabVNaSmFRYXl4UlJ5S3JpcFBsQQ==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjUzZTFlN2JiZTY5NzIyYTZlZGU2MmQ5MGI1Yzg3NmUwZWUzZGNjNWMi
+      !binary "WC1Xb3JrZXItTm9kZQ==":
+      - !binary |-
+        NzQ2ZTE6MjY4OTg=
+      !binary "WC1SYXRlbGltaXQtUmVtYWluaW5n":
+      - !binary |-
+        MTk=
+      !binary "U2VydmVy":
+      - !binary |-
+        VG9ybmFkb1NlcnZlci8zLjE=
+      !binary "WC1SYXRlbGltaXQtTGltaXQ=":
+      - !binary |-
+        MjA=
+      !binary "WC1BcGktS2V5":
+      - !binary |-
+        Qk5PQUVCVDNJWllaSTZXWEk=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT04NjQwMA==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "WC1SYXRlbGltaXQtVXNlZA==":
+      - !binary |-
+        MQ==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        S2VlcC1hbGl2ZQ==
+      !binary "S2VlcC1BbGl2ZQ==":
+      - !binary |-
+        dGltZW91dD0xNSwgbWF4PTEwMA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIElELTAwMDA2Mjc1MDEyMjM3NDYgdXByb3h5LTI=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXNwb25zZSI6IHsic3RhdHVzIjogeyJ2ZXJzaW9uIjogIjQuMiIsICJj
+        b2RlIjogMCwgIm1lc3NhZ2UiOiAiU3VjY2VzcyJ9LCAiYXJ0aXN0cyI6IFt7
+        Im5hbWUiOiAiS2F0eSBQZXJyeSIsICJpZCI6ICJBUjBJVlRMMTE4N0I5QUQ1
+        MjAifSwgeyJuYW1lIjogIkF2aWNpaSIsICJpZCI6ICJBUldMQUVFMTIyQkNG
+        Q0EyNDUifSwgeyJuYW1lIjogIkJleW9uY8OpIiwgImlkIjogIkFSNjVLN0Ex
+        MTg3RkI0REFBNCJ9LCB7Im5hbWUiOiAiUGhhcnJlbGwiLCAiaWQiOiAiQVJX
+        WFNQTzEyNDFCOUM2QjFDIn0sIHsibmFtZSI6ICJNaWxleSBDeXJ1cyIsICJp
+        ZCI6ICJBUllBVkJTMTE4N0ZCNUI0NkMifSwgeyJuYW1lIjogIkltYWdpbmUg
+        RHJhZ29ucyIsICJpZCI6ICJBUlJWUkZQMTI2RkUwMjUzMjcifSwgeyJuYW1l
+        IjogIkVtaW5lbSIsICJpZCI6ICJBUlRIOTA0MTE4N0ZCNDNFMUYifSwgeyJu
+        YW1lIjogIlBpdGJ1bGwiLCAiaWQiOiAiQVJLOUJIRTExODdGQjNBQzlEIn0s
+        IHsibmFtZSI6ICJCZWNrIiwgImlkIjogIkFSQzJYUjExMTg3RkI1Q0M5NSJ9
+        LCB7Im5hbWUiOiAiT25lUmVwdWJsaWMiLCAiaWQiOiAiQVI3M1M0RzExODdC
+        OUEwM0MyIn0sIHsibmFtZSI6ICJEYWZ0IFB1bmsiLCAiaWQiOiAiQVJGOEhU
+        UTExODdCOUFFNjkzIn0sIHsibmFtZSI6ICJTaGFraXJhIiwgImlkIjogIkFS
+        NlBKOFIxMTg3RkI1QUQ3MCJ9LCB7Im5hbWUiOiAiTG9yZGUiLCAiaWQiOiAi
+        QVJVWEFLVzEzRDYxMEIwQTlCIn0sIHsibmFtZSI6ICJFbGxpZSBHb3VsZGlu
+        ZyIsICJpZCI6ICJBUktUVEpWMTI1OTJDREEwN0YifSwgeyJuYW1lIjogIk9u
+        ZSBEaXJlY3Rpb24iLCAiaWQiOiAiQVJaSEZBWTEzMDcwOEVFMzY2In1dfX0=
+    http_version: 
+  recorded_at: Fri, 07 Mar 2014 03:27:07 GMT
+recorded_with: VCR 2.8.0

@@ -7,6 +7,7 @@ require 'echonest-ruby-api'
 require 'vcr'
 require 'webmock/rspec'
 require 'coveralls'
+#require 'mocha/api'
 
 Coveralls.wear!
 
@@ -15,6 +16,7 @@ RSpec.configure do |config|
 end
 
 VCR.configure do |c|
+  c.configure_rspec_metadata!
   c.cassette_library_dir = 'fixtures/vcr_cassettes'
   c.hook_into :webmock
   # TODO: Get rid of this when possible!
