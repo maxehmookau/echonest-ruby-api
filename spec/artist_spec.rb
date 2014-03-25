@@ -103,7 +103,18 @@ describe Echonest::Artist do
     end
 
   end
-
+  
+  describe '#urls' do
+    
+    it 'should return a hash of urls' do
+      VCR.use_cassette('urls') do
+        create_valid_artist
+        @a.urls.should be_a Hash
+      end
+    end
+    
+  end
+  
   describe '#familiarity' do
 
     it 'should allow us to find out how familiar an artist is' do
@@ -256,6 +267,13 @@ describe Echonest::Artist do
       create_valid_artist
       @a.songs.each do |k|
         k.should be_a Hash
+      end
+    end
+    it 'should be able to fetch more than the default amount' do
+      VCR.use_cassette('songs_more') do
+        @a = Echonest::Artist.new('BNOAEBT3IZYZI6WXI', 'Bob Marley')
+        songs = @a.songs(results: 20)
+        songs.size.should be > 15
       end
     end
   end
