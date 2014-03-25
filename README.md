@@ -51,7 +51,7 @@ artist.familiarity
 artist.hotttnesss
 artist.images
 artist.songs
-artist.videos
+artist.video
 artist.urls
 ```
     
