@@ -3,6 +3,7 @@ require "bundler/setup"
 require_relative 'base'
 require_relative 'blog'
 require_relative 'biography'
+require_relative 'video'
 require_relative 'foreign_id'
 
 module Echonest
@@ -44,6 +45,14 @@ module Echonest
       end
     end
 
+    def video(options = { results: 1 })
+      response = get_response(results: options[:results], name: @name)
+
+      response[:video].collect do |v|
+        Video.new(title: v[:title], site: v[:site], url: v[:url], date_found: v[:date_found], image_url: v[:image_url])
+      end
+    end
+    
     def familiarity
       response = get_response(name: @name)
       response[entity_name.to_sym][__method__.to_sym]
