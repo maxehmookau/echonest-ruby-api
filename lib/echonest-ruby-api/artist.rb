@@ -3,6 +3,7 @@ require "bundler/setup"
 require_relative 'base'
 require_relative 'blog'
 require_relative 'biography'
+require_relative 'video'
 require_relative 'foreign_id'
 
 module Echonest
