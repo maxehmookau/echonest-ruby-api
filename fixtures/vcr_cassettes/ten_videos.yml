@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/video?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&results=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 25 Mar 2014 17:51:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3006'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - MAyICk1ET5GlgjjVQx8UtQ
+      Etag:
+      - ! '"6e6c084e73cbd1b42076bf7dd1da50f49b40f49d"'
+      X-Worker-Node:
+      - 7cbef:11396
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-3
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "start": 0, "total": 744, "video": [{"title": "Weezer - I Just
+        Threw Out The Love of My Dreams", "url": "http://www.youtube.com/watch?v=CFXOas-fCq8&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-22T00:00:00", "image_url": "http://i.ytimg.com/vi/CFXOas-fCq8/default.jpg",
+        "id": "611289c4d72f6e507694c75f4552f9b2"}, {"title": "Weezer- Everyone", "url":
+        "http://www.youtube.com/watch?v=iZKC4pHw1zc&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-08T00:00:00", "image_url": "http://i.ytimg.com/vi/iZKC4pHw1zc/default.jpg",
+        "id": "3f763e82869488809411e63f4cc031b6"}, {"title": "Weezer - Smile", "url":
+        "http://www.youtube.com/watch?v=YUeKEB41OCM&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-08T00:00:00", "image_url": "http://i.ytimg.com/vi/YUeKEB41OCM/default.jpg",
+        "id": "cd47f4d58add3b4ddb2a00c1b7c851c9"}, {"title": "Weezer - Beverly Hills",
+        "url": "http://www.youtube.com/watch?v=U4vSDCdAwPE&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-08T00:00:00", "image_url": "http://i.ytimg.com/vi/U4vSDCdAwPE/default.jpg",
+        "id": "bd22637570143ef73ebbb0817485e7c6"}, {"title": "Weezer - Hash Pipe",
+        "url": "http://www.youtube.com/watch?v=aDG_qive-uk&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-08T00:00:00", "image_url": "http://i.ytimg.com/vi/aDG_qive-uk/default.jpg",
+        "id": "5614b2e3f6933379c2e862090404ae04"}, {"title": "Everybody Get Dangerous
+        - Weezer", "url": "http://www.youtube.com/watch?v=q15RYYK7wMI&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-08T00:00:00", "image_url": "http://i.ytimg.com/vi/q15RYYK7wMI/default.jpg",
+        "id": "5f0dfa0255f408ccff9e83ed59569949"}, {"title": "Everybody Get Dangerous
+        - Weezer", "url": "http://www.youtube.com/watch?v=kBaoxmYha3k&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-05T00:00:00", "image_url": "http://i.ytimg.com/vi/kBaoxmYha3k/default.jpg",
+        "id": "e177249d64da400ac9943d50de4995a8"}, {"title": "Weezer - Perfect Situation",
+        "url": "http://www.youtube.com/watch?v=TgcK8jDFadE&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-05T00:00:00", "image_url": "http://i.ytimg.com/vi/TgcK8jDFadE/default.jpg",
+        "id": "f555e9de148787cf45c67a5f7334e0eb"}, {"title": "weezer- the greatest
+        man that ever lived (with lyrics)", "url": "http://www.youtube.com/watch?v=A60grS9QKg0&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-05T00:00:00", "image_url": "http://i.ytimg.com/vi/A60grS9QKg0/default.jpg",
+        "id": "38aedba9bf15272dc5d167da6c8cb370"}, {"title": "Weezer - Simple Pages",
+        "url": "http://www.youtube.com/watch?v=m9EqvOqz4ko&feature=youtube_gdata_player",
+        "site": "youtube.com", "date_found": "2014-03-05T00:00:00", "image_url": "http://i.ytimg.com/vi/m9EqvOqz4ko/default.jpg",
+        "id": "488384dd01dc3d820a89d1f381727347"}]}}'
+    http_version: 
+  recorded_at: Tue, 25 Mar 2014 17:50:37 GMT
+recorded_with: VCR 2.8.0

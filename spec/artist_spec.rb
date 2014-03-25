@@ -91,14 +91,14 @@ describe Echonest::Artist do
     it 'should download a specified number of video streams' do
       VCR.use_cassette('ten_videos') do
         create_valid_artist
-        @a.videos(results: 10).count.should be 10
+        @a.video(results: 10).count.should be 10
       end
     end
 
     it 'should return one video by default' do
       VCR.use_cassette('videos') do
         create_valid_artist
-        @a.videos.count.should be 1
+        @a.video.count.should be 1
       end
     end
 

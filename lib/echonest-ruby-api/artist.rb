@@ -45,10 +45,10 @@ module Echonest
       end
     end
 
-    def videos(options = { results: 1 })
+    def video(options = { results: 1 })
       response = get_response(results: options[:results], name: @name)
 
-      response[:videos].collect do |v|
+      response[:video].collect do |v|
         Video.new(title: v[:title], site: v[:site], url: v[:url], date_found: v[:date_found], image_url: v[:image_url])
       end
     end
