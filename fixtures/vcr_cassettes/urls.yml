@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/urls?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 25 Mar 2014 19:27:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '411'
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 9+GeAlcQTCKxVobTmu+hOQ
+      Etag:
+      - ! '"d08d0b34bc126745b7819958c8c509f0693588cd"'
+      X-Worker-Node:
+      - 7cbef:23004
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - ! '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-2
+    body:
+      encoding: US-ASCII
+      string: ! '{"response": {"status": {"version": "4.2", "code": 0, "message":
+        "Success"}, "urls": {"official_url": "http://www.weezer.com", "lastfm_url":
+        "http://www.last.fm/music/Weezer", "twitter_url": "https://twitter.com/Weezer",
+        "myspace_url": "http://www.myspace.com/weezer", "wikipedia_url": "http://en.wikipedia.org/wiki/Weezer",
+        "mb_url": "http://musicbrainz.org/artist/6fe07aa5-fec0-4eca-a456-f29bff451b04.html"}}}'
+    http_version: 
+  recorded_at: Tue, 25 Mar 2014 19:27:31 GMT
+recorded_with: VCR 2.8.0

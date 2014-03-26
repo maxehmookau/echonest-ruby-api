@@ -53,6 +53,10 @@ module Echonest
       end
     end
     
+    def urls
+      get_response(name: @name)[:urls]
+    end
+    
     def familiarity
       response = get_response(name: @name)
       response[entity_name.to_sym][__method__.to_sym]
@@ -99,9 +103,9 @@ module Echonest
       artists
     end
 
-    def songs
+    def songs(options = { results: 15 })
       songs = []
-      get_response(name: @name)[:songs].each do |s|
+      get_response(results: options[:results], name: @name)[:songs].each do |s|
         songs << { s[:id] => s[:title] }
       end
       songs

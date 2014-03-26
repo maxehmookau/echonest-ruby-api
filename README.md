@@ -51,6 +51,8 @@ artist.familiarity
 artist.hotttnesss
 artist.images
 artist.songs
+artist.video
+artist.urls
 ```
     
 *Exact response are specified in the RDoc  but the method names try to be as self-explanatory as possible.*
