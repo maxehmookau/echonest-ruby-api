@@ -52,11 +52,11 @@ module Echonest
         Video.new(title: v[:title], site: v[:site], url: v[:url], date_found: v[:date_found], image_url: v[:image_url])
       end
     end
-    
+
     def urls
       get_response(name: @name)[:urls]
     end
-    
+
     def familiarity
       response = get_response(name: @name)
       response[entity_name.to_sym][__method__.to_sym]
@@ -93,6 +93,15 @@ module Echonest
         artists << Artist.new(@api_key, a[:name], a[:foreign_ids], a[:id])
       end
       artists
+    end
+
+    def similar(options = { results: 20 })
+      artists = []
+      response = get('artist/similar', {name: @name, results: options[:results]})
+      response[:artists].each do |a|
+        artists << a
+      end
+      return artists
     end
 
     def top_hottt(options = {})
