@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/similar?api_key=BNOAEBT3IZYZI6WXI&format=json&name=Weezer&results=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 11 Nov 2014 02:35:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - DO3eFGEYQpyngza8OtSZ4w
+      X-Worker-Node:
+      - 322a7:4365
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-3
+    body:
+      encoding: UTF-8
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "artists": [{"id": "ARQOST01187B9AC91A", "name": "Rivers Cuomo"}, {"id": "ARBMR171187B989A5E",
+        "name": "The Rentals"}, {"id": "ARP7ILI1187B9AE9F7", "name": "Phantom Planet"},
+        {"id": "AR6OJYP1187B9AE997", "name": "Jimmy Eat World"}, {"id": "ARDBSFT1187B9AC9C1",
+        "name": "Fountains of Wayne"}, {"id": "ARMR7TU1187FB37128", "name": "that
+        dog."}, {"id": "ARBAN8S1187FB4D22F", "name": "Ben Folds Five"}, {"id": "ARM454O1187B9B72B0",
+        "name": "Superdrag"}, {"id": "ARH9ZEH1187B98E01F", "name": "Harvey Danger"},
+        {"id": "ARXDFN01187B9AE80E", "name": "The Presidents of the United States
+        of America"}]}}'
+    http_version: 
+  recorded_at: Tue, 11 Nov 2014 02:35:09 GMT
+recorded_with: VCR 2.9.3

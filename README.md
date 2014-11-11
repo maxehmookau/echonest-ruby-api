@@ -3,7 +3,7 @@
 
 ![Echonest] (http://the.echonest.com/static/img/logos/250x80_lt.gif)
 
-**echonesst-ruby-api** is a pure Ruby wrapper around the Echonest APIs. 
+**echonesst-ruby-api** is a pure Ruby wrapper around the Echonest APIs.
 
 ## Requirements
 * An API Key (available free)
@@ -17,7 +17,7 @@ In your Gemfile:
 ```ruby
 gem 'echonest-ruby-api'
 ```
-    
+
 and then `bundle install`
 
 Or install locally:
@@ -50,11 +50,12 @@ artist.blogs
 artist.familiarity
 artist.hotttnesss
 artist.images
+artist.similar
 artist.songs
 artist.video
 artist.urls
 ```
-    
+
 *Exact response are specified in the RDoc  but the method names try to be as self-explanatory as possible.*
 
 ## Song
@@ -81,25 +82,25 @@ See the full list of params [here](http://developer.echonest.com/docs/v4/song.ht
 
 You can even **identify** a song simply from its fingerprint! Support for this is flaky so far and only tested on OS X.
 
-Firstly, make sure that the `echoprint-codegen` binary is available on your local `$PATH`. 
-    
+Firstly, make sure that the `echoprint-codegen` binary is available on your local `$PATH`.
+
 Just run: `echoprint-codegen` on the terminal and see if it returns anything other than an error.
-    
+
 If it's not installed, you'll need to compile it from source. **It's not as scary as it sounds.**
 
 
     brew install ffmpeg boost taglib # Install dependencies
-    
+
     cd ~/Desktop/ # or somewhere else sensible, you can delete it later anyway
-    
+
     git clone https://github.com/echonest/echoprint-codegen.git
-    
+
     cd echoprint-codegen
-    
+
     make
-    
+
     make install
-    
+
 This should then allow you to use the `echoprint-codegen` command at the command line. If not, try following the instructions here: [echonest/echoprint-codegen](https://github.com/echonest/echoprint-codegen)
 
 Then just use this method call:
@@ -134,7 +135,7 @@ If there's a positive match, it'll return something like this:
 }
 ```
 
-Checkout `spec/song_spec.rb` for an example code to test it out. 
+Checkout `spec/song_spec.rb` for an example code to test it out.
 
 Note that this calls the song/identify API endpoint and does *not* support other Echoprint servers.
 
@@ -154,4 +155,3 @@ Testing is done using RSpec. Just run `guard` in the root directory and it'll ru
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/maxehmookau/echonest-ruby-api/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

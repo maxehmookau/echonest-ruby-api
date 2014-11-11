@@ -85,7 +85,7 @@ describe Echonest::Artist do
     end
 
   end
-  
+
   describe '#videos' do
 
     it 'should download a specified number of video streams' do
@@ -103,18 +103,18 @@ describe Echonest::Artist do
     end
 
   end
-  
+
   describe '#urls' do
-    
+
     it 'should return a hash of urls' do
       VCR.use_cassette('urls') do
         create_valid_artist
         @a.urls.should be_a Hash
       end
     end
-    
+
   end
-  
+
   describe '#familiarity' do
 
     it 'should allow us to find out how familiar an artist is' do
@@ -124,6 +124,18 @@ describe Echonest::Artist do
       end
     end
 
+  end
+
+  describe '#genres' do
+    it 'should allow us to find what genre an artist is in' do
+      VCR.use_cassette('genres', record: :new_episodes) do
+        create_valid_artist
+        @a.genres.should be_an Array
+        @a.genres.size.should > 0
+        @a.genres.should include('rock')
+        @a.genres.should include('alternative rock')
+      end
+    end
   end
 
   describe '#genres' do
@@ -227,6 +239,39 @@ describe Echonest::Artist do
       end
     end
   end # /search
+
+  describe '#similar', vcr: {cassette_name: 'similar_artists'} do
+    it 'should return similar artists' do
+      create_valid_artist
+      @a.similar(results: 10).count.should be > 0
+    end
+
+    it 'expect to return an array of artists' do
+      create_valid_artist
+      results = @a.similar(results: 10)
+      results.should be_a Array
+    end
+
+    it 'expect to return name for each artist' do
+      create_valid_artist
+      names = []
+      results = @a.similar(results: 10)
+      results.each do |a|
+        a[:name].empty?.should eq false
+        a[:name].length.should be > 0
+      end
+    end
+
+    it 'expect an id for each similar artist' do
+      create_valid_artist
+      ids = []
+      results = @a.similar(results: 10)
+      results.each do |a|
+        a[:id].empty?.should eq false
+      end
+    end
+
+  end # /similar
 
   describe '#top_hottt', vcr: {cassette_name: 'top_hottt'} do
     it 'should return an Array of artists' do
