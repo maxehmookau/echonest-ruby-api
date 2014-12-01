@@ -104,6 +104,15 @@ module Echonest
       return artists
     end
 
+    def suggest(options = {})
+      options = {name: @name}.merge(options)
+      artists = []
+      get_response(options)[:artists].each do |a|
+        artists << Artist.new(@api_key, a[:name], a[:foreign_ids], a[:id])
+      end
+      artists
+    end
+
     def top_hottt(options = {})
       artists = []
       get_response(options)[:artists].each do |a|

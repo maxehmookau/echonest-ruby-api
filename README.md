@@ -52,6 +52,7 @@ artist.hotttnesss
 artist.images
 artist.similar
 artist.songs
+artist.suggest
 artist.video
 artist.urls
 ```
@@ -152,6 +153,7 @@ Testing is done using RSpec. Just run `guard` in the root directory and it'll ru
 * makersacademy
 * deadroxy
 * [Devon Blandin](https://github.com/dblandin)
+* [cover](https://github.com/cover)
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/maxehmookau/echonest-ruby-api/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

@@ -273,6 +273,27 @@ describe Echonest::Artist do
 
   end # /similar
 
+  describe '#suggest', vcr: {cassette_name: 'suggest'} do
+    it 'should return an Array of artists' do
+      create_valid_artist
+      @a.suggest.should be_a Array
+    end
+
+    it 'should return an Artist object for each result' do
+      create_valid_artist
+      @a.suggest.each do |k|
+        k.class.should be Echonest::Artist
+      end
+    end
+
+    it 'should fill in id of each returned artist' do
+      create_valid_artist
+      @a.suggest.each do |k|
+        k.id.should_not be_nil
+      end
+    end
+  end # /suggest
+
   describe '#top_hottt', vcr: {cassette_name: 'top_hottt'} do
     it 'should return an Array of artists' do
       create_valid_artist
