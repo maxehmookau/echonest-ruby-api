@@ -37,7 +37,6 @@ module Echonest
     #
     # Returns a response as a Hash
     def get(endpoint, options = {})
-      binding.pry
       Base.get_api_endpoint(@api_key, endpoint, options)
     end
 
@@ -76,8 +75,8 @@ module Echonest
       if response_code.eql?(0)
         json[:response]
       else
-        error_message = "Error code #{response_code}: #{Echonest::Error::ERRORS[response_code]}"
-        raise Echonest::Error.new(response_code, response, error_message)
+        error = Echonest::Error.new(response_code, response)
+        raise error, "Error code #{response_code}: #{error.description}"
       end
     end
 
