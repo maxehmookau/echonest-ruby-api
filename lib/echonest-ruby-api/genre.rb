@@ -24,11 +24,11 @@ module Echonest
     end
 
     def self.list(api_key, options = {})
-      parent.get_api_endpoint(api_key, 'genre/list', options)
+      Base.get_api_endpoint(api_key, 'genre/list', options)
     end
 
     def self.search(api_key, options = {})
-      parent.get_api_endpoint(api_key, 'genre/search', options)
+      Base.get_api_endpoint(api_key, 'genre/search', options)
     end
   end
 end
