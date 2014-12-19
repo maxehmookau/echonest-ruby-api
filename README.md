@@ -96,8 +96,8 @@ genre.similar
 This class also exposes a couple class methods for `/genre/list` and `/genre/search`:
 
 ```ruby
-Echonest::Genre.list
-Echonest::Genre.search
+Echonest::Genre.list(api_key)
+Echonest::Genre.search(api_key, options)
 ```
 
 (any parameters accepted by the Echonest API can be passed in as hash params, for example (`Echonest::Genre.search('YOUR API KEY', name: 'folk rock', start: 15)`).
@@ -179,6 +179,7 @@ Testing is done using RSpec. Just run `guard` in the root directory and it'll ru
 * deadroxy
 * [Devon Blandin](https://github.com/dblandin)
 * [cover](https://github.com/cover)
+* [deakolt](https://github.com/deakolt)
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/maxehmookau/echonest-ruby-api/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
