@@ -1,3 +1,4 @@
+
 # echonest-ruby-api [![Code Climate](https://codeclimate.com/github/maxehmookau/echonest-ruby-api.png)](https://codeclimate.com/github/maxehmookau/echonest-ruby-api) [![Build Status](https://travis-ci.org/maxehmookau/echonest-ruby-api.png)](https://travis-ci.org/maxehmookau/echonest-ruby-api) [![Dependency Status](https://gemnasium.com/maxehmookau/echonest-ruby-api.png)](https://gemnasium.com/maxehmookau/echonest-ruby-api)
 
 
@@ -77,6 +78,30 @@ song.search(params)
 
 See the full list of params [here](http://developer.echonest.com/docs/v4/song.html#search)
 
+## Genre
+Create an instance of the `Echonest::Genre` object with your api key:
+
+```ruby
+genre = Echonest::Genre.new('YOUR-API-KEY', 'folk rock')
+```
+
+Which allows you to hit the Echonest genre API endpoint:
+
+```ruby
+genre.artists
+genre.profile
+genre.similar
+```
+
+This class also exposes a couple class methods for `/genre/list` and `/genre/search`:
+
+```ruby
+Echonest::Genre.list(api_key)
+Echonest::Genre.search(api_key, options)
+```
+
+(any parameters accepted by the Echonest API can be passed in as hash params, for example (`Echonest::Genre.search('YOUR API KEY', name: 'folk rock', start: 15)`).
+
 ## Identification
 
 > **Note:** This stuff is flakey as hell. Seems to work pretty well on OSX, but it doesn't work out of the box. You'll need to follow these instructions to get it working.
@@ -154,6 +179,7 @@ Testing is done using RSpec. Just run `guard` in the root directory and it'll ru
 * deadroxy
 * [Devon Blandin](https://github.com/dblandin)
 * [cover](https://github.com/cover)
+* [deakolt](https://github.com/deakolt)
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/maxehmookau/echonest-ruby-api/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

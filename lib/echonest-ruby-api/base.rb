@@ -23,20 +23,6 @@ module Echonest
       "#{ entity_name }/#{ calling_method }"
     end
 
-    # Gets the base URI for all API calls
-    #
-    # Returns a String
-    def self.base_uri
-      "http://developer.echonest.com/api/v#{ Base.version }/"
-    end
-
-    # The current version of the Echonest API to be supported.
-    #
-    # Returns a Fixnum
-    def self.version
-      4
-    end
-
     # Performs a simple HTTP get on an API endpoint.
     #
     # Examples:
@@ -51,21 +37,7 @@ module Echonest
     #
     # Returns a response as a Hash
     def get(endpoint, options = {})
-      options.merge!(api_key: @api_key,
-                           format: "json")
-
-      httparty_options = { query_string_normalizer: HTTParty::Request::NON_RAILS_QUERY_STRING_NORMALIZER,
-                           query: options }
-
-      response = HTTParty.get("#{ Base.base_uri }#{ endpoint }", httparty_options)
-      json = MultiJson.load(response.body, symbolize_keys: true)
-      response_code = json[:response][:status][:code]
-
-      if response_code.eql?(0)
-        json[:response]
-      else
-        raise Echonest::Error.new(response_code, response), "Error code #{ response_code }"
-      end
+      Base.get_api_endpoint(@api_key, endpoint, options)
     end
 
     # Cross-platform way of finding an executable in the $PATH.
@@ -82,5 +54,37 @@ module Echonest
       return nil
     end
 
+    # Gets the base URI for all API calls
+    #
+    # Returns a String
+    def self.base_uri
+      "http://developer.echonest.com/api/v#{version}/"
+    end
+
+    # Gets an arbitrary Echonest endpoint
+    def self.get_api_endpoint(api_key, endpoint, options = {})
+      options.merge!(api_key: api_key,
+                           format: "json")
+      httparty_options = { query_string_normalizer: HTTParty::Request::NON_RAILS_QUERY_STRING_NORMALIZER,
+                           query: options }
+
+      response = HTTParty.get("#{ base_uri }#{ endpoint }", httparty_options)
+      json = MultiJson.load(response.body, symbolize_keys: true)
+      response_code = json[:response][:status][:code]
+
+      if response_code.eql?(0)
+        json[:response]
+      else
+        error = Echonest::Error.new(response_code, response)
+        raise error, "Error code #{response_code}: #{error.description}"
+      end
+    end
+
+    # The current version of the Echonest API to be supported.
+    #
+    # Returns a Fixnum
+    def self.version
+      4
+    end
   end
 end

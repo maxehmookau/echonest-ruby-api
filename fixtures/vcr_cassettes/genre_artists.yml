@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/genre/artists?api_key=BNOAEBT3IZYZI6WXI&format=json&name=folk%20rock
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Dec 2014 02:52:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - LMEr2cYwR6GVOU8+4Phqdw
+      X-Worker-Node:
+      - ef99f:28485
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - BNOAEBT3IZYZI6WXI
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - '*'
+      X-Ratelimit-Used:
+      - '1'
+      Connection:
+      - Keep-alive
+      Keep-Alive:
+      - timeout=15, max=100
+      Via:
+      - 1.1 ID-0000627501223746 uproxy-2
+    body:
+      encoding: UTF-8
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "artists": [{"id": "ARVHQNN1187B9B9FA3", "name": "Cat Stevens"}, {"id": "AR966X21187B9AC463",
+        "name": "Paul Simon"}, {"id": "ARNAQSX1187B9ADBE4", "name": "Van Morrison"},
+        {"id": "ARIWB161187B9AA1D5", "name": "Simon & Garfunkel"}, {"id": "AR1XWI51187B9B2101",
+        "name": "Richie Havens"}, {"id": "ARSFKG71187FB3D66F", "name": "Crosby, Stills
+        & Nash"}, {"id": "ARGF9VF1187FB37DAE", "name": "The Band"}, {"id": "AR1UBH11187FB3643A",
+        "name": "Don McLean"}, {"id": "AR5FP401187FB523C9", "name": "Bob Dylan"},
+        {"id": "ARFAC0T1187B98C410", "name": "Graham Nash"}, {"id": "ARQFPFK1187FB533E1",
+        "name": "Roger McGuinn"}, {"id": "AR71ISG1187FB3C14D", "name": "Arlo Guthrie"},
+        {"id": "AREI0AM1187FB54C33", "name": "Tim Hardin"}, {"id": "ARQXK0B1187B9ACC97",
+        "name": "Joni Mitchell"}, {"id": "AR24G861187B9B7FAC", "name": "David Crosby"}]}}'
+    http_version: 
+  recorded_at: Thu, 18 Dec 2014 02:52:18 GMT
+recorded_with: VCR 2.9.3
