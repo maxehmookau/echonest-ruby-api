@@ -121,7 +121,7 @@ If it's not installed, you'll need to compile it from source. **It's not as scar
 
     git clone https://github.com/echonest/echoprint-codegen.git
 
-    cd echoprint-codegen
+    cd echoprint-codegen/src
 
     make
 
