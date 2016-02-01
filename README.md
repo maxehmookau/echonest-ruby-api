@@ -1,3 +1,4 @@
+# DEPRECATED! You should not use this gem in production as it is no longer maintained.
 
 # echonest-ruby-api [![Code Climate](https://codeclimate.com/github/maxehmookau/echonest-ruby-api.png)](https://codeclimate.com/github/maxehmookau/echonest-ruby-api) [![Build Status](https://travis-ci.org/maxehmookau/echonest-ruby-api.png)](https://travis-ci.org/maxehmookau/echonest-ruby-api) [![Dependency Status](https://gemnasium.com/maxehmookau/echonest-ruby-api.png)](https://gemnasium.com/maxehmookau/echonest-ruby-api)
 
