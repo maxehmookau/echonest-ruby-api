@@ -6,8 +6,8 @@ module Echonest
   
   class Playlist < Echonest::Base
 
-    def initialize(api_key, artist) 
-      @api_key = api_key
+    def initialize(artist) 
+      @api_key = Echonest.config.api_key
       @artist = artist
       @type = 'artist-radio'
       response = get('playlist/dynamic/create', 
@@ -17,7 +17,7 @@ module Echonest
 
     def next
       response = get('playlist/dynamic/next', { session_id: session_id })
-      artist = Echonest::Artist.new(@api_key, response[:songs].first[:artist_name])
+      artist = Echonest::Artist.new(response[:songs].first[:artist_name])
       { :artist => artist, :track => response[:songs].first[:title] }
     end
 

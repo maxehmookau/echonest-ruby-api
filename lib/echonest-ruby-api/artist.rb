@@ -12,10 +12,10 @@ module Echonest
 
     attr_accessor :id, :name, :foreign_ids
 
-    def initialize(api_key, name = nil, foreign_ids = nil, id = nil)
+    def initialize(name = nil, foreign_ids = nil, id = nil)
       @id = id
       @name = name
-      @api_key = api_key
+      @api_key = Echonest.config.api_key
       @foreign_ids = ForeignId.parse_array(foreign_ids) if foreign_ids
     end
 
@@ -90,7 +90,7 @@ module Echonest
       options = {name: @name}.merge(options)
       artists = []
       get_response(options)[:artists].each do |a|
-        artists << Artist.new(@api_key, a[:name], a[:foreign_ids], a[:id])
+        artists << Artist.new(a[:name], a[:foreign_ids], a[:id])
       end
       artists
     end
@@ -132,7 +132,7 @@ module Echonest
     def profile(options = {})
       options = (@id ? {id: @id} : {name: @name}).merge(options)
       artist_data = get_response(options)[:artist]
-      Artist.new(@api_key, artist_data[:name], artist_data[:foreign_ids], artist_data[:id])
+      Artist.new(artist_data[:name], artist_data[:foreign_ids], artist_data[:id])
     end
 
     def terms(options = {})
